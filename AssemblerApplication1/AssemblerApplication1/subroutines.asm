@@ -6,12 +6,12 @@
  */ 
 
 ; code from: tp05 puts02.asm
-LCD_putstring:
+ LCD_putstring:
 	lpm
-	tst r0
-	breq done
-	mov a0, r0
-	rcall LCD_putc
-	adiw zl, 1
-	rjmp LCD_pustring
+	tst		r0
+	breq	done
+	mov		a0, r0
+	rcall	LCD_putc
+	adiw	zl, 1
+	rjmp	LCD_putstring
 done:ret
