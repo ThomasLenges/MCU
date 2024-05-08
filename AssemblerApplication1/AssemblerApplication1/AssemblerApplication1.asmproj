@@ -96,10 +96,16 @@
     <Compile Include="main.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="printf.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="string.asm">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="subroutines.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="useprintf.asm">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

@@ -5,29 +5,55 @@
  *   Author: renuka
  */ 
 
-.include "m128def.inc"
+;.include "m128def.inc"
 .include "definitions.asm"	
 .include "macros.asm"
-.include "display.asm"
-.include "string.asm"
-.include "subroutines.asm"
-.include "lcd.asm"
+;.include "display.asm"
+;.include "string.asm"
+;.include "subroutines.asm"
+;.include "lcd.asm"
+;.include "printf.asm"
 
  reset:
 	LDSP	RAMEND	
    ;rcall	all initializations
 	rcall LCD_init
-	ldi		a1, 0x00
-	bst		a1, 0
+	;ldi		a1, 0x00
+	;bst		a1, 0
 	rjmp	main
 
+.include "lcd.asm"
+.include "printf.asm"
 main:
-	DISPLAY2 str0, str1 ; WELCOME TO MICROCONTROLLER PARTY
-	WAIT_MS 2000
+	rcall	LCD_home
+	rcall	LCD_clear
+	PRINTF LCD ; WELCOME TO MICROCONTROLLER PARTY
+    .db "hello",0
+	WAIT_MS 100
     ; Display the menu options
-    DISPLAY2 str2, str3  ; Display "1. CHOOSE PLAYERS" and "2. PLAY GAME"
-	WAIT_MS 2000
-    DISPLAY1 str4         ; Display "3. OPEN SAFE"
-	WAIT_MS 10000
-	
+    ;DISPLAY2 str2, str3  ; Display "1. CHOOSE PLAYERS" and "2. PLAY GAME"
+	;WAIT_MS 2000
+    ;DISPLAY1 str4         ; Display "3. OPEN SAFE"
+	;WAIT_MS 10000
+	rjmp main
+/*
+reset:
+	LDSP	RAMEND		; load stack pointer
+	OUTI	DDRB,0xff	; make portB output
+	rcall	LCD_init	; initialize LCD
+	rjmp	main
+.include "lcd.asm"
+.include "printf.asm"
 
+main:	
+	in	a0,PIND		; read switches
+	out	PORTB,a0	; write to LED
+	com	a0		; invert a0
+	
+	rcall	LCD_home
+	rcall	LCD_clear
+	PRINTF	LCD
+	; insert your printing command line here
+	WAIT_MS	100
+	rjmp 	main
+*/
