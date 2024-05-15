@@ -43,7 +43,7 @@ LCD_blink_on:		JW	LCD_wr_ir, 0b00001101	; Display=1,Cursor=0,Blink=1
 LCD_blink_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
 LCD_cursor_on:		JW	LCD_wr_ir, 0b00001110	; Display=1,Cursor=1,Blink=0
 LCD_cursor_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
-		
+LCD_cursorblink: 	JW	LCD_wr_ir, 0b00001111	; Display=1,Cursor=1,Blink=1	
 LCD_init:
 	in	w,MCUCR					; enable access to ext. SRAM
 	sbr	w,(1<<SRE)+(1<<SRW10)

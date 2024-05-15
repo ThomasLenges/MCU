@@ -12,8 +12,11 @@
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc</FILE>
   <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\definitions.asm</FILE>
   <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm</FILE>
-  <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE>
   <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE>
+  <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE>
+  <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE>
+  <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\display.asm</FILE>
+  <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\Debug\AssemblerApplication1.obj</FILE>
@@ -26,28 +29,9 @@
   <FILE>AssemblerApplication1.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <reset><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>17</LINE></reset>
+  <reset><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>12</LINE></reset>
   <LCD_init><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>47</LINE></LCD_init>
-  <main><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>28</LINE></main>
-  <LCD_wr_ir><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>10</LINE></LCD_wr_ir>
-  <lcd_4us><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>18</LINE></lcd_4us>
-  <lcd_2us><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>20</LINE></lcd_2us>
-  <LCD><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>24</LINE></LCD>
-  <LCD_putc><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>25</LINE></LCD_putc>
-  <LCD_cr><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>63</LINE></LCD_cr>
-  <LCD_lf><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>73</LINE></LCD_lf>
-  <LCD_wr_dr><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>28</LINE></LCD_wr_dr>
-  <LCD_clear><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>36</LINE></LCD_clear>
-  <LCD_home><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>37</LINE></LCD_home>
-  <LCD_cursor_left><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>38</LINE></LCD_cursor_left>
-  <LCD_cursor_right><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>39</LINE></LCD_cursor_right>
-  <LCD_display_left><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>40</LINE></LCD_display_left>
-  <LCD_display_right><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>41</LINE></LCD_display_right>
-  <LCD_blink_on><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>42</LINE></LCD_blink_on>
-  <LCD_blink_off><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>43</LINE></LCD_blink_off>
-  <LCD_cursor_on><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>44</LINE></LCD_cursor_on>
-  <LCD_cursor_off><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>45</LINE></LCD_cursor_off>
-  <LCD_pos><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>57</LINE></LCD_pos>
+  <main><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>29</LINE></main>
   <_printf><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>127</LINE></_printf>
   <_printf_read><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>132</LINE></_printf_read>
   <_printf_end><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>142</LINE></_printf_end>
@@ -82,5 +66,50 @@
   <_mul41><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>417</LINE></_mul41>
   <__m41><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>419</LINE></__m41>
   <__d41><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>435</LINE></__d41>
+  <str0><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>13</LINE></str0>
+  <str1><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>15</LINE></str1>
+  <str2><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>17</LINE></str2>
+  <str3><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>19</LINE></str3>
+  <str4><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>24</LINE></str4>
+  <str5><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>26</LINE></str5>
+  <str6><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>30</LINE></str6>
+  <str7><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>32</LINE></str7>
+  <str8><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>34</LINE></str8>
+  <str9><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>36</LINE></str9>
+  <str10><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>38</LINE></str10>
+  <str11><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>40</LINE></str11>
+  <str12><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>45</LINE></str12>
+  <str13><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>47</LINE></str13>
+  <str14><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>49</LINE></str14>
+  <strivia><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>52</LINE></strivia>
+  <strbutton><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>55</LINE></strbutton>
+  <LCD_wr_ir><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>10</LINE></LCD_wr_ir>
+  <lcd_4us><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>18</LINE></lcd_4us>
+  <lcd_2us><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>20</LINE></lcd_2us>
+  <LCD><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>24</LINE></LCD>
+  <LCD_putc><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>25</LINE></LCD_putc>
+  <LCD_cr><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>63</LINE></LCD_cr>
+  <LCD_lf><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>73</LINE></LCD_lf>
+  <LCD_wr_dr><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>28</LINE></LCD_wr_dr>
+  <LCD_clear><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>36</LINE></LCD_clear>
+  <LCD_home><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>37</LINE></LCD_home>
+  <LCD_cursor_left><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>38</LINE></LCD_cursor_left>
+  <LCD_cursor_right><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>39</LINE></LCD_cursor_right>
+  <LCD_display_left><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>40</LINE></LCD_display_left>
+  <LCD_display_right><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>41</LINE></LCD_display_right>
+  <LCD_blink_on><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>42</LINE></LCD_blink_on>
+  <LCD_blink_off><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>43</LINE></LCD_blink_off>
+  <LCD_cursor_on><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>44</LINE></LCD_cursor_on>
+  <LCD_cursor_off><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>45</LINE></LCD_cursor_off>
+  <LCD_cursorblink><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>46</LINE></LCD_cursorblink>
+  <LCD_pos><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>57</LINE></LCD_pos>
+  <LCD_putstring><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>9</LINE></LCD_putstring>
+  <done><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>17</LINE></done>
+  <start><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>40</LINE></start>
+  <safe><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>74</LINE></safe>
+  <games><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>51</LINE></games>
+  <trivia><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>63</LINE></trivia>
+  <dance><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>68</LINE></dance>
+  <end><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>79</LINE></end>
  </LABELS>
 </ASSEMBLER_INFO>
