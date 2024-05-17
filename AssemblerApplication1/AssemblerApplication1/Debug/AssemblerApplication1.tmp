@@ -31,7 +31,7 @@
  <LABELS>
   <reset><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>12</LINE></reset>
   <LCD_init><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>47</LINE></LCD_init>
-  <main><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>29</LINE></main>
+  <main><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>110</LINE></main>
   <_printf><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>127</LINE></_printf>
   <_printf_read><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>132</LINE></_printf_read>
   <_printf_end><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm</FILE><LINE>142</LINE></_printf_end>
@@ -70,19 +70,47 @@
   <str1><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>15</LINE></str1>
   <str2><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>17</LINE></str2>
   <str3><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>19</LINE></str3>
-  <str4><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>24</LINE></str4>
-  <str5><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>26</LINE></str5>
-  <str6><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>30</LINE></str6>
-  <str7><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>32</LINE></str7>
-  <str8><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>34</LINE></str8>
-  <str9><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>36</LINE></str9>
-  <str10><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>38</LINE></str10>
-  <str11><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>40</LINE></str11>
-  <str12><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>45</LINE></str12>
-  <str13><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>47</LINE></str13>
-  <str14><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>49</LINE></str14>
-  <strivia><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>52</LINE></strivia>
-  <strbutton><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>55</LINE></strbutton>
+  <strwelcome><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>23</LINE></strwelcome>
+  <strivia><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>26</LINE></strivia>
+  <strbutton><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>29</LINE></strbutton>
+  <strcorrect><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>32</LINE></strcorrect>
+  <strfalse><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>35</LINE></strfalse>
+  <str4><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>39</LINE></str4>
+  <str5><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>41</LINE></str5>
+  <str6><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>45</LINE></str6>
+  <str7><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>47</LINE></str7>
+  <str8><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>49</LINE></str8>
+  <str9><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>51</LINE></str9>
+  <str10><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>53</LINE></str10>
+  <str11><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>55</LINE></str11>
+  <striviaQ1><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>60</LINE></striviaQ1>
+  <striviaQ12><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>62</LINE></striviaQ12>
+  <strivia1A><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>64</LINE></strivia1A>
+  <strivia1B><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>66</LINE></strivia1B>
+  <strivia1C><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>68</LINE></strivia1C>
+  <strivia1D><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>70</LINE></strivia1D>
+  <answer1><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>72</LINE></answer1>
+  <striviaQ2><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>76</LINE></striviaQ2>
+  <striviaQ22><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>78</LINE></striviaQ22>
+  <strivia2A><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>80</LINE></strivia2A>
+  <strivia2B><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>82</LINE></strivia2B>
+  <strivia2C><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>84</LINE></strivia2C>
+  <strivia2D><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>86</LINE></strivia2D>
+  <answer2><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>88</LINE></answer2>
+  <striviaQ3><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>92</LINE></striviaQ3>
+  <striviaQ32><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>94</LINE></striviaQ32>
+  <strivia3A><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>96</LINE></strivia3A>
+  <strivia3B><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>98</LINE></strivia3B>
+  <strivia3C><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>100</LINE></strivia3C>
+  <strivia3D><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>102</LINE></strivia3D>
+  <answer3><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>104</LINE></answer3>
+  <striviaQ4><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>108</LINE></striviaQ4>
+  <striviaQ42><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>110</LINE></striviaQ42>
+  <strivia4A><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>112</LINE></strivia4A>
+  <strivia4B><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>114</LINE></strivia4B>
+  <strivia4C><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>116</LINE></strivia4C>
+  <strivia4D><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>118</LINE></strivia4D>
+  <answer4><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>120</LINE></answer4>
   <LCD_wr_ir><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>10</LINE></LCD_wr_ir>
   <lcd_4us><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>18</LINE></lcd_4us>
   <lcd_2us><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>20</LINE></lcd_2us>
@@ -105,11 +133,13 @@
   <LCD_pos><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm</FILE><LINE>57</LINE></LCD_pos>
   <LCD_putstring><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>9</LINE></LCD_putstring>
   <done><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>17</LINE></done>
-  <start><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>40</LINE></start>
-  <safe><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>74</LINE></safe>
-  <games><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>51</LINE></games>
-  <trivia><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>63</LINE></trivia>
-  <dance><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>68</LINE></dance>
-  <end><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>79</LINE></end>
+  <main_loop><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>115</LINE></main_loop>
+  <start><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>123</LINE></start>
+  <safe><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>187</LINE></safe>
+  <games><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>135</LINE></games>
+  <trivia><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>148</LINE></trivia>
+  <dance><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>180</LINE></dance>
+  <check_button><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>198</LINE></check_button>
+  <end><FILE>C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>192</LINE></end>
  </LABELS>
 </ASSEMBLER_INFO>

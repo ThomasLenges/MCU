@@ -19,6 +19,21 @@ str2:
 str3:
 .db "2. OPEN SAFE", 0
 
+; general
+strwelcome:
+.db "Welcome to",0
+
+strivia:
+.db "trivia :)",0
+
+strbutton:
+.db "the button :)",0
+
+strcorrect:
+.db "Correct!",0
+
+strfalse:
+.db "False!",0
 
 ; Choose games
 str4:
@@ -26,7 +41,7 @@ str4:
 str5:
 .db "2. BUTTON DANCE", 0
 
-; Ouvrir le coffre
+; Open safe
 str6:
 .db "ENTER PASSCODE", 0
 str7:
@@ -40,19 +55,69 @@ str10:
 str11:
 .db "PLAYING! :D", 0
 
-; Quiz MCQ
+; Quiz trivia
 ; Question 1
-str12:
-.db "WHO SINGS BILLIE JEAN?", 0
-str13:
-.db "A. MICHAEL JACKSON", 0
-str14:
+striviaQ1:
+.db "Who wrote the", 0
+striviaQ12:
+.db "song 'thriller'?", 0
+strivia1A:
+.db "A. M. JACKSON", 0
+strivia1B:
 .db "B. TRACY CHAPMAN", 0
+strivia1C:
+.db "C. A. SCHMID", 0
+strivia1D:
+.db "D. CHER", 0
+answer1:
+.db 0xfd
 
-strivia:
-.db "trivia :)",0
+; Question 2
+striviaQ2:
+.db "Who plays", 0
+striviaQ22:
+.db "Hermione?", 0
+strivia2A:
+.db "A. EMMA WATSON", 0
+strivia2B:
+.db "B. EMMA STONE", 0
+strivia2C:
+.db "C. AMY ADAMS", 0
+strivia2D:
+.db "D. ZOE SALDANA", 0
+answer2:
+.db 0xfd
 
-strbutton:
-.db "button :)",0
+; Question 3
+striviaQ3:
+.db "Which band wrote", 0
+striviaQ32:
+.db "'hey you' ?", 0
+strivia3A:
+.db "A. SPICE GIRLS", 0
+strivia3B:
+.db "B. LED ZEPPLIN", 0
+strivia3C:
+.db "C. JOURNEY", 0
+strivia3D:
+.db "D. PINK FLOYD", 0
+answer3:
+.db 0xef
+
+; Question 4
+striviaQ4:
+.db "Who wrote 'Air", 0
+striviaQ42:
+.db "on G string'?", 0
+strivia4A:
+.db "A. PLAYBOI CARTI", 0
+strivia4B:
+.db "B. BEETHOVEN", 0
+strivia4C:
+.db "C. SCHUBERT", 0
+strivia4D:
+.db "D. J.S. BACH", 0
+answer4:
+.db 0xef
 
 

@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm Wed May 15 18:41:32 2024
+AVRASM ver. 2.2.6  C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm Fri May 17 20:40:13 2024
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
@@ -3144,13 +3144,13 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
 000002 e100
 000003 bf0e                      	LDSP	RAMEND	
                                     ;rcall	all initializations
-000004 d1c4                      	rcall LCD_init
+000004 d265                      	rcall LCD_init
 000005 ef0f                      	ldi r16, 0xff
 000006 bb07                      	out DDRB, r16
 000007 e000                      	ldi r16, 0x00
 000008 bb01                      	out DDRD, r16
                                  
-000009 c1e5                      	rjmp	main
+000009 c286                      	rjmp	main
                                  
                                  .include "printf.asm"
                                  
@@ -3726,148 +3726,382 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
 000131 0000                      .db "2. OPEN SAFE", 0
                                  
+                                 ; general
+                                 strwelcome:
+000132 6557
+000133 636c
+000134 6d6f
+000135 2065
+000136 6f74
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(24): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000137 0000                      .db "Welcome to",0
+                                 
+                                 strivia:
+000138 7274
+000139 7669
+00013a 6169
+00013b 3a20
+00013c 0029                      .db "trivia :)",0
+                                 
+                                 strbutton:
+00013d 6874
+00013e 2065
+00013f 7562
+000140 7474
+000141 6e6f
+000142 3a20
+000143 0029                      .db "the button :)",0
+                                 
+                                 strcorrect:
+000144 6f43
+000145 7272
+000146 6365
+000147 2174
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(33): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000148 0000                      .db "Correct!",0
+                                 
+                                 strfalse:
+000149 6146
+00014a 736c
+00014b 2165
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(36): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00014c 0000                      .db "False!",0
                                  
                                  ; Choose games
                                  str4:
-000132 2e31
-000133 5420
-000134 4952
-000135 4956
-000136 2041
-000137 5551
-000138 5a49
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(25): warning: .cseg .db misalignment - padding zero byte
+00014d 2e31
+00014e 5420
+00014f 4952
+000150 4956
+000151 2041
+000152 5551
+000153 5a49
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(40): warning: .cseg .db misalignment - padding zero byte
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-000139 0000                      .db "1. TRIVIA QUIZ", 0
+000154 0000                      .db "1. TRIVIA QUIZ", 0
                                  str5:
-00013a 2e32
-00013b 4220
-00013c 5455
-00013d 4f54
-00013e 204e
-00013f 4144
-000140 434e
-000141 0045                      .db "2. BUTTON DANCE", 0
+000155 2e32
+000156 4220
+000157 5455
+000158 4f54
+000159 204e
+00015a 4144
+00015b 434e
+00015c 0045                      .db "2. BUTTON DANCE", 0
                                  
-                                 ; Ouvrir le coffre
+                                 ; Open safe
                                  str6:
-000142 4e45
-000143 4554
-000144 2052
-000145 4150
-000146 5353
-000147 4f43
-000148 4544
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(31): warning: .cseg .db misalignment - padding zero byte
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-000149 0000                      .db "ENTER PASSCODE", 0
-                                 str7:
-00014a 4e49
-00014b 4f43
-00014c 5252
-00014d 4345
-00014e 2054
-00014f 4150
-000150 5353
-000151 4f43
-000152 4544
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(33): warning: .cseg .db misalignment - padding zero byte
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-000153 0000                      .db "INCORRECT PASSCODE", 0
-                                 str8:
-000154 4f43
-000155 474e
-000156 4152
-000157 5554
-000158 414c
-000159 4954
-00015a 4e4f
-00015b 2c53
-00015c 0020                      .db "CONGRATULATIONS, ", 0
-                                 str9:
-00015d 4f59
-00015e 2055
-00015f 4957
-000160 204e
-000161 4854
-000162 5349
-000163 4720
-000164 4d41
-000165 2045
-000166 0021                      .db "YOU WIN THIS GAME !", 0
-                                 str10:
-000167 4854
-000168 4e41
-000169 534b
-00016a 4620
-00016b 524f
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(39): warning: .cseg .db misalignment - padding zero byte
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-00016c 0000                      .db "THANKS FOR", 0
-                                 str11:
-00016d 4c50
-00016e 5941
-00016f 4e49
-000170 2147
-000171 3a20
-000172 0044                      .db "PLAYING! :D", 0
-                                 
-                                 ; Quiz MCQ
-                                 ; Question 1
-                                 str12:
-000173 4857
-000174 204f
-000175 4953
-000176 474e
-000177 2053
-000178 4942
-000179 4c4c
-00017a 4549
-00017b 4a20
-00017c 4145
-00017d 3f4e
+00015d 4e45
+00015e 4554
+00015f 2052
+000160 4150
+000161 5353
+000162 4f43
+000163 4544
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(46): warning: .cseg .db misalignment - padding zero byte
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-00017e 0000                      .db "WHO SINGS BILLIE JEAN?", 0
-                                 str13:
-00017f 2e41
-000180 4d20
-000181 4349
-000182 4148
-000183 4c45
-000184 4a20
-000185 4341
-000186 534b
-000187 4e4f
+000164 0000                      .db "ENTER PASSCODE", 0
+                                 str7:
+000165 4e49
+000166 4f43
+000167 5252
+000168 4345
+000169 2054
+00016a 4150
+00016b 5353
+00016c 4f43
+00016d 4544
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(48): warning: .cseg .db misalignment - padding zero byte
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-000188 0000                      .db "A. MICHAEL JACKSON", 0
-                                 str14:
-000189 2e42
-00018a 5420
-00018b 4152
-00018c 5943
-00018d 4320
-00018e 4148
-00018f 4d50
-000190 4e41
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(50): warning: .cseg .db misalignment - padding zero byte
+00016e 0000                      .db "INCORRECT PASSCODE", 0
+                                 str8:
+00016f 4f43
+000170 474e
+000171 4152
+000172 5554
+000173 414c
+000174 4954
+000175 4e4f
+000176 2c53
+000177 0020                      .db "CONGRATULATIONS, ", 0
+                                 str9:
+000178 4f59
+000179 2055
+00017a 4957
+00017b 204e
+00017c 4854
+00017d 5349
+00017e 4720
+00017f 4d41
+000180 2045
+000181 0021                      .db "YOU WIN THIS GAME !", 0
+                                 str10:
+000182 4854
+000183 4e41
+000184 534b
+000185 4620
+000186 524f
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(54): warning: .cseg .db misalignment - padding zero byte
 C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
-000191 0000                      .db "B. TRACY CHAPMAN", 0
+000187 0000                      .db "THANKS FOR", 0
+                                 str11:
+000188 4c50
+000189 5941
+00018a 4e49
+00018b 2147
+00018c 3a20
+00018d 0044                      .db "PLAYING! :D", 0
                                  
-                                 strivia:
-000192 7274
-000193 7669
-000194 6169
-000195 3a20
-000196 0029                      .db "trivia :)",0
+                                 ; Quiz trivia
+                                 ; Question 1
+                                 striviaQ1:
+00018e 6857
+00018f 206f
+000190 7277
+000191 746f
+000192 2065
+000193 6874
+000194 0065                      .db "Who wrote the", 0
+                                 striviaQ12:
+000195 6f73
+000196 676e
+000197 2720
+000198 6874
+000199 6972
+00019a 6c6c
+00019b 7265
+00019c 3f27
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(63): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00019d 0000                      .db "song 'thriller'?", 0
+                                 strivia1A:
+00019e 2e41
+00019f 4d20
+0001a0 202e
+0001a1 414a
+0001a2 4b43
+0001a3 4f53
+0001a4 004e                      .db "A. M. JACKSON", 0
+                                 strivia1B:
+0001a5 2e42
+0001a6 5420
+0001a7 4152
+0001a8 5943
+0001a9 4320
+0001aa 4148
+0001ab 4d50
+0001ac 4e41
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(67): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001ad 0000                      .db "B. TRACY CHAPMAN", 0
+                                 strivia1C:
+0001ae 2e43
+0001af 4120
+0001b0 202e
+0001b1 4353
+0001b2 4d48
+0001b3 4449
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(69): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001b4 0000                      .db "C. A. SCHMID", 0
+                                 strivia1D:
+0001b5 2e44
+0001b6 4320
+0001b7 4548
+0001b8 0052                      .db "D. CHER", 0
+                                 answer1:
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(73): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001b9 00fd                      .db 0xfd
                                  
-                                 strbutton:
-000197 7562
-000198 7474
-000199 6e6f
-00019a 3a20
-00019b 0029                      .db "button :)",0
+                                 ; Question 2
+                                 striviaQ2:
+0001ba 6857
+0001bb 206f
+0001bc 6c70
+0001bd 7961
+0001be 0073                      .db "Who plays", 0
+                                 striviaQ22:
+0001bf 6548
+0001c0 6d72
+0001c1 6f69
+0001c2 656e
+0001c3 003f                      .db "Hermione?", 0
+                                 strivia2A:
+0001c4 2e41
+0001c5 4520
+0001c6 4d4d
+0001c7 2041
+0001c8 4157
+0001c9 5354
+0001ca 4e4f
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(81): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001cb 0000                      .db "A. EMMA WATSON", 0
+                                 strivia2B:
+0001cc 2e42
+0001cd 4520
+0001ce 4d4d
+0001cf 2041
+0001d0 5453
+0001d1 4e4f
+0001d2 0045                      .db "B. EMMA STONE", 0
+                                 strivia2C:
+0001d3 2e43
+0001d4 4120
+0001d5 594d
+0001d6 4120
+0001d7 4144
+0001d8 534d
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(85): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001d9 0000                      .db "C. AMY ADAMS", 0
+                                 strivia2D:
+0001da 2e44
+0001db 5a20
+0001dc 454f
+0001dd 5320
+0001de 4c41
+0001df 4144
+0001e0 414e
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(87): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001e1 0000                      .db "D. ZOE SALDANA", 0
+                                 answer2:
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(89): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001e2 00fd                      .db 0xfd
+                                 
+                                 ; Question 3
+                                 striviaQ3:
+0001e3 6857
+0001e4 6369
+0001e5 2068
+0001e6 6162
+0001e7 646e
+0001e8 7720
+0001e9 6f72
+0001ea 6574
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(93): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001eb 0000                      .db "Which band wrote", 0
+                                 striviaQ32:
+0001ec 6827
+0001ed 7965
+0001ee 7920
+0001ef 756f
+0001f0 2027
+0001f1 003f                      .db "'hey you' ?", 0
+                                 strivia3A:
+0001f2 2e41
+0001f3 5320
+0001f4 4950
+0001f5 4543
+0001f6 4720
+0001f7 5249
+0001f8 534c
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(97): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001f9 0000                      .db "A. SPICE GIRLS", 0
+                                 strivia3B:
+0001fa 2e42
+0001fb 4c20
+0001fc 4445
+0001fd 5a20
+0001fe 5045
+0001ff 4c50
+000200 4e49
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(99): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000201 0000                      .db "B. LED ZEPPLIN", 0
+                                 strivia3C:
+000202 2e43
+000203 4a20
+000204 554f
+000205 4e52
+000206 5945
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(101): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000207 0000                      .db "C. JOURNEY", 0
+                                 strivia3D:
+000208 2e44
+000209 5020
+00020a 4e49
+00020b 204b
+00020c 4c46
+00020d 594f
+00020e 0044                      .db "D. PINK FLOYD", 0
+                                 answer3:
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(105): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00020f 00ef                      .db 0xef
+                                 
+                                 ; Question 4
+                                 striviaQ4:
+000210 6857
+000211 206f
+000212 7277
+000213 746f
+000214 2065
+000215 4127
+000216 7269
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(109): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000217 0000                      .db "Who wrote 'Air", 0
+                                 striviaQ42:
+000218 6e6f
+000219 4720
+00021a 7320
+00021b 7274
+00021c 6e69
+00021d 2767
+00021e 003f                      .db "on G string'?", 0
+                                 strivia4A:
+00021f 2e41
+000220 5020
+000221 414c
+000222 4259
+000223 494f
+000224 4320
+000225 5241
+000226 4954
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(113): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000227 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia4B:
+000228 2e42
+000229 4220
+00022a 4545
+00022b 4854
+00022c 564f
+00022d 4e45
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(115): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00022e 0000                      .db "B. BEETHOVEN", 0
+                                 strivia4C:
+00022f 2e43
+000230 5320
+000231 4843
+000232 4255
+000233 5245
+000234 0054                      .db "C. SCHUBERT", 0
+                                 strivia4D:
+000235 2e44
+000236 4a20
+000237 532e
+000238 202e
+000239 4142
+00023a 4843
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(119): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00023b 0000                      .db "D. J.S. BACH", 0
+                                 answer4:
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(121): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\main.asm(24): 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00023c 00ef                      .db 0xef
                                  
                                  
                                  .include "lcd.asm"
@@ -3882,95 +4116,95 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ; === subroutines ===
                                  LCD_wr_ir:
                                  ; in	w (byte to write to LCD IR)
-00019c 9030 8000                 	lds	u, LCD_IR		; read IR to check busy flag  (bit7)
-00019e fc37
-00019f cffc                      	JB1	u,7,LCD_wr_ir	; Jump if Bit=1 (still busy)
-0001a0 d003                      	rcall	lcd_4us		; delay to increment DRAM addr counter
-0001a1 9300 8000                 	sts	LCD_IR, w		; store w in IR
-0001a3 9508                      	ret
+00023d 9030 8000                 	lds	u, LCD_IR		; read IR to check busy flag  (bit7)
+00023f fc37
+000240 cffc                      	JB1	u,7,LCD_wr_ir	; Jump if Bit=1 (still busy)
+000241 d003                      	rcall	lcd_4us		; delay to increment DRAM addr counter
+000242 9300 8000                 	sts	LCD_IR, w		; store w in IR
+000244 9508                      	ret
                                  	
                                  lcd_4us:
-0001a4 d000                      	rcall	lcd_2us		; recursive call		
+000245 d000                      	rcall	lcd_2us		; recursive call		
                                  lcd_2us:
-0001a5 0000                      	nop					; rcall(3) + nop(1) + ret(4) = 8 cycles (2us)
-0001a6 9508                      	ret
+000246 0000                      	nop					; rcall(3) + nop(1) + ret(4) = 8 cycles (2us)
+000247 9508                      	ret
                                  
                                  LCD:
                                  LCD_putc:
-0001a7 302d
-0001a8 f179                      	JK	a0,CR,LCD_cr	; Jump if a0=CR
-0001a9 302a
-0001aa f1b9                      	JK	a0,LF,LCD_lf	; Jump if a0=LF
+000248 302d
+000249 f179                      	JK	a0,CR,LCD_cr	; Jump if a0=CR
+00024a 302a
+00024b f1b9                      	JK	a0,LF,LCD_lf	; Jump if a0=LF
                                  LCD_wr_dr:
                                  ; in	a0 (byte to write to LCD DR)
-0001ab 9100 8000                 	lds	w, LCD_IR		; read IR to check busy flag  (bit7)
-0001ad fd07
-0001ae cffc                      	JB1	w,7,LCD_wr_dr	; Jump if Bit=1 (still busy)
-0001af dff4                      	rcall	lcd_4us		; delay to increment DRAM addr counter
-0001b0 9320 c000                 	sts	LCD_DR, a0		; store a0 in DR
-0001b2 9508                      	ret	
+00024c 9100 8000                 	lds	w, LCD_IR		; read IR to check busy flag  (bit7)
+00024e fd07
+00024f cffc                      	JB1	w,7,LCD_wr_dr	; Jump if Bit=1 (still busy)
+000250 dff4                      	rcall	lcd_4us		; delay to increment DRAM addr counter
+000251 9320 c000                 	sts	LCD_DR, a0		; store a0 in DR
+000253 9508                      	ret	
                                  	
-0001b3 e001
-0001b4 cfe7                      LCD_clear:		JW	LCD_wr_ir, 0b00000001		; clear display
-0001b5 e002
-0001b6 cfe5                      LCD_home:		JW	LCD_wr_ir, 0b00000010		; return home
-0001b7 e100
-0001b8 cfe3                      LCD_cursor_left:	JW	LCD_wr_ir, 0b00010000	; move cursor to left
-0001b9 e104
-0001ba cfe1                      LCD_cursor_right:	JW	LCD_wr_ir, 0b00010100	; move cursor to right
-0001bb e108
-0001bc cfdf                      LCD_display_left:	JW	LCD_wr_ir, 0b00011000	; shifts display to left
-0001bd e10c
-0001be cfdd                      LCD_display_right:	JW	LCD_wr_ir, 0b00011100	; shifts display to right
-0001bf e00d
-0001c0 cfdb                      LCD_blink_on:		JW	LCD_wr_ir, 0b00001101	; Display=1,Cursor=0,Blink=1
-0001c1 e00c
-0001c2 cfd9                      LCD_blink_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
-0001c3 e00e
-0001c4 cfd7                      LCD_cursor_on:		JW	LCD_wr_ir, 0b00001110	; Display=1,Cursor=1,Blink=0
-0001c5 e00c
-0001c6 cfd5                      LCD_cursor_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
-0001c7 e00f
-0001c8 cfd3                      LCD_cursorblink: 	JW	LCD_wr_ir, 0b00001111	; Display=1,Cursor=1,Blink=1	
+000254 e001
+000255 cfe7                      LCD_clear:		JW	LCD_wr_ir, 0b00000001		; clear display
+000256 e002
+000257 cfe5                      LCD_home:		JW	LCD_wr_ir, 0b00000010		; return home
+000258 e100
+000259 cfe3                      LCD_cursor_left:	JW	LCD_wr_ir, 0b00010000	; move cursor to left
+00025a e104
+00025b cfe1                      LCD_cursor_right:	JW	LCD_wr_ir, 0b00010100	; move cursor to right
+00025c e108
+00025d cfdf                      LCD_display_left:	JW	LCD_wr_ir, 0b00011000	; shifts display to left
+00025e e10c
+00025f cfdd                      LCD_display_right:	JW	LCD_wr_ir, 0b00011100	; shifts display to right
+000260 e00d
+000261 cfdb                      LCD_blink_on:		JW	LCD_wr_ir, 0b00001101	; Display=1,Cursor=0,Blink=1
+000262 e00c
+000263 cfd9                      LCD_blink_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
+000264 e00e
+000265 cfd7                      LCD_cursor_on:		JW	LCD_wr_ir, 0b00001110	; Display=1,Cursor=1,Blink=0
+000266 e00c
+000267 cfd5                      LCD_cursor_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
+000268 e00f
+000269 cfd3                      LCD_cursorblink: 	JW	LCD_wr_ir, 0b00001111	; Display=1,Cursor=1,Blink=1	
                                  LCD_init:
-0001c9 b705                      	in	w,MCUCR					; enable access to ext. SRAM
-0001ca 6c00                      	sbr	w,(1<<SRE)+(1<<SRW10)
-0001cb bf05                      	out	MCUCR,w
-0001cc e001
-0001cd dfce                      	CW	LCD_wr_ir, 0b00000001	; clear display
-0001ce e006
-0001cf dfcc                      	CW	LCD_wr_ir, 0b00000110	; entry mode set (Inc=1, Shift=0)
-0001d0 e00c
-0001d1 dfca                      	CW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0	
-0001d2 e308
-0001d3 dfc8                      	CW	LCD_wr_ir, 0b00111000	; 8bits=1, 2lines=1, 5x8dots=0
-0001d4 9508                      	ret
+00026a b705                      	in	w,MCUCR					; enable access to ext. SRAM
+00026b 6c00                      	sbr	w,(1<<SRE)+(1<<SRW10)
+00026c bf05                      	out	MCUCR,w
+00026d e001
+00026e dfce                      	CW	LCD_wr_ir, 0b00000001	; clear display
+00026f e006
+000270 dfcc                      	CW	LCD_wr_ir, 0b00000110	; entry mode set (Inc=1, Shift=0)
+000271 e00c
+000272 dfca                      	CW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0	
+000273 e308
+000274 dfc8                      	CW	LCD_wr_ir, 0b00111000	; 8bits=1, 2lines=1, 5x8dots=0
+000275 9508                      	ret
                                  
                                  LCD_pos:
                                  ; in	a0 = position (0x00..0x0f first line, 0x40..0x4f second line)
-0001d5 2f02                      	mov	w,a0
-0001d6 6800                      	ori	w,0b10000000
-0001d7 cfc4                      	rjmp	LCD_wr_ir
+000276 2f02                      	mov	w,a0
+000277 6800                      	ori	w,0b10000000
+000278 cfc4                      	rjmp	LCD_wr_ir
                                  
                                  LCD_cr:
                                  ; moving the cursor to the beginning of the line (carriage return)
-0001d8 9100 8000                 	lds	w, LCD_IR			; read IR to check busy flag  (bit7)
-0001da fd07
-0001db cffc                      	JB1	w,7,LCD_cr			; Jump if Bit=1 (still busy)
-0001dc 7400                      	andi	w,0b01000000	; keep bit6 (begin of line 1/2)
-0001dd 6800                      	ori	w,0b10000000		; write address command
-0001de dfc5                      	rcall	lcd_4us			; delay to increment DRAM addr counter
-0001df 9300 8000                 	sts	LCD_IR,w			; store in IR
-0001e1 9508                      	ret
+000279 9100 8000                 	lds	w, LCD_IR			; read IR to check busy flag  (bit7)
+00027b fd07
+00027c cffc                      	JB1	w,7,LCD_cr			; Jump if Bit=1 (still busy)
+00027d 7400                      	andi	w,0b01000000	; keep bit6 (begin of line 1/2)
+00027e 6800                      	ori	w,0b10000000		; write address command
+00027f dfc5                      	rcall	lcd_4us			; delay to increment DRAM addr counter
+000280 9300 8000                 	sts	LCD_IR,w			; store in IR
+000282 9508                      	ret
                                  
                                  LCD_lf:
                                  ; moving the cursor to the beginning of the line 2 (line feed)
-0001e2 932f                      	push	a0				; safeguard a0
-0001e3 e420                      	ldi	a0,$40				; load position $40 (begin of line 2)
-0001e4 dff0                      	rcall	LCD_pos			; set cursor position
-0001e5 912f                      	pop	a0					; restore a0
+000283 932f                      	push	a0				; safeguard a0
+000284 e420                      	ldi	a0,$40				; load position $40 (begin of line 2)
+000285 dff0                      	rcall	LCD_pos			; set cursor position
+000286 912f                      	pop	a0					; restore a0
                                  .include "display.asm"
-0001e6 9508                      
+000287 9508                      
                                   * display.asm
                                   *
                                   *  Created: 30/04/2024 11:39:40
@@ -4009,189 +4243,1038 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  
                                  ; code from: tp05 puts02.asm
                                   LCD_putstring:
-0001e7 95c8                      	lpm
-0001e8 2000                      	tst		r0
-0001e9 f021                      	breq	done
-0001ea 2d20                      	mov		a0, r0
-0001eb dfbb                      	rcall	LCD_putc
-0001ec 9631                      	adiw	zl, 1
-0001ed cff9                      	rjmp	LCD_putstring
-0001ee 9508                      done:ret
+000288 95c8                      	lpm
+000289 2000                      	tst		r0
+00028a f021                      	breq	done
+00028b 2d20                      	mov		a0, r0
+00028c dfbb                      	rcall	LCD_putc
+00028d 9631                      	adiw	zl, 1
+00028e cff9                      	rjmp	LCD_putstring
+00028f 9508                      done:ret
                                  
                                  
+                                 /*
+                                 putdec:
+                                 	mov u, a0
+                                 	ldi a0, '0'-1
+                                 	ldi w, 100
+                                 _putdec2:
+                                 	inc a0
+                                 	sub u, w
+                                 	brsh _putdec2
+                                 	add u,w
+                                 	rcall LCD_putc
+                                 
+                                 	ldi a0, '0'-1
+                                 	ldi w, 10
+                                 _putdec1:
+                                 	inc a0
+                                 	sub u, w
+                                 	brsh _putdec1
+                                 	add u, w
+                                 	rcall LCD_putc
+                                 	ldi a0, '0'
+                                 	add a0, u
+                                 	rcall LCD_putc
+                                 	ldi a0, '0'
+                                 	add a0, u
+                                 	rcall LCD_putc
+                                 	ret
+                                 */
+                                 
+                                 .macro QUESTION ; question: str0, str1 answer: str2, str3, str4, str5
+                                 question_start:
+                                 	DISPLAY2 @0, @1 ; display question
+                                 	WAIT_MS 2000
+                                 	;rjmp check_button
+                                 	in b0, PIND
+                                 	out PORTB, b0 
+                                 	sbrs b0, 4
+                                 	rjmp question_end
+                                 	sbrs b0, 3
+                                 	rjmp question_end
+                                 	sbrs b0, 2
+                                 	rjmp question_end
+                                 	sbrs b0, 1
+                                 	rjmp question_end
+                                 	DISPLAY2 @2, @3
+                                 	;rjmp check_button
+                                 	in b0, PIND
+                                 	out PORTB, b0 
+                                 	sbrs b0, 4
+                                 	rjmp question_end
+                                 	sbrs b0, 3
+                                 	rjmp question_end
+                                 	sbrs b0, 2
+                                 	rjmp question_end
+                                 	sbrs b0, 1
+                                 	rjmp question_end
+                                 	WAIT_MS 2000
+                                 	;rjmp check_button
+                                 	in b0, PIND
+                                 	out PORTB, b0 
+                                 	sbrs b0, 4
+                                 	rjmp question_end
+                                 	sbrs b0, 3
+                                 	rjmp question_end
+                                 	sbrs b0, 2
+                                 	rjmp question_end
+                                 	sbrs b0, 1
+                                 	rjmp question_end
+                                 	DISPLAY2 @4, @5
+                                 	WAIT_MS 2000
+                                 	;rjmp check_button
+                                 	in b0, PIND
+                                 	out PORTB, b0 
+                                 	sbrs b0, 4
+                                 	rjmp question_end
+                                 	sbrs b0, 3
+                                 	rjmp question_end
+                                 	sbrs b0, 2
+                                 	rjmp question_end
+                                 	sbrs b0, 1
+                                 	rjmp question_end
+                                 	rjmp question_start
+                                 question_end:
+                                 .endmacro
+                                 
+                                 .macro COMPARE
+                                 	ldi zl, low(2*@0)
+                                 	ldi zh, high(2*@0)
+                                 	lpm
+                                 	cp b0, r0
+                                 	brne PC+2
+                                 	set
+                                 .endmacro
+                                 
+                                 .macro PRINT_SCORE
+                                 	rcall LCD_clear
+                                 	brts PC+2
+                                 	rjmp incorrect
+                                 correct:
+                                 	DISPLAY1 strcorrect
+                                 	rjmp score
+                                 incorrect:
+                                 	DISPLAY1 strfalse
+                                 score:
+                                 	CLR4 a3, a2, a1, a0
+                                 	mov a0, @0
+                                 	PRINTF LCD
+                                 .db "Score: ",FDEC,a,0
+                                 .endmacro
                                  
                                  main:
-0001ef dfc3                      	rcall	LCD_clear
-0001f0 940e 01c9
-0001f2 e3e2
-0001f3 e0f2
-0001f4 940e 01e7
-0001f6 e3ee
-0001f7 e0f2
-0001f8 e420
-0001f9 940e 01d5
-0001fb 940e 01e7                 	DISPLAY2 str0, str1
-0001fd ed00
-0001fe 2e30
-0001ff e008
-000200 930f
-000201 923f
-000202 e300
-000203 2e30
-000204 e006
-000205 943a
-000206 f7f1
-000207 943a
-000208 950a
-000209 f7d9
-00020a 903f
-00020b 910f
-00020c 943a
-00020d f791
-00020e 950a
-00020f f781                      	WAIT_MS 2000
-000210 d009                      	rcall start
-000211 ff62
-000212 d078                      	CB0 b0,2, safe ; call subroutine safe if PD1 pressed
-000213 ff61
-000214 d01a                      	CB0 b0,1, games ; call subroutine games if PD0 pressed
-000215 ff61
-000216 d040                      	CB0 b0,1, trivia
-000217 ff62
-000218 d058                      	CB0 b0,2, dance
-000219 cfd5                      	rjmp main
+000290 dfc3                      	rcall	LCD_clear
+000291 940e 026a
+000293 e3e2
+000294 e0f2
+000295 940e 0288
+000297 e3ee
+000298 e0f2
+000299 e420
+00029a 940e 0276
+00029c 940e 0288                 	DISPLAY2 str0, str1
+00029e ed00
+00029f 2e30
+0002a0 e008
+0002a1 930f
+0002a2 923f
+0002a3 e300
+0002a4 2e30
+0002a5 e006
+0002a6 943a
+0002a7 f7f1
+0002a8 943a
+0002a9 950a
+0002aa f7d9
+0002ab 903f
+0002ac 910f
+0002ad 943a
+0002ae f791
+0002af 950a
+0002b0 f781                      	WAIT_MS 2000
+                                 
+                                 main_loop:
+0002b1 d009                      	rcall start
+0002b2 ff62
+0002b3 d397                      	CB0 b0,2, safe ; call subroutine safe if PD1 pressed
+0002b4 ff61
+0002b5 d01b                      	CB0 b0,1, games ; call subroutine games if PD0 pressed
+0002b6 ff61
+0002b7 d042                      	CB0 b0,1, trivia
+0002b8 ff62
+0002b9 d36f                      	CB0 b0,2, dance
+0002ba cff6                      	rjmp main_loop
                                  
                                  start:
-00021a 940e 01c9
-00021c e4e8
-00021d e0f2
-00021e 940e 01e7
-000220 e5e6
-000221 e0f2
-000222 e420
-000223 940e 01d5
-000225 940e 01e7                 	DISPLAY2 str2, str3
-000227 b360                      	in b0, PIND ; b0=r22
-000228 bb68                      	out PORTB, b0
-000229 3f6d                      	cpi b0, 0xfd
-00022a f011                      	breq PC+3
-00022b 3f6b                      	cpi b0, 0xfb
-00022c f409                      	brne PC+2
-00022d 9508                      	ret
-00022e cfeb                      	rjmp start
+0002bb 940e 026a
+0002bd e4e8
+0002be e0f2
+0002bf 940e 0288
+0002c1 e5e6
+0002c2 e0f2
+0002c3 e420
+0002c4 940e 0276
+0002c6 940e 0288                 	DISPLAY2 str2, str3
+0002c8 d398                      	rcall check_button
+0002c9 b360                      	in b0, PIND ; b0=r22
+0002ca bb68                      	out PORTB, b0
+0002cb 3f6d                      	cpi b0, 0xfd
+0002cc f011                      	breq PC+3
+0002cd 3f6b                      	cpi b0, 0xfb
+0002ce f409                      	brne PC+2
+0002cf 9508                      	ret
+0002d0 cfea                      	rjmp start
                                  
                                  games:
-00022f 940e 01c9
-000231 e6e4
-000232 e0f2
-000233 940e 01e7
-000235 e7e4
-000236 e0f2
-000237 e420
-000238 940e 01d5
-00023a 940e 01e7                 	DISPLAY2 str4, str5
-00023c ed00
-00023d 2e30
-00023e e008
-00023f 930f
-000240 923f
-000241 e300
-000242 2e30
-000243 e006
-000244 943a
-000245 f7f1
-000246 943a
-000247 950a
-000248 f7d9
-000249 903f
-00024a 910f
-00024b 943a
-00024c f791
-00024d 950a
-00024e f781                      	WAIT_MS 2000
-00024f b360                      	in b0, PIND
-000250 bb68                      	out PORTB, b0
-000251 3f6d                      	cpi b0, 0xfd
-000252 f011                      	breq PC+3
-000253 3f6b                      	cpi b0, 0xfb
-000254 f409                      	brne PC+2
-000255 9508                      	ret
-000256 cfd8                      	rjmp games
+0002d1 940e 026a
+0002d3 e9ea
+0002d4 e0f2
+0002d5 940e 0288
+0002d7 eaea
+0002d8 e0f2
+0002d9 e420
+0002da 940e 0276
+0002dc 940e 0288                 	DISPLAY2 str4, str5
+0002de d382                      	rcall check_button
+0002df ee08
+0002e0 2e30
+0002e1 e004
+0002e2 930f
+0002e3 923f
+0002e4 e300
+0002e5 2e30
+0002e6 e006
+0002e7 943a
+0002e8 f7f1
+0002e9 943a
+0002ea 950a
+0002eb f7d9
+0002ec 903f
+0002ed 910f
+0002ee 943a
+0002ef f791
+0002f0 950a
+0002f1 f781                      	WAIT_MS 1000
+0002f2 b360                      	in b0, PIND
+0002f3 bb68                      	out PORTB, b0
+0002f4 3f6d                      	cpi b0, 0xfd
+0002f5 f011                      	breq PC+3
+0002f6 3f6b                      	cpi b0, 0xfb
+0002f7 f409                      	brne PC+2
+0002f8 9508                      	ret
+0002f9 cfd7                      	rjmp games
                                  
                                  trivia:
-000257 940e 01c9
-000259 e2e4
-00025a e0f3
-00025b 940e 01e7                 	DISPLAY1 strivia
-00025d ed00
-00025e 2e30
-00025f e008
-000260 930f
-000261 923f
-000262 e300
-000263 2e30
-000264 e006
-000265 943a
-000266 f7f1
-000267 943a
-000268 950a
-000269 f7d9
-00026a 903f
-00026b 910f
-00026c 943a
-00026d f791
-00026e 950a
-00026f f781                      	WAIT_MS 2000
-000270 cfa9                      	rjmp start
+0002fa 940e 026a
+0002fc e6e4
+0002fd e0f2
+0002fe 940e 0288
+000300 e7e0
+000301 e0f2
+000302 e420
+000303 940e 0276
+000305 940e 0288                 	DISPLAY2 strwelcome, strivia
+000307 d359                      	rcall check_button
+000308 ed00
+000309 2e30
+00030a e008
+00030b 930f
+00030c 923f
+00030d e300
+00030e 2e30
+00030f e006
+000310 943a
+000311 f7f1
+000312 943a
+000313 950a
+000314 f7d9
+000315 903f
+000316 910f
+000317 943a
+000318 f791
+000319 950a
+00031a f781                      	WAIT_MS 2000
+00031b e070                      	ldi b1, 0x00
+00031c 940e 026a
+00031e e1ec
+00031f e0f3
+000320 940e 0288
+000322 e2ea
+000323 e0f3
+000324 e420
+000325 940e 0276
+000327 940e 0288
+000329 ed00
+00032a 2e30
+00032b e008
+00032c 930f
+00032d 923f
+00032e e300
+00032f 2e30
+000330 e006
+000331 943a
+000332 f7f1
+000333 943a
+000334 950a
+000335 f7d9
+000336 903f
+000337 910f
+000338 943a
+000339 f791
+00033a 950a
+00033b f781
+00033c b360
+00033d bb68
+00033e ff64
+00033f c065
+000340 ff63
+000341 c063
+000342 ff62
+000343 c061
+000344 ff61
+000345 c05f
+000346 940e 026a
+000348 e3ec
+000349 e0f3
+00034a 940e 0288
+00034c e4ea
+00034d e0f3
+00034e e420
+00034f 940e 0276
+000351 940e 0288
+000353 b360
+000354 bb68
+000355 ff64
+000356 c04e
+000357 ff63
+000358 c04c
+000359 ff62
+00035a c04a
+00035b ff61
+00035c c048
+00035d ed00
+00035e 2e30
+00035f e008
+000360 930f
+000361 923f
+000362 e300
+000363 2e30
+000364 e006
+000365 943a
+000366 f7f1
+000367 943a
+000368 950a
+000369 f7d9
+00036a 903f
+00036b 910f
+00036c 943a
+00036d f791
+00036e 950a
+00036f f781
+000370 b360
+000371 bb68
+000372 ff64
+000373 c031
+000374 ff63
+000375 c02f
+000376 ff62
+000377 c02d
+000378 ff61
+000379 c02b
+00037a 940e 026a
+00037c e5ec
+00037d e0f3
+00037e 940e 0288
+000380 e6ea
+000381 e0f3
+000382 e420
+000383 940e 0276
+000385 940e 0288
+000387 ed00
+000388 2e30
+000389 e008
+00038a 930f
+00038b 923f
+00038c e300
+00038d 2e30
+00038e e006
+00038f 943a
+000390 f7f1
+000391 943a
+000392 950a
+000393 f7d9
+000394 903f
+000395 910f
+000396 943a
+000397 f791
+000398 950a
+000399 f781
+00039a b360
+00039b bb68
+00039c ff64
+00039d c007
+00039e ff63
+00039f c005
+0003a0 ff62
+0003a1 c003
+0003a2 ff61
+0003a3 c001
+0003a4 cf77                      	QUESTION striviaQ1, striviaQ12, strivia1A, strivia1B, strivia1C, strivia1D
+0003a5 e7e2
+0003a6 e0f3
+0003a7 95c8
+0003a8 1560
+0003a9 f409
+0003aa 9468                      	COMPARE answer1
+0003ab f40e                      	brtc PC+2
+0003ac 9573                      	inc b1
+0003ad dea6
+0003ae f00e
+0003af c007
+0003b0 940e 026a
+0003b2 e8e8
+0003b3 e0f2
+0003b4 940e 0288
+0003b6 c006
+0003b7 940e 026a
+0003b9 e9e2
+0003ba e0f2
+0003bb 940e 0288
+0003bd 1b55
+0003be 2744
+0003bf 2733
+0003c0 2722
+0003c1 2f27
+0003c2 e408
+0003c3 2e40
+0003c4 e002
+0003c5 2e50
+0003c6 dc43
+0003c7 6353
+0003c8 726f
+0003c9 3a65
+0003ca c020
+0003cb 0012                      	PRINT_SCORE b1
+0003cc ed00
+0003cd 2e30
+0003ce e008
+0003cf 930f
+0003d0 923f
+0003d1 e300
+0003d2 2e30
+0003d3 e006
+0003d4 943a
+0003d5 f7f1
+0003d6 943a
+0003d7 950a
+0003d8 f7d9
+0003d9 903f
+0003da 910f
+0003db 943a
+0003dc f791
+0003dd 950a
+0003de f781                      	WAIT_MS 2000
+0003df 940e 026a
+0003e1 e7e4
+0003e2 e0f3
+0003e3 940e 0288
+0003e5 e7ee
+0003e6 e0f3
+0003e7 e420
+0003e8 940e 0276
+0003ea 940e 0288
+0003ec ed00
+0003ed 2e30
+0003ee e008
+0003ef 930f
+0003f0 923f
+0003f1 e300
+0003f2 2e30
+0003f3 e006
+0003f4 943a
+0003f5 f7f1
+0003f6 943a
+0003f7 950a
+0003f8 f7d9
+0003f9 903f
+0003fa 910f
+0003fb 943a
+0003fc f791
+0003fd 950a
+0003fe f781
+0003ff b360
+000400 bb68
+000401 ff64
+000402 c065
+000403 ff63
+000404 c063
+000405 ff62
+000406 c061
+000407 ff61
+000408 c05f
+000409 940e 026a
+00040b e8e8
+00040c e0f3
+00040d 940e 0288
+00040f e9e8
+000410 e0f3
+000411 e420
+000412 940e 0276
+000414 940e 0288
+000416 b360
+000417 bb68
+000418 ff64
+000419 c04e
+00041a ff63
+00041b c04c
+00041c ff62
+00041d c04a
+00041e ff61
+00041f c048
+000420 ed00
+000421 2e30
+000422 e008
+000423 930f
+000424 923f
+000425 e300
+000426 2e30
+000427 e006
+000428 943a
+000429 f7f1
+00042a 943a
+00042b 950a
+00042c f7d9
+00042d 903f
+00042e 910f
+00042f 943a
+000430 f791
+000431 950a
+000432 f781
+000433 b360
+000434 bb68
+000435 ff64
+000436 c031
+000437 ff63
+000438 c02f
+000439 ff62
+00043a c02d
+00043b ff61
+00043c c02b
+00043d 940e 026a
+00043f eae6
+000440 e0f3
+000441 940e 0288
+000443 ebe4
+000444 e0f3
+000445 e420
+000446 940e 0276
+000448 940e 0288
+00044a ed00
+00044b 2e30
+00044c e008
+00044d 930f
+00044e 923f
+00044f e300
+000450 2e30
+000451 e006
+000452 943a
+000453 f7f1
+000454 943a
+000455 950a
+000456 f7d9
+000457 903f
+000458 910f
+000459 943a
+00045a f791
+00045b 950a
+00045c f781
+00045d b360
+00045e bb68
+00045f ff64
+000460 c007
+000461 ff63
+000462 c005
+000463 ff62
+000464 c003
+000465 ff61
+000466 c001
+000467 cf77                      	QUESTION striviaQ2, striviaQ22, strivia2A, strivia2B, strivia2C, strivia2D
+000468 ece4
+000469 e0f3
+00046a 95c8
+00046b 1560
+00046c f409
+00046d 9468                      	COMPARE answer2
+00046e f40e                      	brtc PC+2
+00046f 9573                      	inc b1
+000470 dde3
+000471 f00e
+000472 c007
+000473 940e 026a
+000475 e8e8
+000476 e0f2
+000477 940e 0288
+000479 c006
+00047a 940e 026a
+00047c e9e2
+00047d e0f2
+00047e 940e 0288
+000480 1b55
+000481 2744
+000482 2733
+000483 2722
+000484 2f27
+000485 e408
+000486 2e40
+000487 e002
+000488 2e50
+000489 db80
+00048a 6353
+00048b 726f
+00048c 3a65
+00048d c020
+00048e 0012                      	PRINT_SCORE b1
+00048f ed00
+000490 2e30
+000491 e008
+000492 930f
+000493 923f
+000494 e300
+000495 2e30
+000496 e006
+000497 943a
+000498 f7f1
+000499 943a
+00049a 950a
+00049b f7d9
+00049c 903f
+00049d 910f
+00049e 943a
+00049f f791
+0004a0 950a
+0004a1 f781                      	WAIT_MS 2000
+0004a2 940e 026a
+0004a4 ece6
+0004a5 e0f3
+0004a6 940e 0288
+0004a8 ede8
+0004a9 e0f3
+0004aa e420
+0004ab 940e 0276
+0004ad 940e 0288
+0004af ed00
+0004b0 2e30
+0004b1 e008
+0004b2 930f
+0004b3 923f
+0004b4 e300
+0004b5 2e30
+0004b6 e006
+0004b7 943a
+0004b8 f7f1
+0004b9 943a
+0004ba 950a
+0004bb f7d9
+0004bc 903f
+0004bd 910f
+0004be 943a
+0004bf f791
+0004c0 950a
+0004c1 f781
+0004c2 b360
+0004c3 bb68
+0004c4 ff64
+0004c5 c065
+0004c6 ff63
+0004c7 c063
+0004c8 ff62
+0004c9 c061
+0004ca ff61
+0004cb c05f
+0004cc 940e 026a
+0004ce eee4
+0004cf e0f3
+0004d0 940e 0288
+0004d2 efe4
+0004d3 e0f3
+0004d4 e420
+0004d5 940e 0276
+0004d7 940e 0288
+0004d9 b360
+0004da bb68
+0004db ff64
+0004dc c04e
+0004dd ff63
+0004de c04c
+0004df ff62
+0004e0 c04a
+0004e1 ff61
+0004e2 c048
+0004e3 ed00
+0004e4 2e30
+0004e5 e008
+0004e6 930f
+0004e7 923f
+0004e8 e300
+0004e9 2e30
+0004ea e006
+0004eb 943a
+0004ec f7f1
+0004ed 943a
+0004ee 950a
+0004ef f7d9
+0004f0 903f
+0004f1 910f
+0004f2 943a
+0004f3 f791
+0004f4 950a
+0004f5 f781
+0004f6 b360
+0004f7 bb68
+0004f8 ff64
+0004f9 c031
+0004fa ff63
+0004fb c02f
+0004fc ff62
+0004fd c02d
+0004fe ff61
+0004ff c02b
+000500 940e 026a
+000502 e0e4
+000503 e0f4
+000504 940e 0288
+000506 e1e0
+000507 e0f4
+000508 e420
+000509 940e 0276
+00050b 940e 0288
+00050d ed00
+00050e 2e30
+00050f e008
+000510 930f
+000511 923f
+000512 e300
+000513 2e30
+000514 e006
+000515 943a
+000516 f7f1
+000517 943a
+000518 950a
+000519 f7d9
+00051a 903f
+00051b 910f
+00051c 943a
+00051d f791
+00051e 950a
+00051f f781
+000520 b360
+000521 bb68
+000522 ff64
+000523 c007
+000524 ff63
+000525 c005
+000526 ff62
+000527 c003
+000528 ff61
+000529 c001
+00052a cf77                      	QUESTION striviaQ3, striviaQ32, strivia3A, strivia3B, strivia3C, strivia3D
+00052b e1ee
+00052c e0f4
+00052d 95c8
+00052e 1560
+00052f f409
+000530 9468                      	COMPARE answer3
+000531 f40e                      	brtc PC+2
+000532 9573                      	inc b1
+000533 dd20
+000534 f00e
+000535 c007
+000536 940e 026a
+000538 e8e8
+000539 e0f2
+00053a 940e 0288
+00053c c006
+00053d 940e 026a
+00053f e9e2
+000540 e0f2
+000541 940e 0288
+000543 1b55
+000544 2744
+000545 2733
+000546 2722
+000547 2f27
+000548 e408
+000549 2e40
+00054a e002
+00054b 2e50
+00054c dabd
+00054d 6353
+00054e 726f
+00054f 3a65
+000550 c020
+000551 0012                      	PRINT_SCORE b1
+000552 ed00
+000553 2e30
+000554 e008
+000555 930f
+000556 923f
+000557 e300
+000558 2e30
+000559 e006
+00055a 943a
+00055b f7f1
+00055c 943a
+00055d 950a
+00055e f7d9
+00055f 903f
+000560 910f
+000561 943a
+000562 f791
+000563 950a
+000564 f781                      	WAIT_MS 2000
+000565 940e 026a
+000567 e2e0
+000568 e0f4
+000569 940e 0288
+00056b e3e0
+00056c e0f4
+00056d e420
+00056e 940e 0276
+000570 940e 0288
+000572 ed00
+000573 2e30
+000574 e008
+000575 930f
+000576 923f
+000577 e300
+000578 2e30
+000579 e006
+00057a 943a
+00057b f7f1
+00057c 943a
+00057d 950a
+00057e f7d9
+00057f 903f
+000580 910f
+000581 943a
+000582 f791
+000583 950a
+000584 f781
+000585 b360
+000586 bb68
+000587 ff64
+000588 c065
+000589 ff63
+00058a c063
+00058b ff62
+00058c c061
+00058d ff61
+00058e c05f
+00058f 940e 026a
+000591 e3ee
+000592 e0f4
+000593 940e 0288
+000595 e5e0
+000596 e0f4
+000597 e420
+000598 940e 0276
+00059a 940e 0288
+00059c b360
+00059d bb68
+00059e ff64
+00059f c04e
+0005a0 ff63
+0005a1 c04c
+0005a2 ff62
+0005a3 c04a
+0005a4 ff61
+0005a5 c048
+0005a6 ed00
+0005a7 2e30
+0005a8 e008
+0005a9 930f
+0005aa 923f
+0005ab e300
+0005ac 2e30
+0005ad e006
+0005ae 943a
+0005af f7f1
+0005b0 943a
+0005b1 950a
+0005b2 f7d9
+0005b3 903f
+0005b4 910f
+0005b5 943a
+0005b6 f791
+0005b7 950a
+0005b8 f781
+0005b9 b360
+0005ba bb68
+0005bb ff64
+0005bc c031
+0005bd ff63
+0005be c02f
+0005bf ff62
+0005c0 c02d
+0005c1 ff61
+0005c2 c02b
+0005c3 940e 026a
+0005c5 e5ee
+0005c6 e0f4
+0005c7 940e 0288
+0005c9 e6ea
+0005ca e0f4
+0005cb e420
+0005cc 940e 0276
+0005ce 940e 0288
+0005d0 ed00
+0005d1 2e30
+0005d2 e008
+0005d3 930f
+0005d4 923f
+0005d5 e300
+0005d6 2e30
+0005d7 e006
+0005d8 943a
+0005d9 f7f1
+0005da 943a
+0005db 950a
+0005dc f7d9
+0005dd 903f
+0005de 910f
+0005df 943a
+0005e0 f791
+0005e1 950a
+0005e2 f781
+0005e3 b360
+0005e4 bb68
+0005e5 ff64
+0005e6 c007
+0005e7 ff63
+0005e8 c005
+0005e9 ff62
+0005ea c003
+0005eb ff61
+0005ec c001
+0005ed cf77                      	QUESTION striviaQ4, striviaQ42, strivia4A, strivia4B, strivia4C, strivia4D
+0005ee e7e8
+0005ef e0f4
+0005f0 95c8
+0005f1 1560
+0005f2 f409
+0005f3 9468                      	COMPARE answer4
+0005f4 f40e                      	brtc PC+2
+0005f5 9573                      	inc b1
+0005f6 dc5d
+0005f7 f00e
+0005f8 c007
+0005f9 940e 026a
+0005fb e8e8
+0005fc e0f2
+0005fd 940e 0288
+0005ff c006
+000600 940e 026a
+000602 e9e2
+000603 e0f2
+000604 940e 0288
+000606 1b55
+000607 2744
+000608 2733
+000609 2722
+00060a 2f27
+00060b e408
+00060c 2e40
+00060d e002
+00060e 2e50
+00060f d9fa
+000610 6353
+000611 726f
+000612 3a65
+000613 c020
+000614 0012                      	PRINT_SCORE b1
+000615 ed00
+000616 2e30
+000617 e008
+000618 930f
+000619 923f
+00061a e300
+00061b 2e30
+00061c e006
+00061d 943a
+00061e f7f1
+00061f 943a
+000620 950a
+000621 f7d9
+000622 903f
+000623 910f
+000624 943a
+000625 f791
+000626 950a
+000627 f781                      	WAIT_MS 2000
+                                 	;rjmp main_loop
+000628 ccd1                      	rjmp trivia
                                  
                                  dance:
-000271 940e 01c9
-000273 e2ee
-000274 e0f3
-000275 940e 01e7                 	DISPLAY1 strbutton
-000277 ed00
-000278 2e30
-000279 e008
-00027a 930f
-00027b 923f
-00027c e300
-00027d 2e30
-00027e e006
-00027f 943a
-000280 f7f1
-000281 943a
-000282 950a
-000283 f7d9
-000284 903f
-000285 910f
-000286 943a
-000287 f791
-000288 950a
-000289 f781                      	WAIT_MS 2000
-00028a cf8f                      	rjmp start
+000629 940e 026a
+00062b e6e4
+00062c e0f2
+00062d 940e 0288
+00062f e7ea
+000630 e0f2
+000631 e420
+000632 940e 0276
+000634 940e 0288                 	DISPLAY2 strwelcome, strbutton
+000636 d02a                      	rcall check_button
+000637 ed00
+000638 2e30
+000639 e008
+00063a 930f
+00063b 923f
+00063c e300
+00063d 2e30
+00063e e006
+00063f 943a
+000640 f7f1
+000641 943a
+000642 950a
+000643 f7d9
+000644 903f
+000645 910f
+000646 943a
+000647 f791
+000648 950a
+000649 f781                      	WAIT_MS 2000
+00064a cc66                      	rjmp main_loop
                                  
                                  
                                  safe:
-00028b 940e 01c9
-00028d e8e4
-00028e e0f2
-00028f 940e 01e7                 	DISPLAY1 str6
-000291 c000                      	rjmp end
+00064b 940e 026a
+00064d ebea
+00064e e0f2
+00064f 940e 0288                 	DISPLAY1 str6
+000651 c000                      	rjmp end
                                  
                                  
                                  end:
-000292 940e 01c9
-000294 ecee
-000295 e0f2
-000296 940e 01e7
-000298 edea
-000299 e0f2
-00029a e420
-00029b 940e 01d5
-00029d 940e 01e7                 	DISPLAY2 str10, str11
-00029f cff2                      	rjmp end
+000652 d00e                      	rcall check_button
+000653 940e 026a
+000655 e0e4
+000656 e0f3
+000657 940e 0288
+000659 e1e0
+00065a e0f3
+00065b e420
+00065c 940e 0276
+00065e 940e 0288                 	DISPLAY2 str10, str11
+000660 cff1                      	rjmp end
                                  
                                  
+                                 check_button:
+000661 b360                      	in b0, PIND
+000662 ff67                      	sbrs b0, 7 ; Check if PIND7 is pressed
+000663 c99c                      	rjmp reset
+000664 9508                      	ret
                                  
                                  
 
@@ -4211,11 +5294,11 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega128" register use summary:
-x  :   6 y  :   0 z  :   0 r0 :   9 r1 :   0 r2 :   0 r3 :  30 r4 :   1 
-r5 :   1 r6 :   0 r7 :   0 r8 :   5 r9 :   5 r10:   5 r11:   6 r12:  11 
-r13:   0 r14:   0 r15:   0 r16: 118 r17:   0 r18:  29 r19:  15 r20:  15 
-r21:  15 r22:  21 r23:  25 r24:   7 r25:  15 r26:   3 r27:   3 r28:   0 
-r29:   0 r30:  23 r31:  17 
+x  :   6 y  :   0 z  :   0 r0 :  13 r1 :   0 r2 :   0 r3 : 142 r4 :   5 
+r5 :   5 r6 :   0 r7 :   0 r8 :   5 r9 :   5 r10:   5 r11:   6 r12:  11 
+r13:   0 r14:   0 r15:   0 r16: 294 r17:   0 r18:  51 r19:  19 r20:  19 
+r21:  23 r22: 123 r23:  34 r24:   7 r25:  15 r26:   3 r27:   3 r28:   0 
+r29:   0 r30:  61 r31:  55 
 Registers used: 23 out of 35 (65.7%)
 
 "ATmega128" instruction use summary:
@@ -4223,29 +5306,29 @@ Registers used: 23 out of 35 (65.7%)
 andi  :   7 asr   :   2 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   1 brcs  :   0 break :   0 breq  :  19 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   1 
-brne  :  25 brpl  :   1 brsh  :   1 brtc  :   5 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   1 call  :  22 cbi   :   0 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  10 cls   :   0 
-clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :   1 cpc   :   3 
-cpi   :  13 cpse  :   0 dec   :  26 elpm  :   0 eor   :   0 fmul  :   0 
-fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :   3 inc   :   2 
-jmp   :   0 ld    :   6 ldd   :   0 ldi   :  80 lds   :   3 lpm   :  15 
-lsl   :   1 lsr   :   3 mov   :  28 movw  :   0 mul   :   0 muls  :   0 
-mulsu :   0 neg   :   0 nop   :   1 or    :   0 ori   :   2 out   :   7 
-pop   :  31 push  :  30 rcall :  30 ret   :  15 reti  :   0 rjmp  :  43 
+brne  :  93 brpl  :   1 brsh  :   1 brtc  :   9 brts  :   4 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   1 call  :  90 cbi   :   0 cbr   :   0 
+clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  22 cls   :   0 
+clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :   5 cpc   :   3 
+cpi   :  13 cpse  :   0 dec   : 106 elpm  :   0 eor   :   0 fmul  :   0 
+fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :  20 inc   :   6 
+jmp   :   0 ld    :   6 ldd   :   0 ldi   : 243 lds   :   3 lpm   :  27 
+lsl   :   1 lsr   :   3 mov   :  72 movw  :   0 mul   :   0 muls  :   0 
+mulsu :   0 neg   :   0 nop   :   1 or    :   0 ori   :   2 out   :  23 
+pop   :  63 push  :  62 rcall :  43 ret   :  16 reti  :   0 rjmp  : 120 
 rol   :  10 ror   :  13 sbc   :   3 sbci  :   0 sbi   :   0 sbic  :   0 
-sbis  :   0 sbiw  :   0 sbr   :   1 sbrc  :  11 sbrs  :   4 sec   :   0 
-seh   :   0 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   1 
+sbis  :   0 sbiw  :   0 sbr   :   1 sbrc  :  11 sbrs  :  69 sec   :   0 
+seh   :   0 sei   :   0 sen   :   0 ser   :   0 ses   :   0 set   :   5 
 sev   :   0 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 
-sts   :   3 sub   :   3 subi  :   3 swap  :   4 tst   :   9 wdr   :   0 
+sts   :   3 sub   :   7 subi  :   3 swap  :   4 tst   :   9 wdr   :   0 
 
-Instructions used: 52 out of 114 (45.6%)
+Instructions used: 53 out of 114 (46.5%)
 
 "ATmega128" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000540   1082    262   1344  131072   1.0%
+[.cseg] 0x000000 0x000cca   2650    624   3274  131072   2.5%
 [.dseg] 0x000100 0x000100      0      0      0    4096   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
-Assembly complete, 0 errors, 9 warnings
+Assembly complete, 0 errors, 27 warnings
