@@ -35,6 +35,30 @@ strcorrect:
 strfalse:
 .db "False!",0
 
+strivia2:
+.db "Answer 5/10 co-",0
+
+strivia3:
+.db "rrectly to win",0
+
+strclue1a:
+.db "1st clue:",0
+
+strclue1b:
+.db "SNOW WHITE",0
+
+strwin1:
+.db "CONGRATULATIONS",0
+
+strwin2:
+.db "YOU WIN",0
+
+strlose1:
+.db "YOU LOSE,",0
+
+strlose2:
+.db "TRY AGAIN",0
+
 ; Choose games
 str4:
 .db "1. TRIVIA QUIZ", 0
@@ -62,15 +86,15 @@ striviaQ1:
 striviaQ12:
 .db "song 'thriller'?", 0
 strivia1A:
-.db "A. M. JACKSON", 0
+.db "A. PLAYBOI CARTI", 0
 strivia1B:
 .db "B. TRACY CHAPMAN", 0
 strivia1C:
 .db "C. A. SCHMID", 0
 strivia1D:
-.db "D. CHER", 0
+.db "D. M. JACKSON", 0
 answer1:
-.db 0xfd
+.db 0xef
 
 ; Question 2
 striviaQ2:
@@ -82,7 +106,7 @@ strivia2A:
 strivia2B:
 .db "B. EMMA STONE", 0
 strivia2C:
-.db "C. AMY ADAMS", 0
+.db "C. PLAYBOI CARTI", 0
 strivia2D:
 .db "D. ZOE SALDANA", 0
 answer2:
@@ -94,7 +118,7 @@ striviaQ3:
 striviaQ32:
 .db "'hey you' ?", 0
 strivia3A:
-.db "A. SPICE GIRLS", 0
+.db "A. PLAYBOI CARTI", 0
 strivia3B:
 .db "B. LED ZEPPLIN", 0
 strivia3C:
@@ -120,4 +144,98 @@ strivia4D:
 answer4:
 .db 0xef
 
+; Question 5
+striviaQ5:
+.db "Who teaches", 0
+striviaQ52:
+.db "MCU best?", 0
+strivia5A:
+.db "A. PLAYBOI CARTI", 0
+strivia5B:
+.db "B. A. SCHMID", 0
+strivia5C:
+.db "C. M. ALI", 0
+strivia5D:
+.db "D. CR 7", 0
+answer5:
+.db 0xfb
 
+; Question 6
+striviaQ6:
+.db "Who won the 2022", 0
+striviaQ62:
+.db "FIFA World Cup?", 0
+strivia6A:
+.db "A. PLAYBOI CARTI", 0
+strivia6B:
+.db "B. SWITZERLAND", 0
+strivia6C:
+.db "C. ARGENTINA", 0
+strivia6D:
+.db "D. FRANCE", 0
+answer6:
+.db 0xf7
+
+; Question 7
+striviaQ7:
+.db "Which dish is", 0
+striviaQ72:
+.db "not swiss?", 0
+strivia7A:
+.db "A. PLAYBOI CARTI", 0
+strivia7B:
+.db "B. RACLETTE", 0
+strivia7C:
+.db "C. FONDUE", 0
+strivia7D:
+.db "D. ROESTI", 0
+answer7:
+.db 0xfd
+
+; Question 8
+striviaQ8:
+.db "What's the capi-", 0
+striviaQ82:
+.db "tal of Laos?", 0
+strivia8A:
+.db "A. LAOS", 0
+strivia8B:
+.db "B. VIENTIANE", 0
+strivia8C:
+.db "C. VENICE", 0
+strivia8D:
+.db "D. PLAYBOI CARTI", 0
+answer8:
+.db 0xfb
+
+; Question 9
+striviaQ9:
+.db "What's the best", 0
+striviaQ92:
+.db "section at EPFL?", 0
+strivia9A:
+.db "A. LIFE SCIENCES", 0
+strivia9B:
+.db "B. MICROTECH", 0
+strivia9C:
+.db "C. ELEC", 0
+strivia9D:
+.db "D. PLAYBOI CARTI", 0
+answer9:
+.db 0xf7
+
+; Question 10
+striviaQ10:
+.db "Who wrote the", 0
+striviaQ102:
+.db "song 'sky'?", 0
+strivia10A:
+.db "A. KANYE WEST", 0
+strivia10B:
+.db "B. PLAYBOI CARTI", 0
+strivia10C:
+.db "C. A. SCHMID", 0
+strivia10D:
+.db "D. TAYLOR SWIFT", 0
+answer10:
+.db 0xfb

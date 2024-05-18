@@ -13,9 +13,9 @@
 .include "definitions.asm"	; include register/constant definitions
 
 	; === definitions ===
-.equ	KPDD = DDRD
-.equ	KPDO = PORTD
-.equ	KPDI = PIND
+.equ	KPDD = DDRC
+.equ	KPDO = PORTC
+.equ	KPDI = PINC
 
 .equ	KPD_DELAY = 30	; msec, debouncing keys of keypad
 

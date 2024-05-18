@@ -1,6 +1,92 @@
 ; file:	macros.asm   target ATmega128L-4MHz-STK300
 ; purpose library, general-purpose macros
 ; author (c) R.Holzer (adapted MICRO210/EE208 A.Schmid)
+; modified to include newer macros used for project
+
+; ==============
+; 	trivia macros
+; ==============
+
+; --- display question and answers as long as answer buttons not pressed
+.macro QUESTION ; question: str0, str1 answer: str2, str3, str4, str5
+question_start:
+	DISPLAY2 @0, @1 ; display question
+	WAIT_MS 2000
+	in b0, PIND
+	out PORTB, b0 
+	sbrs b0, 4
+	jmp question_end
+	sbrs b0, 3
+	jmp question_end
+	sbrs b0, 2
+	jmp question_end
+	sbrs b0, 1
+	jmp question_end
+	DISPLAY2 @2, @3
+	in b0, PIND
+	out PORTB, b0 
+	sbrs b0, 4
+	jmp question_end
+	sbrs b0, 3
+	jmp question_end
+	sbrs b0, 2
+	jmp question_end
+	sbrs b0, 1
+	jmp question_end
+	WAIT_MS 2000
+	in b0, PIND
+	out PORTB, b0 
+	sbrs b0, 4
+	jmp question_end
+	sbrs b0, 3
+	jmp question_end
+	sbrs b0, 2
+	jmp question_end
+	sbrs b0, 1
+	jmp question_end
+	DISPLAY2 @4, @5
+	WAIT_MS 2000
+	in b0, PIND
+	out PORTB, b0 
+	sbrs b0, 4
+	jmp question_end
+	sbrs b0, 3
+	jmp question_end
+	sbrs b0, 2
+	rjmp question_end
+	sbrs b0, 1
+	jmp question_end
+	jmp question_start
+question_end:
+.endmacro
+
+; --- set T in SREG if answer correct
+.macro COMPARE
+	ldi zl, low(2*@0)
+	ldi zh, high(2*@0)
+	lpm
+	cp b0, r0
+	brne PC+2
+	set
+.endmacro
+
+; --- print score on LCD as well as fail or pass message
+.macro PRINT_SCORE
+	call LCD_clear
+	brts PC+2
+	jmp incorrect
+correct:
+	DISPLAY1 strcorrect
+	jmp score
+incorrect:
+	DISPLAY1 strfalse
+score:
+	CLR4 a3, a2, a1, a0
+	mov a0, @0
+	PRINTF LCD
+.db "Score:",FDEC,a,0
+.endmacro
+
 
 ; ==============
 ; 	pointers
@@ -801,11 +887,11 @@ f1:	set
 	.endmacro
 .macro	CB0	; reg,bit,addr		; call if bit=0
 	sbrs	@0,@1
-	rcall	@2
+	call	@2
 	.endmacro
 .macro	CB1	; reg,bit,addr		; call if bit=1
 	sbrc	@0,@1
-	rcall	@2
+	call	@2
 	.endmacro
 .macro	WB0	; reg,bit		; wait if bit=0
 	sbrs	@0,@1
