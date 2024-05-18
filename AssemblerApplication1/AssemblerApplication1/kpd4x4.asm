@@ -117,12 +117,12 @@ reset:	LDSP	RAMEND		; Load Stack Pointer (SP)
 main:
 
 	tst		wr2				; check flag/semaphore
-	breq	main
-	clr		wr2	
+	breq	main			; branch to main as long as no key pressed
+	clr		wr2				; clear wr2 to avoid detecting key pressed once back at beginning of main
 
 	clr		a0
-	add		a0, wr1
-	add		a0, wr0
+	add		a0, wr1			; col
+	add		a0, wr0			; row
 
 	; TO BE COMPLETED AT THIS LOCATION		; decoding ascii
 	
