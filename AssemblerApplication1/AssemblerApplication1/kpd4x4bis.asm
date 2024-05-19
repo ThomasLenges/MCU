@@ -13,9 +13,9 @@
 .include "definitions.asm"	; include register/constant definitions
 
 	; === definitions ===
-.equ	KPDD = DDRD
-.equ	KPDO = PORTD
-.equ	KPDI = PIND
+.equ	KPDD = DDRC
+.equ	KPDO = PORTC
+.equ	KPDI = PINC
 
 .equ	KPD_DELAY = 30	; msec, debouncing keys of keypad
 
@@ -29,6 +29,8 @@
 	jmp reset
 	jmp	isr_ext_int0	; external interrupt INT0
 	jmp	isr_ext_int1	; external interrupt INT1
+	jmp isr_ext_int2
+	jmp isr_ext_int3
 
 
 ; TO BE COMPLETED AT THIS LOCATION
@@ -36,16 +38,26 @@
 	; === interrupt service routines ===
 isr_ext_int0:
 	INVP	PORTB,0			;;debug
-	_LDI	wr1, 0x00		; detect row 1
+	_LDI	wr0, 0x80		; detect row 1
 	_LDI	mask, 0b00000001
 	rjmp	column_detect
 	; no reti (grouped in isr_return)
 
 isr_ext_int1:
-	_LDI	wr1, 0x00		; detect row 2
+	_LDI	wr0, 0x40		; detect row 2
 	_LDI	mask, 0b00000010
 	rjmp	column_detect
-	
+
+isr_ext_int2:
+	_LDI	wr0, 0x20		; detect row 3
+	_LDI	mask, 0b00000100
+	rjmp	column_detect
+
+isr_ext_int3:
+	_LDI	wr0, 0x10		; detect row 4
+	_LDI	mask, 0b00001000
+	rjmp	column_detect
+
 ; TO BE COMPLETED AT THIS LOCATION
 
 column_detect:
@@ -59,11 +71,44 @@ col7:
 	and		w,mask
 	tst		w
 	brne	col6
-	_LDI	wr0,0x00
+	_LDI	wr1,0x08
 	;INVP	PORTB,7		;;debug
 	rjmp	isr_return
 	
 col6:
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0xbf	; check column 6
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	col5
+	_LDI	wr1,0x04
+	;INVP	PORTB,7		;;debug
+	rjmp	isr_return
+
+col5:
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0xdf	; check column 5
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	col4
+	_LDI	wr1,0x02
+	;INVP	PORTB,7		;;debug
+	rjmp	isr_return
+
+col4:
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0xef	; check column 4
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	isr_return
+	_LDI	wr1,0x01
+	;INVP	PORTB,7		;;debug
 
 ; TO BE COMPLETED AT THIS LOCATION
 	
@@ -73,7 +118,7 @@ col6:
 	; no reti (grouped in isr_return)
 
 isr_return:
-	;INVP	PORTB,0		; visual feedback of key pressed acknowledge
+	INVP	PORTB,0		; visual feedback of key pressed acknowledge
 	ldi		_w,10		; sound feedback of key pressed acknowledge
 beep01:	
 	
@@ -96,7 +141,7 @@ reset:	LDSP	RAMEND		; Load Stack Pointer (SP)
 	OUTI	KPDO,0x0f		;>(needs the two lines)
 	OUTI	DDRB,0xff		; turn on LEDs
 	OUTI	EIMSK,0x0f		; enable INT0-INT3
-	OUTI	EICRB,0b0		;>at low level
+	OUTI	EICRB, 0b0		;>at low level
 	sbi		DDRE,SPEAKER	; enable sound
 
 	PRINTF LCD
