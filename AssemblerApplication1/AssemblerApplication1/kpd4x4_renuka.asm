@@ -66,73 +66,73 @@ isr_ext_int3:
 
 column_detect:
 
-
-    OUTI    KPDO,0xff       ; bit4-7 driven high
+	OUTI	KPDO,0xff	; bit4-7 driven high
 col7: ; X1: ABCD
-	;INVP PORTB, 3 ; to check if it lights up LED4 when pressing last column ('ABCD')
-	WAIT_MS KPD_DELAY
-	OUTI KPDO,0x7f ; check column 7
-	WAIT_MS KPD_DELAY
-	in w,KPDI
-	and w,mask
-	tst w
-	brne col6
-	_LDI wr0,0x40
-	INVP PORTB,7 ;;debug
-	rjmp isr_return
-
+	;INVP	PORTB, 3 ; to check if it lights up LED4 when pressing last column ('ABCD')
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0x7f	; check column 7
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	col6
+	_LDI	wr0,0x00
+	INVP	PORTB,7		;;debug
+	rjmp	isr_return
+	
 col6: ; X2: 369#
-	;INVP PORTB, 4
-	WAIT_MS KPD_DELAY
-	OUTI KPDO,0xbf ; check column 6
-	WAIT_MS KPD_DELAY
-	in w,KPDI
-	and w,mask
-	tst w
-	brne col5
-	_LDI wr0,0x30
-	INVP PORTB,6 ;;debug
-	rjmp isr_return
-
-col4: ; X4: 147*
-	WAIT_MS KPD_DELAY
-	OUTI KPDO,0xef ; check column 4
-	WAIT_MS KPD_DELAY
-	in w,KPDI
-	and w,mask
-	tst w
-	brne col5
-	_LDI wr0,0x10
-	INVP PORTB,4 ;;debug
+	;INVP	PORTB, 4
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0xbf	; check column 6
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	col5
+	_LDI	wr0,0x01
+	INVP	PORTB,6		;;debug
+	rjmp	isr_return
 
 col5: ; X3: 2580
-	WAIT_MS KPD_DELAY
-	OUTI KPDO,0xdf ; check column 5
-	WAIT_MS KPD_DELAY
-	in w,KPDI
-	and w,mask
-	tst w
-	brne isr_return
-	_LDI wr0,0x20
-	INVP PORTB,5 ;;debug
-	rjmp isr_return
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0xdf	; check column 5
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	col4
+	_LDI	wr0,0x02
+	INVP	PORTB,5		;;debug
+	rjmp	isr_return
+
+col4: ; X4: 147*
+	WAIT_MS	KPD_DELAY
+	OUTI	KPDO,0xef	; check column 4
+	WAIT_MS	KPD_DELAY
+	in		w,KPDI
+	and		w,mask
+	tst		w
+	brne	isr_return
+	_LDI	wr0,0x03
+	INVP	PORTB,4		;;debug
+
 
 ; TO BE COMPLETED AT THIS LOCATION
+	
+	err_row0:			; debug purpose and filter residual glitches		
+	;INVP	PORTB,0
+	rjmp	isr_return
+	; no reti (grouped in isr_return)
 
-
-    err_row0:                       ; debug purpose and filter residual glitches            
-    ;INVP   PORTB,0
-    rjmp    isr_return
-    ; no reti (grouped in isr_return)
 isr_return:
-	INVP PORTB,0 ; visual feedback of key pressed acknowledge
-	ldi _w,10 ; sound feedback of key pressed acknowledge
-beep01:
-
-    ; TO BE COMPLETED AT THIS LOCATION
-    
-    _LDI    wr2,0xff
-    reti
+	INVP	PORTB,0 	; visual feedback of key pressed acknowledge
+	ldi		_w,10		; sound feedback of key pressed acknowledge
+beep01:	
+	
+	; TO BE COMPLETED AT THIS LOCATION
+	
+	_LDI	wr2,0xff
+	reti
 	
 .include "lcd.asm"			; include UART routines
 .include "printf.asm"		; include formatted printing routines
@@ -199,7 +199,6 @@ main:
 	subi zl, low(-2*KeySet01)
 	sbci zh, high(-2*KeySet01)
 	lpm
-
 
 	; TO BE COMPLETED AT THIS LOCATION		; decoding ascii
 	
