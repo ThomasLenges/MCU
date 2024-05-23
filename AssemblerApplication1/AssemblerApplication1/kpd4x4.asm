@@ -66,9 +66,9 @@ isr_ext_int3:
 
 column_detect:
 
-
+	INVP PORTB,0 
     OUTI    KPDO,0xff       ; bit4-7 driven high
-col7: ; X1: ABCD
+col7: ; X2: 369#
 	;INVP PORTB, 3 ; to check if it lights up LED4 when pressing last column ('ABCD')
 	WAIT_MS KPD_DELAY
 	OUTI KPDO,0x7f ; check column 7
@@ -77,11 +77,11 @@ col7: ; X1: ABCD
 	and w,mask
 	tst w
 	brne col6
-	_LDI wr0,0x40
+	_LDI wr0,0x30
 	INVP PORTB,7 ;;debug
 	rjmp isr_return
 
-col6: ; X2: 369#
+col6: ; X1: ABCD
 	;INVP PORTB, 4
 	WAIT_MS KPD_DELAY
 	OUTI KPDO,0xbf ; check column 6
@@ -90,8 +90,20 @@ col6: ; X2: 369#
 	and w,mask
 	tst w
 	brne col5
-	_LDI wr0,0x30
+	_LDI wr0,0x40
 	INVP PORTB,6 ;;debug
+	rjmp isr_return
+
+col5: ; X3: 2580
+	WAIT_MS KPD_DELAY
+	OUTI KPDO,0xdf ; check column 5
+	WAIT_MS KPD_DELAY
+	in w,KPDI
+	and w,mask
+	tst w
+	brne col4
+	_LDI wr0,0x20
+	INVP PORTB,5 ;;debug
 	rjmp isr_return
 
 col4: ; X4: 147*
@@ -101,23 +113,11 @@ col4: ; X4: 147*
 	in w,KPDI
 	and w,mask
 	tst w
-	brne col5
+	brne isr_return
 	_LDI wr0,0x10
 	INVP PORTB,4 ;;debug
-
-col5: ; X3: 2580
-	WAIT_MS KPD_DELAY
-	OUTI KPDO,0xdf ; check column 5
-	WAIT_MS KPD_DELAY
-	in w,KPDI
-	and w,mask
-	tst w
-	brne isr_return
-	_LDI wr0,0x20
-	INVP PORTB,5 ;;debug
-	rjmp isr_return
-
 ; TO BE COMPLETED AT THIS LOCATION
+
 
 
     err_row0:                       ; debug purpose and filter residual glitches            
@@ -125,13 +125,14 @@ col5: ; X3: 2580
     rjmp    isr_return
     ; no reti (grouped in isr_return)
 isr_return:
-	INVP PORTB,0 ; visual feedback of key pressed acknowledge
+	;INVP PORTB,0 ; visual feedback of key pressed acknowledge
 	ldi _w,10 ; sound feedback of key pressed acknowledge
 beep01:
 
     ; TO BE COMPLETED AT THIS LOCATION
     
     _LDI    wr2,0xff
+	OUTI	KPDO,0x0f
     reti
 	
 .include "lcd.asm"			; include UART routines
