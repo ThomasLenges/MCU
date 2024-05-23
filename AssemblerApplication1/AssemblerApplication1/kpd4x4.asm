@@ -37,27 +37,27 @@
 
 	; === interrupt service routines ===
 isr_ext_int0:
-	INVP	PORTB,0			;;debug lights up if colX4
-	_LDI	wr1, 0x00		; detect row 1
+	;INVP	PORTB,0			;;debug lights up if colX4
+	_LDI	wr1, 0x01		; detect row 1
 	_LDI	mask, 0b00000001
 	rjmp	column_detect
 	; no reti (grouped in isr_return)
 
 isr_ext_int1:
-	INVP	PORTB,1		
-	_LDI	wr1, 0x01		; detect row 2
+	;INVP	PORTB,1		
+	_LDI	wr1, 0x02		; detect row 2
 	_LDI	mask, 0b00000010
 	rjmp	column_detect
 
 isr_ext_int2:
-	INVP	PORTB,2		
-	_LDI	wr1, 0x02		; detect row 3
+	;INVP	PORTB,2		
+	_LDI	wr1, 0x04		; detect row 3 (LSB 0100)
 	_LDI	mask, 0b00000100
 	rjmp	column_detect
 
 isr_ext_int3:
-	INVP	PORTB,3
-	_LDI	wr1, 0x03		; detect row 4
+	;INVP	PORTB,3
+	_LDI	wr1, 0x08		; detect row 4 (LSB 1000)
 	_LDI	mask, 0b00001000
 	rjmp	column_detect
 
@@ -66,7 +66,7 @@ isr_ext_int3:
 
 column_detect:
 
-	INVP PORTB,0 
+	;INVP PORTB,0 
     OUTI    KPDO,0xff       ; bit4-7 driven high
 col7: ; X2: 369#
 	;INVP PORTB, 3 ; to check if it lights up LED4 when pressing last column ('ABCD')
@@ -77,8 +77,8 @@ col7: ; X2: 369#
 	and w,mask
 	tst w
 	brne col6
-	_LDI wr0,0x30
-	INVP PORTB,7 ;;debug
+	_LDI wr0,0x40 ; (MSB 0100)
+	;INVP PORTB,7 ;;debug
 	rjmp isr_return
 
 col6: ; X1: ABCD
@@ -90,8 +90,8 @@ col6: ; X1: ABCD
 	and w,mask
 	tst w
 	brne col5
-	_LDI wr0,0x40
-	INVP PORTB,6 ;;debug
+	_LDI wr0,0x80 ; (MSB 1000)
+	;INVP PORTB,6 ;;debug
 	rjmp isr_return
 
 col5: ; X3: 2580
@@ -103,7 +103,7 @@ col5: ; X3: 2580
 	tst w
 	brne col4
 	_LDI wr0,0x20
-	INVP PORTB,5 ;;debug
+	;INVP PORTB,5 ;;debug
 	rjmp isr_return
 
 col4: ; X4: 147*
@@ -115,7 +115,7 @@ col4: ; X4: 147*
 	tst w
 	brne isr_return
 	_LDI wr0,0x10
-	INVP PORTB,4 ;;debug
+	;INVP PORTB,4 ;;debug
 ; TO BE COMPLETED AT THIS LOCATION
 
 
@@ -180,19 +180,20 @@ main:
 	add		a0, wr1			; col
 	add		a0, wr0			; row
 	clr b0 ; used to compute offset to LUT
-	; offset due to high nibble
-	sbrc a0, 6
-	subi b0, -4
-	sbrc a0, 5
-	subi b0, -8
-	sbrc a0, 4
-	subi b0, -12
-	; offset due to low nibble
-	sbrc a0, 2
-	subi b0, -1
+	; offset due to low nibble (row)
+	
 	sbrc a0, 1
+	subi b0, -4
+	sbrc a0, 2
+	subi b0, -8
+	sbrc a0, 3
+	subi b0, -12
+	; offset due to high nibble (col)
+	sbrc a0, 5
+	subi b0, -1
+	sbrc a0, 6
 	subi b0, -2
-	sbrc a0, 0
+	sbrc a0, 7
 	subi b0, -3
 
 	mov zl, b0
@@ -200,16 +201,17 @@ main:
 	subi zl, low(-2*KeySet01)
 	sbci zh, high(-2*KeySet01)
 	lpm
+	mov b0, r0
 
 
 	; TO BE COMPLETED AT THIS LOCATION		; decoding ascii
 	
 	
 PRINTF LCD
-.db	CR,LF,"KPD=",FHEX,a," ascii=",FHEX,b
+.db	CR,LF,"KPD=",FHEX,a," ascii=",FSTR,b
 .db	0
 	rjmp	main
 	
 ; code conversion table, character set #1 key to ASCII	
 KeySet01:
-.db "1234A456B789C*0#D" ; TO BE COMPLETED AT THIS LOCATION
+.db "123A456B789C*0#D", 0 ; TO BE COMPLETED AT THIS LOCATION
