@@ -9,9 +9,9 @@
 ; solution based on interrupts detected on each row; not optimal but functional if
 ;>and external four-input gate is not available
 
-.include "macros.asm"		; include macro definitions
-.include "definitions.asm"	; include register/constant definitions
-
+;.include "macros.asm"		; include macro definitions
+;.include "definitions.asm"	; include register/constant definitions
+/*
 	; === definitions ===
 .equ	KPDD = DDRD
 .equ	KPDO = PORTD
@@ -26,16 +26,17 @@
 
 	; === interrupt vector table ===
 .org 0
-	jmp reset
+	jmp reset_kpd
 	jmp	isr_ext_int0	; external interrupt INT0
 	jmp	isr_ext_int1	; external interrupt INT1
 	jmp isr_ext_int2
 	jmp isr_ext_int3
 
-
+*/
 ; TO BE COMPLETED AT THIS LOCATION
 
 	; === interrupt service routines ===
+	
 isr_ext_int0:
 	;INVP	PORTB,0			;;debug lights up if colX4
 	_LDI	wr1, 0x01		; detect row 1
@@ -134,15 +135,15 @@ beep01:
     _LDI    wr2,0xff
 	OUTI	KPDO,0x0f
     reti
-	
-.include "lcd.asm"			; include UART routines
-.include "printf.asm"		; include formatted printing routines
+
+;.include "lcd.asm"			; include UART routines
+;.include "printf.asm"		; include formatted printing routines
 
 ; === initialization and configuration ===
 
-.org 0x400
+;.org 0x400
 
-reset:	LDSP	RAMEND		; Load Stack Pointer (SP)
+reset_kpd:	LDSP	RAMEND		; Load Stack Pointer (SP)
 	rcall	LCD_init		; initialize UART
 
 	OUTI	KPDD,0xf0		; bit0-3 pull-up and bits4-7 driven low
@@ -152,9 +153,10 @@ reset:	LDSP	RAMEND		; Load Stack Pointer (SP)
 	OUTI	EICRB,0b0		;>at low level
 	sbi		DDRE,SPEAKER	; enable sound
 
-	PRINTF LCD
-.db	CR,CR,"hello world"
-
+	;PRINTF LCD
+;.db	CR,CR,"hello world"
+	;WAIT_MS 2000
+	;DISPLAY2 str0, str1
 	clr		wr0
 	clr		wr1
 	clr		wr2
@@ -167,13 +169,15 @@ reset:	LDSP	RAMEND		; Load Stack Pointer (SP)
 	clr		b3
 
 	sei
-	;jmp	main				; not useful in this case, kept for modularity
+	jmp	main_kpd				; not useful in this case, kept for modularity
 
+;.include "subroutines.asm"
+;.include "string.asm"
 	; === main program ===
-main:
+main_kpd:
 
 	tst		wr2				; check flag/semaphore
-	breq	main			; branch to main as long as no key pressed
+	breq	main_kpd			; branch to main as long as no key pressed
 	clr		wr2				; clear wr2 to avoid detecting key pressed once back at beginning of main
 
 	clr		a0
@@ -181,7 +185,8 @@ main:
 	add		a0, wr0			; row
 	clr b0 ; used to compute offset to LUT
 	; offset due to low nibble (row)
-	
+	mov c0, a0
+
 	sbrc a0, 1
 	subi b0, -4
 	sbrc a0, 2
@@ -207,11 +212,12 @@ main:
 	; TO BE COMPLETED AT THIS LOCATION		; decoding ascii
 	
 	
-PRINTF LCD
-.db	CR,LF,"KPD=",FHEX,a," ascii=",FSTR,b
-.db	0
-	rjmp	main
-	
+;PRINTF LCD
+;.db	CR,LF,"KPD=",FHEX,a," ascii=",FSTR,b
+;.db	0
+	;rjmp	main_kpd
+	ret
+		
 ; code conversion table, character set #1 key to ASCII	
-KeySet01:
-.db "123A456B789C*0#D", 0 ; TO BE COMPLETED AT THIS LOCATION
+;KeySet01:
+;.db "123A456B789C*0#D", 0 ; TO BE COMPLETED AT THIS LOCATION

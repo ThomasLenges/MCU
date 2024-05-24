@@ -8,6 +8,10 @@
 
 
 .cseg
+;.org 
+; Keypad LUT
+KeySet01:
+.db "123A456B789C*0#D", 0 
 
 ; Menu of game
 str0:
@@ -15,9 +19,9 @@ str0:
 str1:
 .db "MCU PARTY", 0
 str2:
-.db "1. PLAY GAME", 0
+.db "A. PLAY GAME", 0
 str3:
-.db "2. OPEN SAFE", 0
+.db "B. OPEN SAFE", 0
 
 ; general
 strwelcome:
@@ -61,9 +65,9 @@ strlose2:
 
 ; Choose games
 str4:
-.db "1. TRIVIA QUIZ", 0
+.db "A. TRIVIA QUIZ", 0
 str5:
-.db "2. BUTTON DANCE", 0
+.db "B. BUTTON DANCE", 0
 
 ; Open safe
 str6:
@@ -94,7 +98,7 @@ strivia1C:
 strivia1D:
 .db "D. M. JACKSON", 0
 answer1:
-.db 0xef
+.db 0x88 ; 0xef
 
 ; Question 2
 striviaQ2:
@@ -110,7 +114,7 @@ strivia2C:
 strivia2D:
 .db "D. ZOE SALDANA", 0
 answer2:
-.db 0xfd
+.db 0x81 ; 0xfd
 
 ; Question 3
 striviaQ3:
@@ -126,7 +130,7 @@ strivia3C:
 strivia3D:
 .db "D. PINK FLOYD", 0
 answer3:
-.db 0xef
+.db 0x88 ; 0xef
 
 ; Question 4
 striviaQ4:
@@ -142,7 +146,7 @@ strivia4C:
 strivia4D:
 .db "D. J.S. BACH", 0
 answer4:
-.db 0xef
+.db 0x88 ; 0xef
 
 ; Question 5
 striviaQ5:
@@ -158,7 +162,7 @@ strivia5C:
 strivia5D:
 .db "D. CR 7", 0
 answer5:
-.db 0xfb
+.db 0x82 ; 0xfb
 
 ; Question 6
 striviaQ6:
@@ -174,7 +178,7 @@ strivia6C:
 strivia6D:
 .db "D. FRANCE", 0
 answer6:
-.db 0xf7
+.db 0x84 ; 0xf7
 
 ; Question 7
 striviaQ7:
@@ -190,7 +194,7 @@ strivia7C:
 strivia7D:
 .db "D. ROESTI", 0
 answer7:
-.db 0xfd
+.db 0x81 ; 0xfd
 
 ; Question 8
 striviaQ8:
@@ -206,7 +210,7 @@ strivia8C:
 strivia8D:
 .db "D. PLAYBOI CARTI", 0
 answer8:
-.db 0xfb
+.db 0x82 ; 0xfb
 
 ; Question 9
 striviaQ9:
@@ -222,7 +226,7 @@ strivia9C:
 strivia9D:
 .db "D. PLAYBOI CARTI", 0
 answer9:
-.db 0xf7
+.db 0x84 ; 0xf7
 
 ; Question 10
 striviaQ10:
@@ -238,4 +242,4 @@ strivia10C:
 strivia10D:
 .db "D. TAYLOR SWIFT", 0
 answer10:
-.db 0xfb
+.db 0x82 ; 0xfb

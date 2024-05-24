@@ -1,22 +1,30 @@
 
-AVRASM ver. 2.2.6  C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm Thu May 23 11:29:25 2024
+AVRASM ver. 2.2.6  C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm Fri May 24 16:39:57 2024
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(12): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(13): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\definitions.asm'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(22): warning: Register r2 already defined by the .DEF directive
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(23): warning: Register r1 already defined by the .DEF directive
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(24): warning: Register r14 already defined by the .DEF directive
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(25): warning: Register r15 already defined by the .DEF directive
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(138): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(139): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(1): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\definitions.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(2): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(3): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(12): warning: Register r2 already defined by the .DEF directive
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(13): warning: Register r1 already defined by the .DEF directive
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(14): warning: Register r14 already defined by the .DEF directive
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(15): warning: Register r15 already defined by the .DEF directive
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(100): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4bis.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(101): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(103): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(104): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(12): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(13): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\definitions.asm'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(138): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm'
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(139): Including file 'C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(1): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\definitions.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(2): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(3): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(100): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4bis.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(101): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\lcd.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(103): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm'
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(104): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\printf.asm'
                                  
-                                 ; file	kpd4x4_S.asm   target ATmega128L-4MHz-STK300		
+                                 .include "definitions.asm"
                                  
                                  ;***** Created: 2011-02-09 12:03 ******* Source: ATmega128.xml ***********
                                  ;*************************************************************************
@@ -1235,75 +1243,106 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  
                                  ; ***** END OF FILE ******************************************************
                                  
-                                 ; purpose keypad 4x4 acquisition and print
-                                 ;  uses four external interrupts and ports internal pull-up
                                  
-                                 ; solutions based on the methodology presented in EE208-MICRO210_ESP-2024-v1.0.fm
-                                 ;>alternate solutions also possible
-                                 ; standalone solution/file; not meeant as a modular solution and thus must be
-                                 ;>adapted when used in a complex project
-                                 ; solution based on interrupts detected on each row; not optimal but functional if
-                                 ;>and external four-input gate is not available
+                                 ; purpose library, definition of addresses and constants
+                                 ; 20171114 A.S.
                                  
-                                 .include "macros.asm"		; include macro definitions
+                                 ; === definitions  ===
+                                 .list
+                                 .include "macros.asm"
                                  
                                  ; purpose library, general-purpose macros
                                  ; author (c) R.Holzer (adapted MICRO210/EE208 A.Schmid)
                                  ; modified to include newer macros used for project
                                  
                                  ; ==============
+                                 ;	display macros
+                                 ; ==============
+                                 .macro DISPLAY1 
+                                 
+                                 	call	LCD_init
+                                 	ldi	zl, low(2*@0)
+                                 	ldi	zh, high(2*@0)
+                                 	call	LCD_putstring
+                                 
+                                 .endmacro
+                                 
+                                 .macro DISPLAY2
+                                 
+                                 	call	LCD_init
+                                 	ldi	zl, low(2*@0)
+                                 	ldi	zh, high(2*@0)
+                                 	call	LCD_putstring
+                                 	ldi	zl, low(2*@1)
+                                 	ldi	zh, high(2*@1)
+                                 	ldi	a0, 0x40
+                                 	call	LCD_pos
+                                 	call	LCD_putstring
+                                 
+                                 .endmacro
+                                 
+                                 ; ==============
                                  ; 	trivia macros
                                  ; ==============
                                  
                                  ; --- display question and answers as long as answer buttons not pressed
+                                 
                                  .macro QUESTION ; question: str0, str1 answer: str2, str3, str4, str5
                                  question_start:
-                                 	DISPLAY2 @0, @1 ; display question
-                                 	WAIT_MS 2000
-                                 	in b0, PIND
-                                 	out PORTB, b0 
-                                 	sbrs b0, 4
+                                 display1:
+                                 	call	LCD_init
+                                 	ldi	zl, low(2*@0)
+                                 	ldi	zh, high(2*@0)
+                                 	call	LCD_putstring
+                                 	ldi	zl, low(2*@1)
+                                 	ldi	zh, high(2*@1)
+                                 	ldi	a0, 0x40
+                                 	call	LCD_pos
+                                 	call	LCD_putstring
+                                 	call reset_kpd
+                                 	call check_reset
+                                 	mov b0, a0
+                                 	andi a0, 0b10000000
+                                 	breq PC+2
                                  	jmp question_end
-                                 	sbrs b0, 3
+                                 	cpi b0, 0x48
+                                 	brne display1
+                                 display2:
+                                 	call	LCD_init
+                                 	ldi	zl, low(2*@2)
+                                 	ldi	zh, high(2*@2)
+                                 	call	LCD_putstring
+                                 	ldi	zl, low(2*@3)
+                                 	ldi	zh, high(2*@3)
+                                 	ldi	a0, 0x40
+                                 	call	LCD_pos
+                                 	call	LCD_putstring
+                                 	call reset_kpd
+                                 	call check_reset
+                                 	mov b0, a0
+                                 	andi a0, 0b10000000
+                                 	breq PC+2
                                  	jmp question_end
-                                 	sbrs b0, 2
+                                 	cpi b0, 0x48
+                                 	brne display2
+                                 display3:
+                                 	call	LCD_init
+                                 	ldi	zl, low(2*@4)
+                                 	ldi	zh, high(2*@4)
+                                 	call	LCD_putstring
+                                 	ldi	zl, low(2*@5)
+                                 	ldi	zh, high(2*@5)
+                                 	ldi	a0, 0x40
+                                 	call	LCD_pos
+                                 	call	LCD_putstring
+                                 	call reset_kpd
+                                 	call check_reset
+                                 	mov b0, a0
+                                 	andi a0, 0b10000000
+                                 	breq PC+2
                                  	jmp question_end
-                                 	sbrs b0, 1
-                                 	jmp question_end
-                                 	DISPLAY2 @2, @3
-                                 	in b0, PIND
-                                 	out PORTB, b0 
-                                 	sbrs b0, 4
-                                 	jmp question_end
-                                 	sbrs b0, 3
-                                 	jmp question_end
-                                 	sbrs b0, 2
-                                 	jmp question_end
-                                 	sbrs b0, 1
-                                 	jmp question_end
-                                 	WAIT_MS 2000
-                                 	in b0, PIND
-                                 	out PORTB, b0 
-                                 	sbrs b0, 4
-                                 	jmp question_end
-                                 	sbrs b0, 3
-                                 	jmp question_end
-                                 	sbrs b0, 2
-                                 	jmp question_end
-                                 	sbrs b0, 1
-                                 	jmp question_end
-                                 	DISPLAY2 @4, @5
-                                 	WAIT_MS 2000
-                                 	in b0, PIND
-                                 	out PORTB, b0 
-                                 	sbrs b0, 4
-                                 	jmp question_end
-                                 	sbrs b0, 3
-                                 	jmp question_end
-                                 	sbrs b0, 2
-                                 	rjmp question_end
-                                 	sbrs b0, 1
-                                 	jmp question_end
+                                 	cpi b0, 0x48
+                                 	brne display3
                                  	jmp question_start
                                  question_end:
                                  .endmacro
@@ -1741,7 +1780,7 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  loop:	lpm
                                  	cp	r0,@0
                                  	breq	found
-                                 	inc	@1
+                                 	inc	@1 
                                  	adiw	ZL,1
                                  	tst	r0
                                  	breq	notfound
@@ -3172,13 +3211,50 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  .list
                                  
                                  
-                                 .include "definitions.asm"	; include register/constant definitions
+                                 .include "m128def.inc"
                                  
-                                 ; purpose library, definition of addresses and constants
-                                 ; 20171114 A.S.
+                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega128.xml ***********
+                                 ;*************************************************************************
+                                 ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
+                                 ;* 
+                                 ;* Number            : AVR000
+                                 ;* File Name         : "m128def.inc"
+                                 ;* Title             : Register/Bit Definitions for the ATmega128
+                                 ;* Date              : 2011-02-09
+                                 ;* Version           : 2.35
+                                 ;* Support E-mail    : avr@atmel.com
+                                 ;* Target MCU        : ATmega128
+                                 ;* 
+                                 ;* DESCRIPTION
+                                 ;* When including this file in the assembly program file, all I/O register 
+                                 ;* names and I/O register bit names appearing in the data book can be used.
+                                 ;* In addition, the six registers forming the three data pointers X, Y and 
+                                 ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
+                                 ;* SRAM is also defined 
+                                 ;* 
+                                 ;* The Register names are represented by their hexadecimal address.
+                                 ;* 
+                                 ;* The Register Bit names are represented by their bit number (0-7).
+                                 ;* 
+                                 ;* Please observe the difference in using the bit names with instructions
+                                 ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
+                                 ;* (skip if bit in register set/cleared). The following example illustrates
+                                 ;* this:
+                                 ;* 
+                                 ;* in    r16,PORTB             ;read PORTB latch
+                                 ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
+                                 ;* out   PORTB,r16             ;output to PORTB
+                                 ;* 
+                                 ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
+                                 ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
+                                 ;* rjmp  TOV0_is_set           ;jump if set
+                                 ;* ...                         ;otherwise do something else
+                                 ;*************************************************************************
                                  
-                                 ; === definitions  ===
-                                 .list
+                                 #ifndef _M128DEF_INC_
+                                 #endif  /* _M128DEF_INC_ */
+                                 
+                                 ; ***** END OF FILE ******************************************************
                                  
                                  	; === definitions ===
                                  .equ	KPDD = DDRD
@@ -3194,59 +3270,47 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  
                                  	; === interrupt vector table ===
                                  .org 0
-000000 940c 0400                 	jmp reset
+000000 940c 04dc                 	jmp reset
 000002 940c 000a                 	jmp	isr_ext_int0	; external interrupt INT0
 000004 940c 000f                 	jmp	isr_ext_int1	; external interrupt INT1
 000006 940c 0014                 	jmp isr_ext_int2
 000008 940c 0019                 	jmp isr_ext_int3
                                  
-                                 
-                                 ; TO BE COMPLETED AT THIS LOCATION
-                                 
                                  	; === interrupt service routines ===
+                                 	
                                  isr_ext_int0:
-                                 	;INVP	PORTB,0			;;debug lights up if colX4
 00000a e001
 00000b 2e10                      	_LDI	wr1, 0x01		; detect row 1
 00000c e001
 00000d 2ee0                      	_LDI	mask, 0b00000001
 00000e c00f                      	rjmp	column_detect
-                                 	; no reti (grouped in isr_return)
                                  
                                  isr_ext_int1:
-                                 	;INVP	PORTB,1		
 00000f e002
 000010 2e10                      	_LDI	wr1, 0x02		; detect row 2
 000011 e002
 000012 2ee0                      	_LDI	mask, 0b00000010
 000013 c00a                      	rjmp	column_detect
                                  
-                                 isr_ext_int2:
-                                 	;INVP	PORTB,2		
+                                 isr_ext_int2:		
 000014 e004
-000015 2e10                      	_LDI	wr1, 0x04		; detect row 3
+000015 2e10                      	_LDI	wr1, 0x04		; detect row 3 (LSB 0100)
 000016 e004
 000017 2ee0                      	_LDI	mask, 0b00000100
 000018 c005                      	rjmp	column_detect
                                  
                                  isr_ext_int3:
-                                 	;INVP	PORTB,3
 000019 e008
-00001a 2e10                      	_LDI	wr1, 0x08		; detect row 4
+00001a 2e10                      	_LDI	wr1, 0x08		; detect row 4 (LSB 1000)
 00001b e008
 00001c 2ee0                      	_LDI	mask, 0b00001000
 00001d c000                      	rjmp	column_detect
                                  
-                                 	
-                                 ; TO BE COMPLETED AT THIS LOCATION
                                  
                                  column_detect:
-                                 
-                                 	;INVP PORTB,0 
 00001e ef0f
 00001f bb02                          OUTI    KPDO,0xff       ; bit4-7 driven high
                                  col7: ; X2: 369#
-                                 	;INVP PORTB, 3 ; to check if it lights up LED4 when pressing last column ('ABCD')
 000020 e10e
 000021 2e30
 000022 e001
@@ -3292,12 +3356,10 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
 00004a 2300                      	tst w
 00004b f419                      	brne col6
 00004c e400
-00004d 2e20                      	_LDI wr0,0x40
-                                 	;INVP PORTB,7 ;;debug
-00004e c08d                      	rjmp isr_return
+00004d 2e20                      	_LDI wr0,0x40 ; (MSB 0100)
+00004e c08c                      	rjmp isr_return
                                  
                                  col6: ; X1: ABCD
-                                 	;INVP PORTB, 4
 00004f e10e
 000050 2e30
 000051 e001
@@ -3343,9 +3405,8 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
 000079 2300                      	tst w
 00007a f419                      	brne col5
 00007b e800
-00007c 2e20                      	_LDI wr0,0x80
-                                 	;INVP PORTB,6 ;;debug
-00007d c05e                      	rjmp isr_return
+00007c 2e20                      	_LDI wr0,0x80 ; (MSB 1000)
+00007d c05d                      	rjmp isr_return
                                  
                                  col5: ; X3: 2580
 00007e e10e
@@ -3394,8 +3455,7 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
 0000a9 f419                      	brne col4
 0000aa e200
 0000ab 2e20                      	_LDI wr0,0x20
-                                 	;INVP PORTB,5 ;;debug
-0000ac c02f                      	rjmp isr_return
+0000ac c02e                      	rjmp isr_return
                                  
                                  col4: ; X4: 147*
 0000ad e10e
@@ -3441,32 +3501,86 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
 0000d5 b300                      	in w,KPDI
 0000d6 210e                      	and w,mask
 0000d7 2300                      	tst w
-0000d8 f419                      	brne isr_return
+0000d8 f411                      	brne isr_return
 0000d9 e100
 0000da 2e20                      	_LDI wr0,0x10
-                                 	;INVP PORTB,4 ;;debug
-                                 ; TO BE COMPLETED AT THIS LOCATION
-                                 
-                                 
-                                 
-                                     err_row0:                       ; debug purpose and filter residual glitches            
-                                     ;INVP   PORTB,0
-0000db c000                          rjmp    isr_return
-                                     ; no reti (grouped in isr_return)
+                                  
                                  isr_return:
-                                 	;INVP PORTB,0 ; visual feedback of key pressed acknowledge
-0000dc e01a                      	ldi _w,10 ; sound feedback of key pressed acknowledge
-                                 beep01:
+0000db e01a                      	ldi _w,10 ; sound feedback of key pressed acknowledge
+                                 beep01:    
+0000dc ef0f
+0000dd 2ef0                          _LDI    wr2,0xff
+0000de e00f
+0000df bb02                      	OUTI	KPDO,0x0f
+0000e0 9518                          reti
                                  
-                                     ; TO BE COMPLETED AT THIS LOCATION
-                                     
-0000dd ef0f
-0000de 2ef0                          _LDI    wr2,0xff
-0000df e00f
-0000e0 bb02                      	OUTI	KPDO,0x0f
-0000e1 9518                          reti
-                                 	
-                                 .include "lcd.asm"			; include UART routines
+                                 .include "kpd4x4bis.asm"
+                                 
+                                 ; === initialization and configuration ===
+                                 
+                                 reset_kpd:	
+0000e1 ef00
+0000e2 bb01                      	OUTI	KPDD,0xf0		; bit0-3 pull-up and bits4-7 driven low
+0000e3 e00f
+0000e4 bb02                      	OUTI	KPDO,0x0f		;>(needs the two lines)
+0000e5 ef0f
+0000e6 bb07                      	OUTI	DDRB,0xff		; turn on LEDs
+0000e7 e00f
+0000e8 bf09                      	OUTI	EIMSK,0x0f		; enable INT0-INT3
+0000e9 e000
+0000ea bf0a                      	OUTI	EICRB,0b0		;>at low level
+0000eb 9a12                      	sbi		DDRE,SPEAKER	; enable sound
+                                 
+0000ec 2422                      	clr		wr0
+0000ed 2411                      	clr		wr1
+0000ee 24ff                      	clr		wr2
+                                 
+0000ef 2733                      	clr		a1				
+0000f0 2744                      	clr		a2
+0000f1 2755                      	clr		a3
+0000f2 2777                      	clr		b1
+0000f3 2788                      	clr		b2
+0000f4 2799                      	clr		b3
+                                 
+0000f5 9478                      	sei
+0000f6 940c 00f8                 	jmp	main_kpd				; not useful in this case, kept for modularity
+                                 
+                                 	; === main program ===
+                                 main_kpd:
+                                 
+0000f8 20ff                      	tst		wr2				; check flag/semaphore
+0000f9 f3f1                      	breq	main_kpd			; branch to main as long as no key pressed
+0000fa 24ff                      	clr		wr2				; clear wr2 to avoid detecting key pressed once back at beginning of main
+                                 
+0000fb 2722                      	clr		a0
+0000fc 0d21                      	add		a0, wr1			; col
+0000fd 0d22                      	add		a0, wr0			; row
+0000fe 2766                      	clr b0 ; used to compute offset to LUT
+                                 	; offset due to low nibble (row)
+0000ff 2e82                      	mov c0, a0
+                                 
+000100 fd21                      	sbrc a0, 1
+000101 5f6c                      	subi b0, -4
+000102 fd22                      	sbrc a0, 2
+000103 5f68                      	subi b0, -8
+000104 fd23                      	sbrc a0, 3
+000105 5f64                      	subi b0, -12
+                                 	; offset due to high nibble (col)
+000106 fd25                      	sbrc a0, 5
+000107 5f6f                      	subi b0, -1
+000108 fd26                      	sbrc a0, 6
+000109 5f6e                      	subi b0, -2
+00010a fd27                      	sbrc a0, 7
+00010b 5f6d                      	subi b0, -3
+                                 
+00010c 2fe6                      	mov zl, b0
+00010d 27ff                      	clr zh
+00010e 54e4                      	subi zl, low(-2*KeySet01)
+00010f 4ffd                      	sbci zh, high(-2*KeySet01)
+000110 95c8                      	lpm
+000111 2d60                      	mov b0, r0
+000112 9508                      	ret
+                                 .include "lcd.asm"
                                  
                                  ; purpose  LCD HD44780U library
                                  ; ATmega 128 and Atmel Studio 7.0 compliant
@@ -3478,95 +3592,987 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ; === subroutines ===
                                  LCD_wr_ir:
                                  ; in	w (byte to write to LCD IR)
-0000e2 9030 8000                 	lds	u, LCD_IR		; read IR to check busy flag  (bit7)
-0000e4 fc37
-0000e5 cffc                      	JB1	u,7,LCD_wr_ir	; Jump if Bit=1 (still busy)
-0000e6 d003                      	rcall	lcd_4us		; delay to increment DRAM addr counter
-0000e7 9300 8000                 	sts	LCD_IR, w		; store w in IR
-0000e9 9508                      	ret
+000113 9030 8000                 	lds	u, LCD_IR		; read IR to check busy flag  (bit7)
+000115 fc37
+000116 cffc                      	JB1	u,7,LCD_wr_ir	; Jump if Bit=1 (still busy)
+000117 d003                      	rcall	lcd_4us		; delay to increment DRAM addr counter
+000118 9300 8000                 	sts	LCD_IR, w		; store w in IR
+00011a 9508                      	ret
                                  	
                                  lcd_4us:
-0000ea d000                      	rcall	lcd_2us		; recursive call		
+00011b d000                      	rcall	lcd_2us		; recursive call		
                                  lcd_2us:
-0000eb 0000                      	nop					; rcall(3) + nop(1) + ret(4) = 8 cycles (2us)
-0000ec 9508                      	ret
+00011c 0000                      	nop					; rcall(3) + nop(1) + ret(4) = 8 cycles (2us)
+00011d 9508                      	ret
                                  
                                  LCD:
                                  LCD_putc:
-0000ed 302d
-0000ee f179                      	JK	a0,CR,LCD_cr	; Jump if a0=CR
-0000ef 302a
-0000f0 f1b9                      	JK	a0,LF,LCD_lf	; Jump if a0=LF
+00011e 302d
+00011f f179                      	JK	a0,CR,LCD_cr	; Jump if a0=CR
+000120 302a
+000121 f1b9                      	JK	a0,LF,LCD_lf	; Jump if a0=LF
                                  LCD_wr_dr:
                                  ; in	a0 (byte to write to LCD DR)
-0000f1 9100 8000                 	lds	w, LCD_IR		; read IR to check busy flag  (bit7)
-0000f3 fd07
-0000f4 cffc                      	JB1	w,7,LCD_wr_dr	; Jump if Bit=1 (still busy)
-0000f5 dff4                      	rcall	lcd_4us		; delay to increment DRAM addr counter
-0000f6 9320 c000                 	sts	LCD_DR, a0		; store a0 in DR
-0000f8 9508                      	ret	
+000122 9100 8000                 	lds	w, LCD_IR		; read IR to check busy flag  (bit7)
+000124 fd07
+000125 cffc                      	JB1	w,7,LCD_wr_dr	; Jump if Bit=1 (still busy)
+000126 dff4                      	rcall	lcd_4us		; delay to increment DRAM addr counter
+000127 9320 c000                 	sts	LCD_DR, a0		; store a0 in DR
+000129 9508                      	ret	
                                  	
-0000f9 e001
-0000fa cfe7                      LCD_clear:		JW	LCD_wr_ir, 0b00000001		; clear display
-0000fb e002
-0000fc cfe5                      LCD_home:		JW	LCD_wr_ir, 0b00000010		; return home
-0000fd e100
-0000fe cfe3                      LCD_cursor_left:	JW	LCD_wr_ir, 0b00010000	; move cursor to left
-0000ff e104
-000100 cfe1                      LCD_cursor_right:	JW	LCD_wr_ir, 0b00010100	; move cursor to right
-000101 e108
-000102 cfdf                      LCD_display_left:	JW	LCD_wr_ir, 0b00011000	; shifts display to left
-000103 e10c
-000104 cfdd                      LCD_display_right:	JW	LCD_wr_ir, 0b00011100	; shifts display to right
-000105 e00d
-000106 cfdb                      LCD_blink_on:		JW	LCD_wr_ir, 0b00001101	; Display=1,Cursor=0,Blink=1
-000107 e00c
-000108 cfd9                      LCD_blink_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
-000109 e00e
-00010a cfd7                      LCD_cursor_on:		JW	LCD_wr_ir, 0b00001110	; Display=1,Cursor=1,Blink=0
-00010b e00c
-00010c cfd5                      LCD_cursor_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
-00010d e00f
-00010e cfd3                      LCD_cursorblink: 	JW	LCD_wr_ir, 0b00001111	; Display=1,Cursor=1,Blink=1	
+00012a e001
+00012b cfe7                      LCD_clear:		JW	LCD_wr_ir, 0b00000001		; clear display
+00012c e002
+00012d cfe5                      LCD_home:		JW	LCD_wr_ir, 0b00000010		; return home
+00012e e100
+00012f cfe3                      LCD_cursor_left:	JW	LCD_wr_ir, 0b00010000	; move cursor to left
+000130 e104
+000131 cfe1                      LCD_cursor_right:	JW	LCD_wr_ir, 0b00010100	; move cursor to right
+000132 e108
+000133 cfdf                      LCD_display_left:	JW	LCD_wr_ir, 0b00011000	; shifts display to left
+000134 e10c
+000135 cfdd                      LCD_display_right:	JW	LCD_wr_ir, 0b00011100	; shifts display to right
+000136 e00d
+000137 cfdb                      LCD_blink_on:		JW	LCD_wr_ir, 0b00001101	; Display=1,Cursor=0,Blink=1
+000138 e00c
+000139 cfd9                      LCD_blink_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
+00013a e00e
+00013b cfd7                      LCD_cursor_on:		JW	LCD_wr_ir, 0b00001110	; Display=1,Cursor=1,Blink=0
+00013c e00c
+00013d cfd5                      LCD_cursor_off:		JW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0
+00013e e00f
+00013f cfd3                      LCD_cursorblink: 	JW	LCD_wr_ir, 0b00001111	; Display=1,Cursor=1,Blink=1	
                                  LCD_init:
-00010f b705                      	in	w,MCUCR					; enable access to ext. SRAM
-000110 6c00                      	sbr	w,(1<<SRE)+(1<<SRW10)
-000111 bf05                      	out	MCUCR,w
-000112 e001
-000113 dfce                      	CW	LCD_wr_ir, 0b00000001	; clear display
-000114 e006
-000115 dfcc                      	CW	LCD_wr_ir, 0b00000110	; entry mode set (Inc=1, Shift=0)
-000116 e00c
-000117 dfca                      	CW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0	
-000118 e308
-000119 dfc8                      	CW	LCD_wr_ir, 0b00111000	; 8bits=1, 2lines=1, 5x8dots=0
-00011a 9508                      	ret
+000140 b705                      	in	w,MCUCR					; enable access to ext. SRAM
+000141 6c00                      	sbr	w,(1<<SRE)+(1<<SRW10)
+000142 bf05                      	out	MCUCR,w
+000143 e001
+000144 dfce                      	CW	LCD_wr_ir, 0b00000001	; clear display
+000145 e006
+000146 dfcc                      	CW	LCD_wr_ir, 0b00000110	; entry mode set (Inc=1, Shift=0)
+000147 e00c
+000148 dfca                      	CW	LCD_wr_ir, 0b00001100	; Display=1,Cursor=0,Blink=0	
+000149 e308
+00014a dfc8                      	CW	LCD_wr_ir, 0b00111000	; 8bits=1, 2lines=1, 5x8dots=0
+00014b 9508                      	ret
                                  
                                  LCD_pos:
                                  ; in	a0 = position (0x00..0x0f first line, 0x40..0x4f second line)
-00011b 2f02                      	mov	w,a0
-00011c 6800                      	ori	w,0b10000000
-00011d cfc4                      	rjmp	LCD_wr_ir
+00014c 2f02                      	mov	w,a0
+00014d 6800                      	ori	w,0b10000000
+00014e cfc4                      	rjmp	LCD_wr_ir
                                  
                                  LCD_cr:
                                  ; moving the cursor to the beginning of the line (carriage return)
-00011e 9100 8000                 	lds	w, LCD_IR			; read IR to check busy flag  (bit7)
-000120 fd07
-000121 cffc                      	JB1	w,7,LCD_cr			; Jump if Bit=1 (still busy)
-000122 7400                      	andi	w,0b01000000	; keep bit6 (begin of line 1/2)
-000123 6800                      	ori	w,0b10000000		; write address command
-000124 dfc5                      	rcall	lcd_4us			; delay to increment DRAM addr counter
-000125 9300 8000                 	sts	LCD_IR,w			; store in IR
-000127 9508                      	ret
+00014f 9100 8000                 	lds	w, LCD_IR			; read IR to check busy flag  (bit7)
+000151 fd07
+000152 cffc                      	JB1	w,7,LCD_cr			; Jump if Bit=1 (still busy)
+000153 7400                      	andi	w,0b01000000	; keep bit6 (begin of line 1/2)
+000154 6800                      	ori	w,0b10000000		; write address command
+000155 dfc5                      	rcall	lcd_4us			; delay to increment DRAM addr counter
+000156 9300 8000                 	sts	LCD_IR,w			; store in IR
+000158 9508                      	ret
                                  
                                  LCD_lf:
                                  ; moving the cursor to the beginning of the line 2 (line feed)
-000128 932f                      	push	a0				; safeguard a0
-000129 e420                      	ldi	a0,$40				; load position $40 (begin of line 2)
-00012a dff0                      	rcall	LCD_pos			; set cursor position
-00012b 912f                      	pop	a0					; restore a0
-                                 .include "printf.asm"		; include formatted printing routines
-00012c 9508                      
+000159 932f                      	push	a0				; safeguard a0
+00015a e420                      	ldi	a0,$40				; load position $40 (begin of line 2)
+00015b dff0                      	rcall	LCD_pos			; set cursor position
+00015c 912f                      	pop	a0					; restore a0
+                                 .include "string.asm"
+00015d 9508                      
+                                 ; AssemblerApplication1.asm
+                                 ;
+                                 ; Created: 30/04/2024 10:34:37
+                                 ; Author : renuka
+                                 ; File containing all strings to 
+                                 ; print on LCD screen
+                                 
+                                 
+                                 .cseg
+                                 ;.org 
+                                 ; Keypad LUT
+                                 KeySet01:
+00015e 3231
+00015f 4133
+000160 3534
+000161 4236
+000162 3837
+000163 4339
+000164 302a
+000165 4423
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(14): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000166 0000                      .db "123A456B789C*0#D", 0 
+                                 
+                                 ; Menu of game
+                                 str0:
+000167 4557
+000168 434c
+000169 4d4f
+00016a 2045
+00016b 4f54
+00016c 0020                      .db "WELCOME TO ", 0
+                                 str1:
+00016d 434d
+00016e 2055
+00016f 4150
+000170 5452
+000171 0059                      .db "MCU PARTY", 0
+                                 str2:
+000172 2e41
+000173 5020
+000174 414c
+000175 2059
+000176 4147
+000177 454d
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(22): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000178 0000                      .db "A. PLAY GAME", 0
+                                 str3:
+000179 2e42
+00017a 4f20
+00017b 4550
+00017c 204e
+00017d 4153
+00017e 4546
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(24): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00017f 0000                      .db "B. OPEN SAFE", 0
+                                 
+                                 ; general
+                                 strwelcome:
+000180 6557
+000181 636c
+000182 6d6f
+000183 2065
+000184 6f74
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(28): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000185 0000                      .db "Welcome to",0
+                                 
+                                 strivia:
+000186 7274
+000187 7669
+000188 6169
+000189 3a20
+00018a 0029                      .db "trivia :)",0
+                                 
+                                 strbutton:
+00018b 6874
+00018c 2065
+00018d 7562
+00018e 7474
+00018f 6e6f
+000190 3a20
+000191 0029                      .db "the button :)",0
+                                 
+                                 strcorrect:
+000192 6f43
+000193 7272
+000194 6365
+000195 2174
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(37): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000196 0000                      .db "Correct!",0
+                                 
+                                 strfalse:
+000197 6146
+000198 736c
+000199 2165
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(40): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00019a 0000                      .db "False!",0
+                                 
+                                 strivia2:
+00019b 6e41
+00019c 7773
+00019d 7265
+00019e 3520
+00019f 312f
+0001a0 2030
+0001a1 6f63
+0001a2 002d                      .db "Answer 5/10 co-",0
+                                 
+                                 strivia3:
+0001a3 7272
+0001a4 6365
+0001a5 6c74
+0001a6 2079
+0001a7 6f74
+0001a8 7720
+0001a9 6e69
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(46): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001aa 0000                      .db "rrectly to win",0
+                                 
+                                 strclue1a:
+0001ab 7331
+0001ac 2074
+0001ad 6c63
+0001ae 6575
+0001af 003a                      .db "1st clue:",0
+                                 
+                                 strclue1b:
+0001b0 4e53
+0001b1 574f
+0001b2 5720
+0001b3 4948
+0001b4 4554
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(52): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001b5 0000                      .db "SNOW WHITE",0
+                                 
+                                 strwin1:
+0001b6 4f43
+0001b7 474e
+0001b8 4152
+0001b9 5554
+0001ba 414c
+0001bb 4954
+0001bc 4e4f
+0001bd 0053                      .db "CONGRATULATIONS",0
+                                 
+                                 strwin2:
+0001be 4f59
+0001bf 2055
+0001c0 4957
+0001c1 004e                      .db "YOU WIN",0
+                                 
+                                 strlose1:
+0001c2 4f59
+0001c3 2055
+0001c4 4f4c
+0001c5 4553
+0001c6 002c                      .db "YOU LOSE,",0
+                                 
+                                 strlose2:
+0001c7 5254
+0001c8 2059
+0001c9 4741
+0001ca 4941
+0001cb 004e                      .db "TRY AGAIN",0
+                                 
+                                 ; Choose games
+                                 str4:
+0001cc 2e41
+0001cd 5420
+0001ce 4952
+0001cf 4956
+0001d0 2041
+0001d1 5551
+0001d2 5a49
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(68): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001d3 0000                      .db "A. TRIVIA QUIZ", 0
+                                 str5:
+0001d4 2e42
+0001d5 4220
+0001d6 5455
+0001d7 4f54
+0001d8 204e
+0001d9 4144
+0001da 434e
+0001db 0045                      .db "B. BUTTON DANCE", 0
+                                 
+                                 ; Open safe
+                                 str6:
+0001dc 4e45
+0001dd 4554
+0001de 2052
+0001df 4150
+0001e0 5353
+0001e1 4f43
+0001e2 4544
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(74): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001e3 0000                      .db "ENTER PASSCODE", 0
+                                 str7:
+0001e4 4e49
+0001e5 4f43
+0001e6 5252
+0001e7 4345
+0001e8 2054
+0001e9 4150
+0001ea 5353
+0001eb 4f43
+0001ec 4544
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(76): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0001ed 0000                      .db "INCORRECT PASSCODE", 0
+                                 str8:
+0001ee 4f43
+0001ef 474e
+0001f0 4152
+0001f1 5554
+0001f2 414c
+0001f3 4954
+0001f4 4e4f
+0001f5 2c53
+0001f6 0020                      .db "CONGRATULATIONS, ", 0
+                                 str9:
+0001f7 4f59
+0001f8 2055
+0001f9 4957
+0001fa 204e
+0001fb 4854
+0001fc 5349
+0001fd 4720
+0001fe 4d41
+0001ff 2045
+000200 0021                      .db "YOU WIN THIS GAME !", 0
+                                 str10:
+000201 4854
+000202 4e41
+000203 534b
+000204 4620
+000205 524f
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(82): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000206 0000                      .db "THANKS FOR", 0
+                                 str11:
+000207 4c50
+000208 5941
+000209 4e49
+00020a 2147
+00020b 3a20
+00020c 0044                      .db "PLAYING! :D", 0
+                                 
+                                 ; Quiz trivia
+                                 ; Question 1
+                                 striviaQ1:
+00020d 6857
+00020e 206f
+00020f 7277
+000210 746f
+000211 2065
+000212 6874
+000213 0065                      .db "Who wrote the", 0
+                                 striviaQ12:
+000214 6f73
+000215 676e
+000216 2720
+000217 6874
+000218 6972
+000219 6c6c
+00021a 7265
+00021b 3f27
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(91): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00021c 0000                      .db "song 'thriller'?", 0
+                                 strivia1A:
+00021d 2e41
+00021e 5020
+00021f 414c
+000220 4259
+000221 494f
+000222 4320
+000223 5241
+000224 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(93): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000225 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia1B:
+000226 2e42
+000227 5420
+000228 4152
+000229 5943
+00022a 4320
+00022b 4148
+00022c 4d50
+00022d 4e41
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(95): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00022e 0000                      .db "B. TRACY CHAPMAN", 0
+                                 strivia1C:
+00022f 2e43
+000230 4120
+000231 202e
+000232 4353
+000233 4d48
+000234 4449
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(97): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000235 0000                      .db "C. A. SCHMID", 0
+                                 strivia1D:
+000236 2e44
+000237 4d20
+000238 202e
+000239 414a
+00023a 4b43
+00023b 4f53
+00023c 004e                      .db "D. M. JACKSON", 0
+                                 answer1:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(101): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00023d 0088                      .db 0x88 ; 0xef
+                                 
+                                 ; Question 2
+                                 striviaQ2:
+00023e 6857
+00023f 206f
+000240 6c70
+000241 7961
+000242 0073                      .db "Who plays", 0
+                                 striviaQ22:
+000243 6548
+000244 6d72
+000245 6f69
+000246 656e
+000247 003f                      .db "Hermione?", 0
+                                 strivia2A:
+000248 2e41
+000249 4520
+00024a 4d4d
+00024b 2041
+00024c 4157
+00024d 5354
+00024e 4e4f
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(109): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00024f 0000                      .db "A. EMMA WATSON", 0
+                                 strivia2B:
+000250 2e42
+000251 4520
+000252 4d4d
+000253 2041
+000254 5453
+000255 4e4f
+000256 0045                      .db "B. EMMA STONE", 0
+                                 strivia2C:
+000257 2e43
+000258 5020
+000259 414c
+00025a 4259
+00025b 494f
+00025c 4320
+00025d 5241
+00025e 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(113): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00025f 0000                      .db "C. PLAYBOI CARTI", 0
+                                 strivia2D:
+000260 2e44
+000261 5a20
+000262 454f
+000263 5320
+000264 4c41
+000265 4144
+000266 414e
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(115): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000267 0000                      .db "D. ZOE SALDANA", 0
+                                 answer2:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(117): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000268 0081                      .db 0x81 ; 0xfd
+                                 
+                                 ; Question 3
+                                 striviaQ3:
+000269 6857
+00026a 6369
+00026b 2068
+00026c 6162
+00026d 646e
+00026e 7720
+00026f 6f72
+000270 6574
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(121): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000271 0000                      .db "Which band wrote", 0
+                                 striviaQ32:
+000272 6827
+000273 7965
+000274 7920
+000275 756f
+000276 2027
+000277 003f                      .db "'hey you' ?", 0
+                                 strivia3A:
+000278 2e41
+000279 5020
+00027a 414c
+00027b 4259
+00027c 494f
+00027d 4320
+00027e 5241
+00027f 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(125): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000280 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia3B:
+000281 2e42
+000282 4c20
+000283 4445
+000284 5a20
+000285 5045
+000286 4c50
+000287 4e49
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(127): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000288 0000                      .db "B. LED ZEPPLIN", 0
+                                 strivia3C:
+000289 2e43
+00028a 4a20
+00028b 554f
+00028c 4e52
+00028d 5945
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(129): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00028e 0000                      .db "C. JOURNEY", 0
+                                 strivia3D:
+00028f 2e44
+000290 5020
+000291 4e49
+000292 204b
+000293 4c46
+000294 594f
+000295 0044                      .db "D. PINK FLOYD", 0
+                                 answer3:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(133): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000296 0088                      .db 0x88 ; 0xef
+                                 
+                                 ; Question 4
+                                 striviaQ4:
+000297 6857
+000298 206f
+000299 7277
+00029a 746f
+00029b 2065
+00029c 4127
+00029d 7269
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(137): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00029e 0000                      .db "Who wrote 'Air", 0
+                                 striviaQ42:
+00029f 6e6f
+0002a0 4720
+0002a1 7320
+0002a2 7274
+0002a3 6e69
+0002a4 2767
+0002a5 003f                      .db "on G string'?", 0
+                                 strivia4A:
+0002a6 2e41
+0002a7 5020
+0002a8 414c
+0002a9 4259
+0002aa 494f
+0002ab 4320
+0002ac 5241
+0002ad 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(141): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002ae 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia4B:
+0002af 2e42
+0002b0 4220
+0002b1 4545
+0002b2 4854
+0002b3 564f
+0002b4 4e45
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(143): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002b5 0000                      .db "B. BEETHOVEN", 0
+                                 strivia4C:
+0002b6 2e43
+0002b7 5320
+0002b8 4843
+0002b9 4255
+0002ba 5245
+0002bb 0054                      .db "C. SCHUBERT", 0
+                                 strivia4D:
+0002bc 2e44
+0002bd 4a20
+0002be 532e
+0002bf 202e
+0002c0 4142
+0002c1 4843
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(147): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002c2 0000                      .db "D. J.S. BACH", 0
+                                 answer4:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(149): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002c3 0088                      .db 0x88 ; 0xef
+                                 
+                                 ; Question 5
+                                 striviaQ5:
+0002c4 6857
+0002c5 206f
+0002c6 6574
+0002c7 6361
+0002c8 6568
+0002c9 0073                      .db "Who teaches", 0
+                                 striviaQ52:
+0002ca 434d
+0002cb 2055
+0002cc 6562
+0002cd 7473
+0002ce 003f                      .db "MCU best?", 0
+                                 strivia5A:
+0002cf 2e41
+0002d0 5020
+0002d1 414c
+0002d2 4259
+0002d3 494f
+0002d4 4320
+0002d5 5241
+0002d6 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(157): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002d7 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia5B:
+0002d8 2e42
+0002d9 4120
+0002da 202e
+0002db 4353
+0002dc 4d48
+0002dd 4449
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(159): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002de 0000                      .db "B. A. SCHMID", 0
+                                 strivia5C:
+0002df 2e43
+0002e0 4d20
+0002e1 202e
+0002e2 4c41
+0002e3 0049                      .db "C. M. ALI", 0
+                                 strivia5D:
+0002e4 2e44
+0002e5 4320
+0002e6 2052
+0002e7 0037                      .db "D. CR 7", 0
+                                 answer5:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(165): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002e8 0082                      .db 0x82 ; 0xfb
+                                 
+                                 ; Question 6
+                                 striviaQ6:
+0002e9 6857
+0002ea 206f
+0002eb 6f77
+0002ec 206e
+0002ed 6874
+0002ee 2065
+0002ef 3032
+0002f0 3232
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(169): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0002f1 0000                      .db "Who won the 2022", 0
+                                 striviaQ62:
+0002f2 4946
+0002f3 4146
+0002f4 5720
+0002f5 726f
+0002f6 646c
+0002f7 4320
+0002f8 7075
+0002f9 003f                      .db "FIFA World Cup?", 0
+                                 strivia6A:
+0002fa 2e41
+0002fb 5020
+0002fc 414c
+0002fd 4259
+0002fe 494f
+0002ff 4320
+000300 5241
+000301 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(173): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000302 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia6B:
+000303 2e42
+000304 5320
+000305 4957
+000306 5a54
+000307 5245
+000308 414c
+000309 444e
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(175): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00030a 0000                      .db "B. SWITZERLAND", 0
+                                 strivia6C:
+00030b 2e43
+00030c 4120
+00030d 4752
+00030e 4e45
+00030f 4954
+000310 414e
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(177): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000311 0000                      .db "C. ARGENTINA", 0
+                                 strivia6D:
+000312 2e44
+000313 4620
+000314 4152
+000315 434e
+000316 0045                      .db "D. FRANCE", 0
+                                 answer6:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(181): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000317 0084                      .db 0x84 ; 0xf7
+                                 
+                                 ; Question 7
+                                 striviaQ7:
+000318 6857
+000319 6369
+00031a 2068
+00031b 6964
+00031c 6873
+00031d 6920
+00031e 0073                      .db "Which dish is", 0
+                                 striviaQ72:
+00031f 6f6e
+000320 2074
+000321 7773
+000322 7369
+000323 3f73
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(187): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000324 0000                      .db "not swiss?", 0
+                                 strivia7A:
+000325 2e41
+000326 5020
+000327 414c
+000328 4259
+000329 494f
+00032a 4320
+00032b 5241
+00032c 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(189): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00032d 0000                      .db "A. PLAYBOI CARTI", 0
+                                 strivia7B:
+00032e 2e42
+00032f 5220
+000330 4341
+000331 454c
+000332 5454
+000333 0045                      .db "B. RACLETTE", 0
+                                 strivia7C:
+000334 2e43
+000335 4620
+000336 4e4f
+000337 5544
+000338 0045                      .db "C. FONDUE", 0
+                                 strivia7D:
+000339 2e44
+00033a 5220
+00033b 454f
+00033c 5453
+00033d 0049                      .db "D. ROESTI", 0
+                                 answer7:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(197): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00033e 0081                      .db 0x81 ; 0xfd
+                                 
+                                 ; Question 8
+                                 striviaQ8:
+00033f 6857
+000340 7461
+000341 7327
+000342 7420
+000343 6568
+000344 6320
+000345 7061
+000346 2d69
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(201): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000347 0000                      .db "What's the capi-", 0
+                                 striviaQ82:
+000348 6174
+000349 206c
+00034a 666f
+00034b 4c20
+00034c 6f61
+00034d 3f73
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(203): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+00034e 0000                      .db "tal of Laos?", 0
+                                 strivia8A:
+00034f 2e41
+000350 4c20
+000351 4f41
+000352 0053                      .db "A. LAOS", 0
+                                 strivia8B:
+000353 2e42
+000354 5620
+000355 4549
+000356 544e
+000357 4149
+000358 454e
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(207): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000359 0000                      .db "B. VIENTIANE", 0
+                                 strivia8C:
+00035a 2e43
+00035b 5620
+00035c 4e45
+00035d 4349
+00035e 0045                      .db "C. VENICE", 0
+                                 strivia8D:
+00035f 2e44
+000360 5020
+000361 414c
+000362 4259
+000363 494f
+000364 4320
+000365 5241
+000366 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(211): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000367 0000                      .db "D. PLAYBOI CARTI", 0
+                                 answer8:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(213): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000368 0082                      .db 0x82 ; 0xfb
+                                 
+                                 ; Question 9
+                                 striviaQ9:
+000369 6857
+00036a 7461
+00036b 7327
+00036c 7420
+00036d 6568
+00036e 6220
+00036f 7365
+000370 0074                      .db "What's the best", 0
+                                 striviaQ92:
+000371 6573
+000372 7463
+000373 6f69
+000374 206e
+000375 7461
+000376 4520
+000377 4650
+000378 3f4c
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(219): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000379 0000                      .db "section at EPFL?", 0
+                                 strivia9A:
+00037a 2e41
+00037b 4c20
+00037c 4649
+00037d 2045
+00037e 4353
+00037f 4549
+000380 434e
+000381 5345
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(221): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000382 0000                      .db "A. LIFE SCIENCES", 0
+                                 strivia9B:
+000383 2e42
+000384 4d20
+000385 4349
+000386 4f52
+000387 4554
+000388 4843
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(223): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000389 0000                      .db "B. MICROTECH", 0
+                                 strivia9C:
+00038a 2e43
+00038b 4520
+00038c 454c
+00038d 0043                      .db "C. ELEC", 0
+                                 strivia9D:
+00038e 2e44
+00038f 5020
+000390 414c
+000391 4259
+000392 494f
+000393 4320
+000394 5241
+000395 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(227): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000396 0000                      .db "D. PLAYBOI CARTI", 0
+                                 answer9:
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(229): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+000397 0084                      .db 0x84 ; 0xf7
+                                 
+                                 ; Question 10
+                                 striviaQ10:
+000398 6857
+000399 206f
+00039a 7277
+00039b 746f
+00039c 2065
+00039d 6874
+00039e 0065                      .db "Who wrote the", 0
+                                 striviaQ102:
+00039f 6f73
+0003a0 676e
+0003a1 2720
+0003a2 6b73
+0003a3 2779
+0003a4 003f                      .db "song 'sky'?", 0
+                                 strivia10A:
+0003a5 2e41
+0003a6 4b20
+0003a7 4e41
+0003a8 4559
+0003a9 5720
+0003aa 5345
+0003ab 0054                      .db "A. KANYE WEST", 0
+                                 strivia10B:
+0003ac 2e42
+0003ad 5020
+0003ae 414c
+0003af 4259
+0003b0 494f
+0003b1 4320
+0003b2 5241
+0003b3 4954
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(239): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0003b4 0000                      .db "B. PLAYBOI CARTI", 0
+                                 strivia10C:
+0003b5 2e43
+0003b6 4120
+0003b7 202e
+0003b8 4353
+0003b9 4d48
+0003ba 4449
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm(241): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(102): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm' included form here
+0003bb 0000                      .db "C. A. SCHMID", 0
+                                 strivia10D:
+0003bc 2e44
+0003bd 5420
+0003be 5941
+0003bf 4f4c
+0003c0 2052
+0003c1 5753
+0003c2 4649
+0003c3 0054                      .db "D. TAYLOR SWIFT", 0
+                                 answer10:
+                                 .include "subroutines.asm"
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm(1): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(103): 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm' included form here
+0003c4 0082                      
+                                  * subroutines.asm
+                                  *
+                                  *  Created: 30/04/2024 11:21:07
+                                  *   Author: renuka
+                                  */ 
+                                 
+                                 ; code from: tp05 puts02.asm
+                                  LCD_putstring:
+0003c5 95c8                      	lpm
+0003c6 2000                      	tst		r0
+0003c7 f021                      	breq	done
+0003c8 2d20                      	mov		a0, r0
+0003c9 dd54                      	rcall	LCD_putc
+0003ca 9631                      	adiw	zl, 1
+0003cb cff9                      	rjmp	LCD_putstring
+0003cc 9508                      done:ret
+                                 .include "printf.asm"
+                                 
                                  ; purpose library, formatted output generation
                                  ; author (c) R.Holzer (adapted MICRO210/EE208 A.Schmid)
                                  
@@ -3693,30 +4699,30 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ; === routines ================================================
                                  
                                  _printf:
-00012d 91ff
-00012e 91ef                      	POPZ			; z points to begin of "string"
-00012f 0fee
-000130 1fff                      	MUL2Z			; multiply Z by two, (word ptr -> byte ptr)
-000131 93af
-000132 93bf                      	PUSHX
+0003cd 91ff
+0003ce 91ef                      	POPZ			; z points to begin of "string"
+0003cf 0fee
+0003d0 1fff                      	MUL2Z			; multiply Z by two, (word ptr -> byte ptr)
+0003d1 93af
+0003d2 93bf                      	PUSHX
                                  		
                                  _printf_read:
-000133 95c8                      	lpm				; places prog_mem(Z) into r0 (=c)
-000134 9631                      	adiw	zl,1	; increment pointer Z
-000135 2000                      	tst	r0			; test for ZERO (=end of string)
-000136 f021                      	breq	_printf_end	; char=0 indicates end of ascii string
-000137 f04a                      	brmi	_printf_formatted ; bit7=1 indicates formatting character
-000138 2d00                      	mov	w,r0
-000139 d013                      	rcall	_putw	; display the character
-00013a cff8                      	rjmp	_printf_read	; read next character in the string
+0003d3 95c8                      	lpm				; places prog_mem(Z) into r0 (=c)
+0003d4 9631                      	adiw	zl,1	; increment pointer Z
+0003d5 2000                      	tst	r0			; test for ZERO (=end of string)
+0003d6 f021                      	breq	_printf_end	; char=0 indicates end of ascii string
+0003d7 f04a                      	brmi	_printf_formatted ; bit7=1 indicates formatting character
+0003d8 2d00                      	mov	w,r0
+0003d9 d013                      	rcall	_putw	; display the character
+0003da cff8                      	rjmp	_printf_read	; read next character in the string
                                  	
                                  _printf_end:
-00013b 9631                      	adiw	zl,1	; point to the next character
-00013c 95f6
-00013d 95e7                      	DIV2Z			; divide by 2 (byte ptr -> word ptr)
-00013e 91bf
-00013f 91af                      	POPX
-000140 9409                      	ijmp			; return to instruction after "string"
+0003db 9631                      	adiw	zl,1	; point to the next character
+0003dc 95f6
+0003dd 95e7                      	DIV2Z			; divide by 2 (byte ptr -> word ptr)
+0003de 91bf
+0003df 91af                      	POPX
+0003e0 9409                      	ijmp			; return to instruction after "string"
                                  
                                  _printf_formatted:
                                  
@@ -3727,188 +4733,188 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ; FCHAR	1000'0100
                                  ; FSTR	1000'0101
                                  
-000141 fa00                      	bst	r0,0		; store sign in T
-000142 2d00                      	mov	w,r0		; store formatting character in w
+0003e1 fa00                      	bst	r0,0		; store sign in T
+0003e2 2d00                      	mov	w,r0		; store formatting character in w
                                  
-000143 95c8                      	lpm	
-000144 2da0                      	mov	xl,r0		; load x-pointer with SRAM address
-000145 27bb                      	clr	xh			; clear high-byte
-000146 9631                       	adiw	zl,1	; increment pointer Z
+0003e3 95c8                      	lpm	
+0003e4 2da0                      	mov	xl,r0		; load x-pointer with SRAM address
+0003e5 27bb                      	clr	xh			; clear high-byte
+0003e6 9631                       	adiw	zl,1	; increment pointer Z
                                  
                                  ;	JB1	w,6,_putdec
                                  ;	JB1	w,5,_putbin
                                  ;	JB1	w,4,_puthex
                                  ;	JB1	w,3,_putfrac
-000147 3804
-000148 f079                      	JK	w,FCHAR,_putchar
-000149 3805
-00014a f081                      	JK	w,FSTR ,_putstr
-00014b c015                      	rjmp	_putnum
+0003e7 3804
+0003e8 f079                      	JK	w,FCHAR,_putchar
+0003e9 3805
+0003ea f081                      	JK	w,FSTR ,_putstr
+0003eb c015                      	rjmp	_putnum
                                  	
-00014c cfe6                      	rjmp	_printf_read	
+0003ec cfe6                      	rjmp	_printf_read	
                                  
                                  ; === putc (put character) ===============================
                                  ; in	w	character to put
                                  ;	e1,e0	address of output routine (UART, LCD putc)
                                  _putw:
-00014d 932f
-00014e 93ff
-00014f 93ef                      	PUSH3	a0,zh,zl
-000150 2de4
-000151 2df5
-000152 2f20                      	MOV3	a0,zh,zl, w,e1,e0
-000153 9509                      	icall			; indirect call to "putc"
-000154 91ef
-000155 91ff
-000156 912f                      	POP3	a0,zh,zl
-000157 9508                      	ret
+0003ed 932f
+0003ee 93ff
+0003ef 93ef                      	PUSH3	a0,zh,zl
+0003f0 2de4
+0003f1 2df5
+0003f2 2f20                      	MOV3	a0,zh,zl, w,e1,e0
+0003f3 9509                      	icall			; indirect call to "putc"
+0003f4 91ef
+0003f5 91ff
+0003f6 912f                      	POP3	a0,zh,zl
+0003f7 9508                      	ret
                                  
                                  ; === putchar (put character) ============================
                                  ; in	x	pointer to character to put
                                  _putchar:
-000158 910c                      	ld	w,x
-000159 dff3                      	rcall	_putw
-00015a cfd8                      	rjmp	_printf_read
+0003f8 910c                      	ld	w,x
+0003f9 dff3                      	rcall	_putw
+0003fa cfd8                      	rjmp	_printf_read
                                  	
                                  ; === putstr (put string) ================================
                                  ; in	x	pointer to ascii string
                                  ;	b3,b2	address of output routine (UART, LCD putc)
                                  _putstr:
-00015b 910d                      	ld	w,x+
-00015c 2300                      	tst	w
-00015d f409                      	brne	PC+2
-00015e cfd4                      	rjmp	_printf_read
-00015f dfed                      	rcall	_putw
-000160 cffa                      	rjmp	_putstr
+0003fb 910d                      	ld	w,x+
+0003fc 2300                      	tst	w
+0003fd f409                      	brne	PC+2
+0003fe cfd4                      	rjmp	_printf_read
+0003ff dfed                      	rcall	_putw
+000400 cffa                      	rjmp	_putstr
                                  
                                  ; === putnum (dec/bin/hex/frac) ===========================
                                  ; in	x	pointer to SRAM variable to print
                                  ; 	r0	formatting character
                                  	
                                  _putnum:
-000161 935f
-000162 934f
-000163 933f
-000164 932f                      	PUSH4	a3,a2,a1,a0	; safeguard a
-000165 939f
-000166 938f
-000167 937f
-000168 936f                      	PUSH4	b3,b2,b1,b0	; safeguard b	
-000169 912d
-00016a 913d
-00016b 914d
-00016c 915d                      	LDX4	a3,a2,a1,a0	; load operand to print into a
+000401 935f
+000402 934f
+000403 933f
+000404 932f                      	PUSH4	a3,a2,a1,a0	; safeguard a
+000405 939f
+000406 938f
+000407 937f
+000408 936f                      	PUSH4	b3,b2,b1,b0	; safeguard b	
+000409 912d
+00040a 913d
+00040b 914d
+00040c 915d                      	LDX4	a3,a2,a1,a0	; load operand to print into a
                                  
                                  ; FDEC	11bb'iiis
                                  ; FBIN	101i'iiis
                                  ; FHEX	1001'iiis
                                  ; FRACT	1000'1bbs
                                  
-00016d fd06
-00016e c006                      	JB1	w,6,_putdec
-00016f fd05
-000170 c00f                      	JB1	w,5,_putbin
-000171 fd04
-000172 c010                      	JB1	w,4,_puthex
-000173 fd03
-000174 c019                      	JB1	w,3,_putfrac
+00040d fd06
+00040e c006                      	JB1	w,6,_putdec
+00040f fd05
+000410 c00f                      	JB1	w,5,_putbin
+000411 fd04
+000412 c010                      	JB1	w,4,_puthex
+000413 fd03
+000414 c019                      	JB1	w,3,_putfrac
                                  
                                  ; FDEC	11bb'iiis
                                  _putdec:
-000175 e06a                      	ldi	b0,10		; b0 = base (10)
+000415 e06a                      	ldi	b0,10		; b0 = base (10)
                                  
-000176 2f70                      	mov	b1,w
-000177 9576                      	lsr	b1
-000178 7077                      	andi	b1,0b111	
-000179 9572                      	swap	b1		; b1 = format 0iii'0000 (integer digits)
-00017a e080                      	ldi	b2,0		; b2 = dec. point position = 0 (right)
+000416 2f70                      	mov	b1,w
+000417 9576                      	lsr	b1
+000418 7077                      	andi	b1,0b111	
+000419 9572                      	swap	b1		; b1 = format 0iii'0000 (integer digits)
+00041a e080                      	ldi	b2,0		; b2 = dec. point position = 0 (right)
                                  	
-00017b 2f90                      	mov	b3,w
-00017c 9592                      	swap	b3
-00017d 7093                      	andi	b3,0b11
-00017e 9593                      	inc	b3			; b3 = number of bytes (1..4)
-00017f c01a                      	rjmp	_getnum	; get number of digits (iii)
+00041b 2f90                      	mov	b3,w
+00041c 9592                      	swap	b3
+00041d 7093                      	andi	b3,0b11
+00041e 9593                      	inc	b3			; b3 = number of bytes (1..4)
+00041f c01a                      	rjmp	_getnum	; get number of digits (iii)
                                  
                                  ; FBIN	101i'iiis	addr
                                  _putbin:	
-000180 e062                      	ldi	b0,2		; b0 = base (2)
-000181 e094                      	ldi	b3,4		; b3 = number of bytes (4)	
-000182 c003                      	rjmp	_getdig	; get number of digits (iii)
+000420 e062                      	ldi	b0,2		; b0 = base (2)
+000421 e094                      	ldi	b3,4		; b3 = number of bytes (4)	
+000422 c003                      	rjmp	_getdig	; get number of digits (iii)
                                  
                                  ; FHEX	1001'iiis	addr
                                  _puthex:	
-000183 e160                      	ldi	b0,16		; b0 = base (16)
-000184 e094                      	ldi	b3,4		; b3 = number of bytes (4)
-000185 c000                      	rjmp	_getdig
+000423 e160                      	ldi	b0,16		; b0 = base (16)
+000424 e094                      	ldi	b3,4		; b3 = number of bytes (4)
+000425 c000                      	rjmp	_getdig
                                  
                                  _getdig:
-000186 2f70                      	mov	b1,w
-000187 9576                      	lsr	b1
-000188 7077                      	andi	b1,0b111
-000189 f409                      	brne	PC+2
-00018a e078                      	ldi	b1,8		; if b1=0 then 8-digits
-00018b 9572                      	swap	b1		; b1 = format 0iii'0000 (integer digits)
-00018c e080                      	ldi	b2, 0		; b2 = dec. point position = 0 (right)
-00018d c00c                      	rjmp	_getnum
+000426 2f70                      	mov	b1,w
+000427 9576                      	lsr	b1
+000428 7077                      	andi	b1,0b111
+000429 f409                      	brne	PC+2
+00042a e078                      	ldi	b1,8		; if b1=0 then 8-digits
+00042b 9572                      	swap	b1		; b1 = format 0iii'0000 (integer digits)
+00042c e080                      	ldi	b2, 0		; b2 = dec. point position = 0 (right)
+00042d c00c                      	rjmp	_getnum
                                  
                                  ; FFRAC	1000'1bbs	addr	 00dd'dddd, 	iiii'ffff
                                  	
                                  _putfrac:
-00018e e06a                      	ldi	b0,10		; base=10	
-00018f 95c8                      	lpm
-000190 2d80                      	mov	b2,r0		; load dec.point position
-000191 9631                      	adiw	zl,1	; increment char pointer
-000192 95c8                      	lpm
-000193 2d70                      	mov	b1,r0		; load ii.ff format
-000194 9631                      	adiw	zl,1	; increment char pointer
+00042e e06a                      	ldi	b0,10		; base=10	
+00042f 95c8                      	lpm
+000430 2d80                      	mov	b2,r0		; load dec.point position
+000431 9631                      	adiw	zl,1	; increment char pointer
+000432 95c8                      	lpm
+000433 2d70                      	mov	b1,r0		; load ii.ff format
+000434 9631                      	adiw	zl,1	; increment char pointer
                                  	
-000195 2f90                      	mov	b3,w
-000196 9595                      	asr	b3
-000197 7093                      	andi	b3,0b11
-000198 9593                      	inc	b3			; b3 = number of bytes (1..4)
+000435 2f90                      	mov	b3,w
+000436 9595                      	asr	b3
+000437 7093                      	andi	b3,0b11
+000438 9593                      	inc	b3			; b3 = number of bytes (1..4)
                                  
-000199 c000                      	rjmp	_getnum
+000439 c000                      	rjmp	_getnum
                                  
                                  _getnum:
                                  ; in 	a	4-byte variable
                                  ; 	b3	number of bytes (1..4)
                                  ;	T	sign, 0=unsigned, 1=signed
                                  
-00019a 3094
-00019b f081                      	JK	b3,4,_printf_4b
-00019c 3093
-00019d f051                      	JK	b3,3,_printf_3b
-00019e 3092
-00019f f021                      	JK	b3,2,_printf_2b	
+00043a 3094
+00043b f081                      	JK	b3,4,_printf_4b
+00043c 3093
+00043d f051                      	JK	b3,3,_printf_3b
+00043e 3092
+00043f f021                      	JK	b3,2,_printf_2b	
                                  	
                                  _printf_1b:			; sign extension
-0001a0 2733                      	clr	a1
-0001a1 f416                      	brtc	PC+3	; T=1 sign extension
-0001a2 fd27                      	sbrc	a0,7
-0001a3 ef3f                      	ldi	a1,0xff
+000440 2733                      	clr	a1
+000441 f416                      	brtc	PC+3	; T=1 sign extension
+000442 fd27                      	sbrc	a0,7
+000443 ef3f                      	ldi	a1,0xff
                                  _printf_2b:
-0001a4 2744                      	clr	a2
-0001a5 f416                      	brtc	PC+3	; T=1 sign extension	
-0001a6 fd37                      	sbrc	a1,7
-0001a7 ef4f                      	ldi	a2,0xff
+000444 2744                      	clr	a2
+000445 f416                      	brtc	PC+3	; T=1 sign extension	
+000446 fd37                      	sbrc	a1,7
+000447 ef4f                      	ldi	a2,0xff
                                  _printf_3b:	
-0001a8 2755                      	clr	a3
-0001a9 f416                      	brtc	PC+3	; T=1 sign extension
-0001aa fd47                      	sbrc	a2,7
-0001ab ef5f                      	ldi	a3,0xff
+000448 2755                      	clr	a3
+000449 f416                      	brtc	PC+3	; T=1 sign extension
+00044a fd47                      	sbrc	a2,7
+00044b ef5f                      	ldi	a3,0xff
                                  _printf_4b:
                                  
-0001ac d009                      	rcall	_ftoa		; float to ascii
-0001ad 916f
-0001ae 917f
-0001af 918f
-0001b0 919f                      	POP4	b3,b2,b1,b0	; restore b
-0001b1 912f
-0001b2 913f
-0001b3 914f
-0001b4 915f                      	POP4	a3,a2,a1,a0	; restore a
+00044c d009                      	rcall	_ftoa		; float to ascii
+00044d 916f
+00044e 917f
+00044f 918f
+000450 919f                      	POP4	b3,b2,b1,b0	; restore b
+000451 912f
+000452 913f
+000453 914f
+000454 915f                      	POP4	a3,a2,a1,a0	; restore a
                                  	
-0001b5 cf7d                      	rjmp	_printf_read
+000455 cf7d                      	rjmp	_printf_read
                                  
                                  ; ===============================================
                                  ; func	ftoa
@@ -3922,123 +4928,123 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ;	T	sign (T=0 unsiged, T=1 signed)
                                  
                                  _ftoa:
-0001b6 92cf                      	push	d0
-0001b7 92bf
-0001b8 92af
-0001b9 929f
-0001ba 928f                      	PUSH4	c3,c2,c1,c0	; c = fraction part, a = integer part
-0001bb 18bb
-0001bc 24aa
-0001bd 2499
-0001be 2488                      	CLR4	c3,c2,c1,c0	; clear fraction part
+000456 92cf                      	push	d0
+000457 92bf
+000458 92af
+000459 929f
+00045a 928f                      	PUSH4	c3,c2,c1,c0	; c = fraction part, a = integer part
+00045b 18bb
+00045c 24aa
+00045d 2499
+00045e 2488                      	CLR4	c3,c2,c1,c0	; clear fraction part
                                  
-0001bf f486                      	brtc	_ftoa_plus	; if T=0 then unsigned
-0001c0 94e8                      	clt
-0001c1 2355                      	tst	a3				; if MSb(a)=1 then a=-a
-0001c2 f46a                      	brpl	_ftoa_plus
-0001c3 9468                      	set					; T=1 (minus)
-0001c4 2377                      	tst	b1
-0001c5 f009                      	breq	PC+2		; if b1=0 the print ALL digits
-0001c6 5170                      	subi	b1,0x10		; decrease int digits
-0001c7 9550
-0001c8 9540
-0001c9 9530
-0001ca 9520
-0001cb ef0f
-0001cc 1b20
-0001cd 0b30
-0001ce 0b40
-0001cf 0b50                      	NEG4	a3,a2,a1,a0	; negate a
+00045f f486                      	brtc	_ftoa_plus	; if T=0 then unsigned
+000460 94e8                      	clt
+000461 2355                      	tst	a3				; if MSb(a)=1 then a=-a
+000462 f46a                      	brpl	_ftoa_plus
+000463 9468                      	set					; T=1 (minus)
+000464 2377                      	tst	b1
+000465 f009                      	breq	PC+2		; if b1=0 the print ALL digits
+000466 5170                      	subi	b1,0x10		; decrease int digits
+000467 9550
+000468 9540
+000469 9530
+00046a 9520
+00046b ef0f
+00046c 1b20
+00046d 0b30
+00046e 0b40
+00046f 0b50                      	NEG4	a3,a2,a1,a0	; negate a
                                  _ftoa_plus:	
-0001d0 2388                      	tst	b2				; b0=0 (only integer part)
-0001d1 f051                      	breq	_ftoa_int	
+000470 2388                      	tst	b2				; b0=0 (only integer part)
+000471 f051                      	breq	_ftoa_int	
                                  _ftoa_shift:	
-0001d2 9555
-0001d3 9547
-0001d4 9537
-0001d5 9527                      	ASR4	a3,a2,a1,a0	; a = integer part	
-0001d6 94b7
-0001d7 94a7
-0001d8 9497
-0001d9 9487                      	ROR4	c3,c2,c1,c0	; c = fraction part
-0001da 958a
-0001db f7b1                      	DJNZ	b2,_ftoa_shift
+000472 9555
+000473 9547
+000474 9537
+000475 9527                      	ASR4	a3,a2,a1,a0	; a = integer part	
+000476 94b7
+000477 94a7
+000478 9497
+000479 9487                      	ROR4	c3,c2,c1,c0	; c = fraction part
+00047a 958a
+00047b f7b1                      	DJNZ	b2,_ftoa_shift
                                  _ftoa_int:
-0001dc 937f                      	push	b1			; ii.ff (ii=int digits)
-0001dd 9572                      	swap	b1
-0001de 707f                      	andi	b1,0x0f
+00047c 937f                      	push	b1			; ii.ff (ii=int digits)
+00047d 9572                      	swap	b1
+00047e 707f                      	andi	b1,0x0f
                                  	
-0001df e20e                      	ldi	w,'.'			; push decimal point
-0001e0 930f                      	push	w
+00047f e20e                      	ldi	w,'.'			; push decimal point
+000480 930f                      	push	w
                                  _ftoa_int1:
-0001e1 d045                      	rcall	_div41		; int=int/10
-0001e2 2d0c                      	mov	w,d0			; d=reminder
-0001e3 d030                      	rcall	_hex2asc
-0001e4 930f                      	push	w			; push rem(int/10)
-0001e5 2700
-0001e6 1720
-0001e7 0730
-0001e8 0740
-0001e9 0750                      	TST4	a3,a2,a1,a0	; (int/10)=?
-0001ea f029                      	breq	_ftoa_space	; (int/10)=0 then finished
-0001eb 2377                      	tst	b1
-0001ec f3a1                      	breq	_ftoa_int1	; if b1=0 then print ALL int-digits
-0001ed 957a
-0001ee f791                      	DJNZ	b1,_ftoa_int1
-0001ef c007                      	rjmp	_ftoa_sign
+000481 d045                      	rcall	_div41		; int=int/10
+000482 2d0c                      	mov	w,d0			; d=reminder
+000483 d030                      	rcall	_hex2asc
+000484 930f                      	push	w			; push rem(int/10)
+000485 2700
+000486 1720
+000487 0730
+000488 0740
+000489 0750                      	TST4	a3,a2,a1,a0	; (int/10)=?
+00048a f029                      	breq	_ftoa_space	; (int/10)=0 then finished
+00048b 2377                      	tst	b1
+00048c f3a1                      	breq	_ftoa_int1	; if b1=0 then print ALL int-digits
+00048d 957a
+00048e f791                      	DJNZ	b1,_ftoa_int1
+00048f c007                      	rjmp	_ftoa_sign
                                  _ftoa_space:
-0001f0 2377                      	tst	b1				; if b1=0 then print ALL int-digits
-0001f1 f029                      	breq	_ftoa_sign
-0001f2 957a                      	dec	b1
-0001f3 f019                      	breq	_ftoa_sign
-0001f4 e200                      	ldi	w,' '			; write spaces
-0001f5 df57                      	rcall	_putw	
-0001f6 cff9                      	rjmp	_ftoa_space
+000490 2377                      	tst	b1				; if b1=0 then print ALL int-digits
+000491 f029                      	breq	_ftoa_sign
+000492 957a                      	dec	b1
+000493 f019                      	breq	_ftoa_sign
+000494 e200                      	ldi	w,' '			; write spaces
+000495 df57                      	rcall	_putw	
+000496 cff9                      	rjmp	_ftoa_space
                                  _ftoa_sign:
-0001f7 f416                      	brtc	PC+3		; if T=1 then write 'minus'
-0001f8 e20d                      	ldi	w,'-'
-0001f9 df53                      	rcall	_putw
+000497 f416                      	brtc	PC+3		; if T=1 then write 'minus'
+000498 e20d                      	ldi	w,'-'
+000499 df53                      	rcall	_putw
                                  _ftoa_int3:
-0001fa 910f                      	pop	w
-0001fb 320e                      	cpi	w,'.'
-0001fc f011                      	breq	PC+3
-0001fd df4f                      	rcall	_putw
-0001fe cffb                      	rjmp	_ftoa_int3
+00049a 910f                      	pop	w
+00049b 320e                      	cpi	w,'.'
+00049c f011                      	breq	PC+3
+00049d df4f                      	rcall	_putw
+00049e cffb                      	rjmp	_ftoa_int3
                                  
-0001ff 917f                      	pop	b1				; ii.ff (ff=frac digits)
-000200 707f                      	andi	b1,0x0f
-000201 2377                      	tst	b1
-000202 f059                      	breq	_ftoa_end
+00049f 917f                      	pop	b1				; ii.ff (ff=frac digits)
+0004a0 707f                      	andi	b1,0x0f
+0004a1 2377                      	tst	b1
+0004a2 f059                      	breq	_ftoa_end
                                  _ftoa_point:	
-000203 df49                      	rcall	_putw		; write decimal point
-000204 2d28
-000205 2d39
-000206 2d4a
-000207 2d5b                      	MOV4	a3,a2,a1,a0, c3,c2,c1,c0		
+0004a3 df49                      	rcall	_putw		; write decimal point
+0004a4 2d28
+0004a5 2d39
+0004a6 2d4a
+0004a7 2d5b                      	MOV4	a3,a2,a1,a0, c3,c2,c1,c0		
                                  _ftoa_frac:
-000208 d011                      	rcall	_mul41		; d.frac=10*frac
-000209 2d0c                      	mov	w,d0
-00020a d009                      	rcall	_hex2asc
-00020b df41                      	rcall	_putw
-00020c 957a
-00020d f7d1                      	DJNZ	b1,_ftoa_frac
+0004a8 d011                      	rcall	_mul41		; d.frac=10*frac
+0004a9 2d0c                      	mov	w,d0
+0004aa d009                      	rcall	_hex2asc
+0004ab df41                      	rcall	_putw
+0004ac 957a
+0004ad f7d1                      	DJNZ	b1,_ftoa_frac
                                  _ftoa_end:
-00020e 908f
-00020f 909f
-000210 90af
-000211 90bf                      	POP4	c3,c2,c1,c0
-000212 90cf                      	pop	d0
-000213 9508                      	ret
+0004ae 908f
+0004af 909f
+0004b0 90af
+0004b1 90bf                      	POP4	c3,c2,c1,c0
+0004b2 90cf                      	pop	d0
+0004b3 9508                      	ret
                                  
                                  ; === hexadecimal to ascii ===
                                  ; in	w
                                  _hex2asc:
-000214 300a                      	cpi	w,10
-000215 f410                      	brsh	PC+3
-000216 5d00                      	addi	w,'0'
-000217 9508                      	ret
-000218 5a09                      	addi	w,('a'-10)
-000219 9508                      	ret
+0004b4 300a                      	cpi	w,10
+0004b5 f410                      	brsh	PC+3
+0004b6 5d00                      	addi	w,'0'
+0004b7 9508                      	ret
+0004b8 5a09                      	addi	w,('a'-10)
+0004b9 9508                      	ret
                                  
                                  ; === multiply 4byte*1byte ===
                                  ; funct mul41
@@ -4050,19 +5056,19 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ; out	a3..a0	result
                                  ; 	d0	result MSB (byte 4)
                                  ;
-00021a 24cc                      _mul41:	clr	d0			; clear byte4 of result
-00021b e200                      	ldi	w,32			; load bit counter
-00021c 9488                      __m41:	clc				; clear carry
-00021d fd20                      	sbrc	a0,0		; skip addition if LSB=0
-00021e 0ec6                      	add	d0,b0			; add b to MSB of a
-00021f 94c7
-000220 9557
-000221 9547
-000222 9537
-000223 9527                      	ROR5	d0,a3,a2,a1,a0	; shift-right c, LSB (of b) into carry
-000224 950a
-000225 f7b1                      	DJNZ	w,__m41		; Decrement and Jump if bit-count Not Zero
-000226 9508                      	ret
+0004ba 24cc                      _mul41:	clr	d0			; clear byte4 of result
+0004bb e200                      	ldi	w,32			; load bit counter
+0004bc 9488                      __m41:	clc				; clear carry
+0004bd fd20                      	sbrc	a0,0		; skip addition if LSB=0
+0004be 0ec6                      	add	d0,b0			; add b to MSB of a
+0004bf 94c7
+0004c0 9557
+0004c1 9547
+0004c2 9537
+0004c3 9527                      	ROR5	d0,a3,a2,a1,a0	; shift-right c, LSB (of b) into carry
+0004c4 950a
+0004c5 f7b1                      	DJNZ	w,__m41		; Decrement and Jump if bit-count Not Zero
+0004c6 9508                      	ret
                                  
                                  ; === divide 4byte/1byte ===
                                  ; func div41
@@ -4071,146 +5077,1431 @@ C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplicatio
                                  ; out	a0..a3 	result 
                                  ;	d0	reminder
                                  ;
-000227 24cc                      _div41:	clr	d0			; d will contain the remainder
-000228 e200                      	ldi	w,32			; load bit counter
-000229 1f22
-00022a 1f33
-00022b 1f44
-00022c 1f55
-00022d 1ccc                      __d41:	ROL5	d0,a3,a2,a1,a0	; shift carry into result c
-00022e 1ac6                      	sub	d0, b0			; subtract b from remainder
-00022f f408                      	brcc	PC+2	
-000230 0ec6                      	add	d0, b0			; restore if remainder became negative
-000231 950a
-000232 f7b1                      	DJNZ	w,__d41		; Decrement and Jump if bit-count Not Zero
-000233 1f22
-000234 1f33
-000235 1f44
-000236 1f55                      	ROL4	a3,a2,a1,a0	; last shift (carry into result c)
-000237 9550
-000238 9540
-000239 9530
-00023a 9520                      	COM4	a3,a2,a1,a0	; complement result
-00023b 9508                      	ret
+0004c7 24cc                      _div41:	clr	d0			; d will contain the remainder
+0004c8 e200                      	ldi	w,32			; load bit counter
+0004c9 1f22
+0004ca 1f33
+0004cb 1f44
+0004cc 1f55
+0004cd 1ccc                      __d41:	ROL5	d0,a3,a2,a1,a0	; shift carry into result c
+0004ce 1ac6                      	sub	d0, b0			; subtract b from remainder
+0004cf f408                      	brcc	PC+2	
+0004d0 0ec6                      	add	d0, b0			; restore if remainder became negative
+0004d1 950a
+0004d2 f7b1                      	DJNZ	w,__d41		; Decrement and Jump if bit-count Not Zero
+0004d3 1f22
+0004d4 1f33
+0004d5 1f44
+0004d6 1f55                      	ROL4	a3,a2,a1,a0	; last shift (carry into result c)
+0004d7 9550
+0004d8 9540
+0004d9 9530
+0004da 9520                      	COM4	a3,a2,a1,a0	; complement result
+0004db 9508                      	ret
                                  
-                                 ; === initialization and configuration ===
+                                 reset:
+0004dc ef0f
+0004dd bf0d
+0004de e100
+0004df bf0e                      	LDSP	RAMEND	
+0004e0 dc5f                      	rcall LCD_init
+0004e1 ef0f                      	ldi r16, 0xff
+0004e2 bb07                      	out DDRB, r16
+0004e3 e000                      	ldi r16, 0x00
+0004e4 bb01                      	out DDRD, r16
+0004e5 940c 04e7                 	jmp main
                                  
-                                 .org 0x400
-                                 
-000400 ef0f
-000401 bf0d
-000402 e100
-000403 bf0e                      reset:	LDSP	RAMEND		; Load Stack Pointer (SP)
-000404 dd0a                      	rcall	LCD_init		; initialize UART
-                                 
-000405 ef00
-000406 bb01                      	OUTI	KPDD,0xf0		; bit0-3 pull-up and bits4-7 driven low
-000407 e00f
-000408 bb02                      	OUTI	KPDO,0x0f		;>(needs the two lines)
-000409 ef0f
-00040a bb07                      	OUTI	DDRB,0xff		; turn on LEDs
-00040b e00f
-00040c bf09                      	OUTI	EIMSK,0x0f		; enable INT0-INT3
-00040d e000
-00040e bf0a                      	OUTI	EICRB,0b0		;>at low level
-00040f 9a12                      	sbi		DDRE,SPEAKER	; enable sound
-                                 
-000410 ee0d
-000411 2e40
-000412 e000
-000413 2e50
-000414 940e 012d                 	PRINTF LCD
-000416 0d0d
-000417 6568
-000418 6c6c
-000419 206f
-00041a 6f77
-00041b 6c72
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(156): warning: .cseg .db misalignment - padding zero byte
-00041c 0064                      .db	CR,CR,"hello world"
-                                 
-00041d 2422                      	clr		wr0
-00041e 2411                      	clr		wr1
-00041f 24ff                      	clr		wr2
-                                 
-000420 2733                      	clr		a1				
-000421 2744                      	clr		a2
-000422 2755                      	clr		a3
-000423 2777                      	clr		b1
-000424 2788                      	clr		b2
-000425 2799                      	clr		b3
-                                 
-000426 9478                      	sei
-                                 	;jmp	main				; not useful in this case, kept for modularity
-                                 
-                                 	; === main program ===
                                  main:
+0004e7 dc42                      	rcall	LCD_clear
+0004e8 940e 0140
+0004ea ecee
+0004eb e0f2
+0004ec 940e 03c5
+0004ee edea
+0004ef e0f2
+0004f0 e420
+0004f1 940e 014c
+0004f3 940e 03c5                 	DISPLAY2 str0, str1
+0004f5 ed00
+0004f6 2e30
+0004f7 e008
+0004f8 930f
+0004f9 923f
+0004fa e300
+0004fb 2e30
+0004fc e006
+0004fd 943a
+0004fe f7f1
+0004ff 943a
+000500 950a
+000501 f7d9
+000502 903f
+000503 910f
+000504 943a
+000505 f791
+000506 950a
+000507 f781                      	WAIT_MS 2000
                                  
-000427 20ff                      	tst		wr2				; check flag/semaphore
-000428 f3f1                      	breq	main			; branch to main as long as no key pressed
-000429 24ff                      	clr		wr2				; clear wr2 to avoid detecting key pressed once back at beginning of main
+                                 main_loop:
+000508 d00e                      	rcall start
+000509 fd61
+00050a 940e 0530                 	CB1 b0,1, safe
+00050c fd60
+00050d 940e 0538                 	CB1 b0,0, games
+00050f fd60
+000510 940e 0551                 	CB1 b0,0, trivia
+000512 fd61
+000513 940e 0b4c                 	CB1 b0,1, dance
+000515 940c 0508                 	jmp main_loop
                                  
-00042a 2722                      	clr		a0
-00042b 0d21                      	add		a0, wr1			; col
-00042c 0d22                      	add		a0, wr0			; row
-00042d 2766                      	clr b0 ; used to compute offset to LUT
-                                 	; offset due to low nibble (row)
-                                 	
-00042e fd21                      	sbrc a0, 1
-00042f 5f6c                      	subi b0, -4
-000430 fd22                      	sbrc a0, 2
-000431 5f68                      	subi b0, -8
-000432 fd23                      	sbrc a0, 3
-000433 5f64                      	subi b0, -12
-                                 	; offset due to high nibble (col)
-000434 fd25                      	sbrc a0, 5
-000435 5f6f                      	subi b0, -1
-000436 fd26                      	sbrc a0, 6
-000437 5f6e                      	subi b0, -2
-000438 fd27                      	sbrc a0, 7
-000439 5f6d                      	subi b0, -3
+                                 start:
+000517 940e 0140
+000519 eee4
+00051a e0f2
+00051b 940e 03c5
+00051d efe2
+00051e e0f2
+00051f e420
+000520 940e 014c
+000522 940e 03c5                 	DISPLAY2 str2, str3
+000524 940e 00e1                 	call reset_kpd
+000526 940e 0b90                 	call check_reset
+000528 2f62                      	mov b0, a0
+000529 3861                      	cpi b0, 0x81
+00052a f011                      	breq PC+3
+00052b 3862                      	cpi b0, 0x82
+00052c f409                      	brne PC+2
+00052d 9508                      	ret
+00052e 940c 0517                 	jmp start
                                  
-00043a 2fe6                      	mov zl, b0
-00043b 27ff                      	clr zh
-00043c 55ee                      	subi zl, low(-2*KeySet01)
-00043d 4ff7                      	sbci zh, high(-2*KeySet01)
-00043e 95c8                      	lpm
-00043f 2d60                      	mov b0, r0
+                                 safe:
+000530 940e 0140
+000532 ebe8
+000533 e0f3
+000534 940e 03c5                 	DISPLAY1 str6
+000536 940c 0b6e                 	jmp end
+                                 
+                                 games:
+000538 940e 0140
+00053a e9e8
+00053b e0f3
+00053c 940e 03c5
+00053e eae8
+00053f e0f3
+000540 e420
+000541 940e 014c
+000543 940e 03c5                 	DISPLAY2 str4, str5
+000545 940e 00e1                 	call reset_kpd
+000547 940e 0b90                 	call check_reset
+000549 2f62                      	mov b0, a0
+00054a 3861                      	cpi b0, 0x81
+00054b f011                      	breq PC+3
+00054c 3862                      	cpi b0, 0x82
+00054d f409                      	brne PC+2
+00054e 9508                      	ret
+00054f 940c 0538                 	jmp games
                                  
                                  
-                                 	; TO BE COMPLETED AT THIS LOCATION		; decoding ascii
-                                 	
-                                 	
-000440 ee0d
-000441 2e40
-000442 e000
-000443 2e50
-000444 940e 012d                 PRINTF LCD
-000446 0a0d
-000447 504b
-000448 3d44
-000449 1294
-00044a 6120
-00044b 6373
-00044c 6969
-00044d 853d
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(211): warning: .cseg .db misalignment - padding zero byte
-00044e 0016                      .db	CR,LF,"KPD=",FHEX,a," ascii=",FSTR,b
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(212): warning: .cseg .db misalignment - padding zero byte
-00044f 0000                      .db	0
-000450 cfd6                      	rjmp	main
-                                 	
-                                 ; code conversion table, character set #1 key to ASCII	
-                                 KeySet01:
-000451 3231
-000452 4133
-000453 3534
-000454 4236
-000455 3837
-000456 4339
-000457 302a
-000458 4423
-C:\Users\renuka\Desktop\mcu\projet\MCU\AssemblerApplication1\AssemblerApplication1\kpd4x4.asm(217): warning: .cseg .db misalignment - padding zero byte
+                                 trivia:
+000551 940e 0140
+000553 e0e0
+000554 e0f3
+000555 940e 03c5
+000557 e0ec
+000558 e0f3
+000559 e420
+00055a 940e 014c
+00055c 940e 03c5                 	DISPLAY2 strwelcome, strivia
+00055e ed00
+00055f 2e30
+000560 e008
+000561 930f
+000562 923f
+000563 e300
+000564 2e30
+000565 e006
+000566 943a
+000567 f7f1
+000568 943a
+000569 950a
+00056a f7d9
+00056b 903f
+00056c 910f
+00056d 943a
+00056e f791
+00056f 950a
+000570 f781                      	WAIT_MS 2000
+000571 940e 0140
+000573 e3e6
+000574 e0f3
+000575 940e 03c5
+000577 e4e6
+000578 e0f3
+000579 e420
+00057a 940e 014c
+00057c 940e 03c5                 	DISPLAY2 strivia2, strivia3
+00057e ed00
+00057f 2e30
+000580 e008
+000581 930f
+000582 923f
+000583 e300
+000584 2e30
+000585 e006
+000586 943a
+000587 f7f1
+000588 943a
+000589 950a
+00058a f7d9
+00058b 903f
+00058c 910f
+00058d 943a
+00058e f791
+00058f 950a
+000590 f781                      	WAIT_MS 2000
+000591 e000
+000592 2e90                      	_LDI c1, 0x00
+000593 940e 0140
+000595 e1ea
+000596 e0f4
+000597 940e 03c5
+000599 e2e8
+00059a e0f4
+00059b e420
+00059c 940e 014c
+00059e 940e 03c5
+0005a0 940e 00e1
+0005a2 940e 0b90
+0005a4 2f62
+0005a5 7820
+0005a6 f009
+0005a7 940c 05dd
+0005a9 3468
+0005aa f741
+0005ab 940e 0140
+0005ad e3ea
+0005ae e0f4
+0005af 940e 03c5
+0005b1 e4ec
+0005b2 e0f4
+0005b3 e420
+0005b4 940e 014c
+0005b6 940e 03c5
+0005b8 940e 00e1
+0005ba 940e 0b90
+0005bc 2f62
+0005bd 7820
+0005be f009
+0005bf 940c 05dd
+0005c1 3468
+0005c2 f741
+0005c3 940e 0140
+0005c5 e5ee
+0005c6 e0f4
+0005c7 940e 03c5
+0005c9 e6ec
+0005ca e0f4
+0005cb e420
+0005cc 940e 014c
+0005ce 940e 03c5
+0005d0 940e 00e1
+0005d2 940e 0b90
+0005d4 2f62
+0005d5 7820
+0005d6 f009
+0005d7 940c 05dd
+0005d9 3468
+0005da f741
+0005db 940c 0593                 	QUESTION striviaQ1, striviaQ12, strivia1A, strivia1B, strivia1C, strivia1D
+0005dd e7ea
+0005de e0f4
+0005df 95c8
+0005e0 1560
+0005e1 f409
+0005e2 9468                      	COMPARE answer1
+0005e3 f40e                      	brtc PC+2
+0005e4 9493                      	inc c1
+0005e5 940e 012a
+0005e7 f00e
+0005e8 940c 05f2
+0005ea 940e 0140
+0005ec e2e4
+0005ed e0f3
+0005ee 940e 03c5
+0005f0 940c 05f8
+0005f2 940e 0140
+0005f4 e2ee
+0005f5 e0f3
+0005f6 940e 03c5
+0005f8 1b55
+0005f9 2744
+0005fa 2733
+0005fb 2722
+0005fc 2d29
+0005fd e10e
+0005fe 2e40
+0005ff e001
+000600 2e50
+000601 940e 03cd
+000603 6353
+000604 726f
+000605 3a65
+000606 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(167): macro 'PRINT_SCORE' called here
+000607 0000                      	PRINT_SCORE c1
+000608 ed00
+000609 2e30
+00060a e008
+00060b 930f
+00060c 923f
+00060d e300
+00060e 2e30
+00060f e006
+000610 943a
+000611 f7f1
+000612 943a
+000613 950a
+000614 f7d9
+000615 903f
+000616 910f
+000617 943a
+000618 f791
+000619 950a
+00061a f781                      	WAIT_MS 2000
+00061b 940e 0140
+00061d e7ec
+00061e e0f4
+00061f 940e 03c5
+000621 e8e6
+000622 e0f4
+000623 e420
+000624 940e 014c
+000626 940e 03c5
+000628 940e 00e1
+00062a 940e 0b90
+00062c 2f62
+00062d 7820
+00062e f009
+00062f 940c 0665
+000631 3468
+000632 f741
+000633 940e 0140
+000635 e9e0
+000636 e0f4
+000637 940e 03c5
+000639 eae0
+00063a e0f4
+00063b e420
+00063c 940e 014c
+00063e 940e 03c5
+000640 940e 00e1
+000642 940e 0b90
+000644 2f62
+000645 7820
+000646 f009
+000647 940c 0665
+000649 3468
+00064a f741
+00064b 940e 0140
+00064d eaee
+00064e e0f4
+00064f 940e 03c5
+000651 ece0
+000652 e0f4
+000653 e420
+000654 940e 014c
+000656 940e 03c5
+000658 940e 00e1
+00065a 940e 0b90
+00065c 2f62
+00065d 7820
+00065e f009
+00065f 940c 0665
+000661 3468
+000662 f741
+000663 940c 061b                 	QUESTION striviaQ2, striviaQ22, strivia2A, strivia2B, strivia2C, strivia2D
+000665 ede0
+000666 e0f4
+000667 95c8
+000668 1560
+000669 f409
+00066a 9468                      	COMPARE answer2
+00066b f40e                      	brtc PC+2
+00066c 9493                      	inc c1
+00066d 940e 012a
+00066f f00e
+000670 940c 067a
+000672 940e 0140
+000674 e2e4
+000675 e0f3
+000676 940e 03c5
+000678 940c 0680
+00067a 940e 0140
+00067c e2ee
+00067d e0f3
+00067e 940e 03c5
+000680 1b55
+000681 2744
+000682 2733
+000683 2722
+000684 2d29
+000685 e10e
+000686 2e40
+000687 e001
+000688 2e50
+000689 940e 03cd
+00068b 6353
+00068c 726f
+00068d 3a65
+00068e 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(173): macro 'PRINT_SCORE' called here
+00068f 0000                      	PRINT_SCORE c1
+000690 ed00
+000691 2e30
+000692 e008
+000693 930f
+000694 923f
+000695 e300
+000696 2e30
+000697 e006
+000698 943a
+000699 f7f1
+00069a 943a
+00069b 950a
+00069c f7d9
+00069d 903f
+00069e 910f
+00069f 943a
+0006a0 f791
+0006a1 950a
+0006a2 f781                      	WAIT_MS 2000
+0006a3 940e 0140
+0006a5 ede2
+0006a6 e0f4
+0006a7 940e 03c5
+0006a9 eee4
+0006aa e0f4
+0006ab e420
+0006ac 940e 014c
+0006ae 940e 03c5
+0006b0 940e 00e1
+0006b2 940e 0b90
+0006b4 2f62
+0006b5 7820
+0006b6 f009
+0006b7 940c 06ed
+0006b9 3468
+0006ba f741
+0006bb 940e 0140
+0006bd efe0
+0006be e0f4
+0006bf 940e 03c5
+0006c1 e0e2
+0006c2 e0f5
+0006c3 e420
+0006c4 940e 014c
+0006c6 940e 03c5
+0006c8 940e 00e1
+0006ca 940e 0b90
+0006cc 2f62
+0006cd 7820
+0006ce f009
+0006cf 940c 06ed
+0006d1 3468
+0006d2 f741
+0006d3 940e 0140
+0006d5 e1e2
+0006d6 e0f5
+0006d7 940e 03c5
+0006d9 e1ee
+0006da e0f5
+0006db e420
+0006dc 940e 014c
+0006de 940e 03c5
+0006e0 940e 00e1
+0006e2 940e 0b90
+0006e4 2f62
+0006e5 7820
+0006e6 f009
+0006e7 940c 06ed
+0006e9 3468
+0006ea f741
+0006eb 940c 06a3                 	QUESTION striviaQ3, striviaQ32, strivia3A, strivia3B, strivia3C, strivia3D
+0006ed e2ec
+0006ee e0f5
+0006ef 95c8
+0006f0 1560
+0006f1 f409
+0006f2 9468                      	COMPARE answer3
+0006f3 f40e                      	brtc PC+2
+0006f4 9493                      	inc c1
+0006f5 940e 012a
+0006f7 f00e
+0006f8 940c 0702
+0006fa 940e 0140
+0006fc e2e4
+0006fd e0f3
+0006fe 940e 03c5
+000700 940c 0708
+000702 940e 0140
+000704 e2ee
+000705 e0f3
+000706 940e 03c5
+000708 1b55
+000709 2744
+00070a 2733
+00070b 2722
+00070c 2d29
+00070d e10e
+00070e 2e40
+00070f e001
+000710 2e50
+000711 940e 03cd
+000713 6353
+000714 726f
+000715 3a65
+000716 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(179): macro 'PRINT_SCORE' called here
+000717 0000                      	PRINT_SCORE c1
+000718 ed00
+000719 2e30
+00071a e008
+00071b 930f
+00071c 923f
+00071d e300
+00071e 2e30
+00071f e006
+000720 943a
+000721 f7f1
+000722 943a
+000723 950a
+000724 f7d9
+000725 903f
+000726 910f
+000727 943a
+000728 f791
+000729 950a
+00072a f781                      	WAIT_MS 2000
+00072b 940e 0140
+00072d e2ee
+00072e e0f5
+00072f 940e 03c5
+000731 e3ee
+000732 e0f5
+000733 e420
+000734 940e 014c
+000736 940e 03c5
+000738 940e 00e1
+00073a 940e 0b90
+00073c 2f62
+00073d 7820
+00073e f009
+00073f 940c 0775
+000741 3468
+000742 f741
+000743 940e 0140
+000745 e4ec
+000746 e0f5
+000747 940e 03c5
+000749 e5ee
+00074a e0f5
+00074b e420
+00074c 940e 014c
+00074e 940e 03c5
+000750 940e 00e1
+000752 940e 0b90
+000754 2f62
+000755 7820
+000756 f009
+000757 940c 0775
+000759 3468
+00075a f741
+00075b 940e 0140
+00075d e6ec
+00075e e0f5
+00075f 940e 03c5
+000761 e7e8
+000762 e0f5
+000763 e420
+000764 940e 014c
+000766 940e 03c5
+000768 940e 00e1
+00076a 940e 0b90
+00076c 2f62
+00076d 7820
+00076e f009
+00076f 940c 0775
+000771 3468
+000772 f741
+000773 940c 072b                 	QUESTION striviaQ4, striviaQ42, strivia4A, strivia4B, strivia4C, strivia4D
+000775 e8e6
+000776 e0f5
+000777 95c8
+000778 1560
+000779 f409
+00077a 9468                      	COMPARE answer4
+00077b f40e                      	brtc PC+2
+00077c 9493                      	inc c1
+00077d 940e 012a
+00077f f00e
+000780 940c 078a
+000782 940e 0140
+000784 e2e4
+000785 e0f3
+000786 940e 03c5
+000788 940c 0790
+00078a 940e 0140
+00078c e2ee
+00078d e0f3
+00078e 940e 03c5
+000790 1b55
+000791 2744
+000792 2733
+000793 2722
+000794 2d29
+000795 e10e
+000796 2e40
+000797 e001
+000798 2e50
+000799 940e 03cd
+00079b 6353
+00079c 726f
+00079d 3a65
+00079e 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(185): macro 'PRINT_SCORE' called here
+00079f 0000                      	PRINT_SCORE c1
+0007a0 ed00
+0007a1 2e30
+0007a2 e008
+0007a3 930f
+0007a4 923f
+0007a5 e300
+0007a6 2e30
+0007a7 e006
+0007a8 943a
+0007a9 f7f1
+0007aa 943a
+0007ab 950a
+0007ac f7d9
+0007ad 903f
+0007ae 910f
+0007af 943a
+0007b0 f791
+0007b1 950a
+0007b2 f781                      	WAIT_MS 2000
+0007b3 940e 0140
+0007b5 e8e8
+0007b6 e0f5
+0007b7 940e 03c5
+0007b9 e9e4
+0007ba e0f5
+0007bb e420
+0007bc 940e 014c
+0007be 940e 03c5
+0007c0 940e 00e1
+0007c2 940e 0b90
+0007c4 2f62
+0007c5 7820
+0007c6 f009
+0007c7 940c 07fd
+0007c9 3468
+0007ca f741
+0007cb 940e 0140
+0007cd e9ee
+0007ce e0f5
+0007cf 940e 03c5
+0007d1 ebe0
+0007d2 e0f5
+0007d3 e420
+0007d4 940e 014c
+0007d6 940e 03c5
+0007d8 940e 00e1
+0007da 940e 0b90
+0007dc 2f62
+0007dd 7820
+0007de f009
+0007df 940c 07fd
+0007e1 3468
+0007e2 f741
+0007e3 940e 0140
+0007e5 ebee
+0007e6 e0f5
+0007e7 940e 03c5
+0007e9 ece8
+0007ea e0f5
+0007eb e420
+0007ec 940e 014c
+0007ee 940e 03c5
+0007f0 940e 00e1
+0007f2 940e 0b90
+0007f4 2f62
+0007f5 7820
+0007f6 f009
+0007f7 940c 07fd
+0007f9 3468
+0007fa f741
+0007fb 940c 07b3                 	QUESTION striviaQ5, striviaQ52, strivia5A, strivia5B, strivia5C, strivia5D
+0007fd ede0
+0007fe e0f5
+0007ff 95c8
+000800 1560
+000801 f409
+000802 9468                      	COMPARE answer5
+000803 f40e                      	brtc PC+2
+000804 9493                      	inc c1
+000805 940e 012a
+000807 f00e
+000808 940c 0812
+00080a 940e 0140
+00080c e2e4
+00080d e0f3
+00080e 940e 03c5
+000810 940c 0818
+000812 940e 0140
+000814 e2ee
+000815 e0f3
+000816 940e 03c5
+000818 1b55
+000819 2744
+00081a 2733
+00081b 2722
+00081c 2d29
+00081d e10e
+00081e 2e40
+00081f e001
+000820 2e50
+000821 940e 03cd
+000823 6353
+000824 726f
+000825 3a65
+000826 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(191): macro 'PRINT_SCORE' called here
+000827 0000                      	PRINT_SCORE c1
+000828 ed00
+000829 2e30
+00082a e008
+00082b 930f
+00082c 923f
+00082d e300
+00082e 2e30
+00082f e006
+000830 943a
+000831 f7f1
+000832 943a
+000833 950a
+000834 f7d9
+000835 903f
+000836 910f
+000837 943a
+000838 f791
+000839 950a
+00083a f781                      	WAIT_MS 2000
+00083b 940e 0140
+00083d ede2
+00083e e0f5
+00083f 940e 03c5
+000841 eee4
+000842 e0f5
+000843 e420
+000844 940e 014c
+000846 940e 03c5
+000848 940e 00e1
+00084a 940e 0b90
+00084c 2f62
+00084d 7820
+00084e f009
+00084f 940c 0885
+000851 3468
+000852 f741
+000853 940e 0140
+000855 efe4
+000856 e0f5
+000857 940e 03c5
+000859 e0e6
+00085a e0f6
+00085b e420
+00085c 940e 014c
+00085e 940e 03c5
+000860 940e 00e1
+000862 940e 0b90
+000864 2f62
+000865 7820
+000866 f009
+000867 940c 0885
+000869 3468
+00086a f741
+00086b 940e 0140
+00086d e1e6
+00086e e0f6
+00086f 940e 03c5
+000871 e2e4
+000872 e0f6
+000873 e420
+000874 940e 014c
+000876 940e 03c5
+000878 940e 00e1
+00087a 940e 0b90
+00087c 2f62
+00087d 7820
+00087e f009
+00087f 940c 0885
+000881 3468
+000882 f741
+000883 940c 083b                 	QUESTION striviaQ6, striviaQ62, strivia6A, strivia6B, strivia6C, strivia6D
+000885 e2ee
+000886 e0f6
+000887 95c8
+000888 1560
+000889 f409
+00088a 9468                      	COMPARE answer6
+00088b f40e                      	brtc PC+2
+00088c 9493                      	inc c1
+00088d 940e 012a
+00088f f00e
+000890 940c 089a
+000892 940e 0140
+000894 e2e4
+000895 e0f3
+000896 940e 03c5
+000898 940c 08a0
+00089a 940e 0140
+00089c e2ee
+00089d e0f3
+00089e 940e 03c5
+0008a0 1b55
+0008a1 2744
+0008a2 2733
+0008a3 2722
+0008a4 2d29
+0008a5 e10e
+0008a6 2e40
+0008a7 e001
+0008a8 2e50
+0008a9 940e 03cd
+0008ab 6353
+0008ac 726f
+0008ad 3a65
+0008ae 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(197): macro 'PRINT_SCORE' called here
+0008af 0000                      	PRINT_SCORE c1
+0008b0 ed00
+0008b1 2e30
+0008b2 e008
+0008b3 930f
+0008b4 923f
+0008b5 e300
+0008b6 2e30
+0008b7 e006
+0008b8 943a
+0008b9 f7f1
+0008ba 943a
+0008bb 950a
+0008bc f7d9
+0008bd 903f
+0008be 910f
+0008bf 943a
+0008c0 f791
+0008c1 950a
+0008c2 f781                      	WAIT_MS 2000
+0008c3 940e 0140
+0008c5 e3e0
+0008c6 e0f6
+0008c7 940e 03c5
+0008c9 e3ee
+0008ca e0f6
+0008cb e420
+0008cc 940e 014c
+0008ce 940e 03c5
+0008d0 940e 00e1
+0008d2 940e 0b90
+0008d4 2f62
+0008d5 7820
+0008d6 f009
+0008d7 940c 090d
+0008d9 3468
+0008da f741
+0008db 940e 0140
+0008dd e4ea
+0008de e0f6
+0008df 940e 03c5
+0008e1 e5ec
+0008e2 e0f6
+0008e3 e420
+0008e4 940e 014c
+0008e6 940e 03c5
+0008e8 940e 00e1
+0008ea 940e 0b90
+0008ec 2f62
+0008ed 7820
+0008ee f009
+0008ef 940c 090d
+0008f1 3468
+0008f2 f741
+0008f3 940e 0140
+0008f5 e6e8
+0008f6 e0f6
+0008f7 940e 03c5
+0008f9 e7e2
+0008fa e0f6
+0008fb e420
+0008fc 940e 014c
+0008fe 940e 03c5
+000900 940e 00e1
+000902 940e 0b90
+000904 2f62
+000905 7820
+000906 f009
+000907 940c 090d
+000909 3468
+00090a f741
+00090b 940c 08c3                 	QUESTION striviaQ7, striviaQ72, strivia7A, strivia7B, strivia7C, strivia7D
+00090d e7ec
+00090e e0f6
+00090f 95c8
+000910 1560
+000911 f409
+000912 9468                      	COMPARE answer7
+000913 f40e                      	brtc PC+2
+000914 9493                      	inc c1
+000915 940e 012a
+000917 f00e
+000918 940c 0922
+00091a 940e 0140
+00091c e2e4
+00091d e0f3
+00091e 940e 03c5
+000920 940c 0928
+000922 940e 0140
+000924 e2ee
+000925 e0f3
+000926 940e 03c5
+000928 1b55
+000929 2744
+00092a 2733
+00092b 2722
+00092c 2d29
+00092d e10e
+00092e 2e40
+00092f e001
+000930 2e50
+000931 940e 03cd
+000933 6353
+000934 726f
+000935 3a65
+000936 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(203): macro 'PRINT_SCORE' called here
+000937 0000                      	PRINT_SCORE c1
+000938 ed00
+000939 2e30
+00093a e008
+00093b 930f
+00093c 923f
+00093d e300
+00093e 2e30
+00093f e006
+000940 943a
+000941 f7f1
+000942 943a
+000943 950a
+000944 f7d9
+000945 903f
+000946 910f
+000947 943a
+000948 f791
+000949 950a
+00094a f781                      	WAIT_MS 2000
+00094b 940e 0140
+00094d e7ee
+00094e e0f6
+00094f 940e 03c5
+000951 e9e0
+000952 e0f6
+000953 e420
+000954 940e 014c
+000956 940e 03c5
+000958 940e 00e1
+00095a 940e 0b90
+00095c 2f62
+00095d 7820
+00095e f009
+00095f 940c 0995
+000961 3468
+000962 f741
+000963 940e 0140
+000965 e9ee
+000966 e0f6
+000967 940e 03c5
+000969 eae6
+00096a e0f6
+00096b e420
+00096c 940e 014c
+00096e 940e 03c5
+000970 940e 00e1
+000972 940e 0b90
+000974 2f62
+000975 7820
+000976 f009
+000977 940c 0995
+000979 3468
+00097a f741
+00097b 940e 0140
+00097d ebe4
+00097e e0f6
+00097f 940e 03c5
+000981 ebee
+000982 e0f6
+000983 e420
+000984 940e 014c
+000986 940e 03c5
+000988 940e 00e1
+00098a 940e 0b90
+00098c 2f62
+00098d 7820
+00098e f009
+00098f 940c 0995
+000991 3468
+000992 f741
+000993 940c 094b                 	QUESTION striviaQ8, striviaQ82, strivia8A, strivia8B, strivia8C, strivia8D
+000995 ede0
+000996 e0f6
+000997 95c8
+000998 1560
+000999 f409
+00099a 9468                      	COMPARE answer8
+00099b f40e                      	brtc PC+2
+00099c 9493                      	inc c1
+00099d 940e 012a
+00099f f00e
+0009a0 940c 09aa
+0009a2 940e 0140
+0009a4 e2e4
+0009a5 e0f3
+0009a6 940e 03c5
+0009a8 940c 09b0
+0009aa 940e 0140
+0009ac e2ee
+0009ad e0f3
+0009ae 940e 03c5
+0009b0 1b55
+0009b1 2744
+0009b2 2733
+0009b3 2722
+0009b4 2d29
+0009b5 e10e
+0009b6 2e40
+0009b7 e001
+0009b8 2e50
+0009b9 940e 03cd
+0009bb 6353
+0009bc 726f
+0009bd 3a65
+0009be 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(209): macro 'PRINT_SCORE' called here
+0009bf 0000                      	PRINT_SCORE c1
+0009c0 ed00
+0009c1 2e30
+0009c2 e008
+0009c3 930f
+0009c4 923f
+0009c5 e300
+0009c6 2e30
+0009c7 e006
+0009c8 943a
+0009c9 f7f1
+0009ca 943a
+0009cb 950a
+0009cc f7d9
+0009cd 903f
+0009ce 910f
+0009cf 943a
+0009d0 f791
+0009d1 950a
+0009d2 f781                      	WAIT_MS 2000
+0009d3 940e 0140
+0009d5 ede2
+0009d6 e0f6
+0009d7 940e 03c5
+0009d9 eee2
+0009da e0f6
+0009db e420
+0009dc 940e 014c
+0009de 940e 03c5
+0009e0 940e 00e1
+0009e2 940e 0b90
+0009e4 2f62
+0009e5 7820
+0009e6 f009
+0009e7 940c 0a1d
+0009e9 3468
+0009ea f741
+0009eb 940e 0140
+0009ed efe4
+0009ee e0f6
+0009ef 940e 03c5
+0009f1 e0e6
+0009f2 e0f7
+0009f3 e420
+0009f4 940e 014c
+0009f6 940e 03c5
+0009f8 940e 00e1
+0009fa 940e 0b90
+0009fc 2f62
+0009fd 7820
+0009fe f009
+0009ff 940c 0a1d
+000a01 3468
+000a02 f741
+000a03 940e 0140
+000a05 e1e4
+000a06 e0f7
+000a07 940e 03c5
+000a09 e1ec
+000a0a e0f7
+000a0b e420
+000a0c 940e 014c
+000a0e 940e 03c5
+000a10 940e 00e1
+000a12 940e 0b90
+000a14 2f62
+000a15 7820
+000a16 f009
+000a17 940c 0a1d
+000a19 3468
+000a1a f741
+000a1b 940c 09d3                 	QUESTION striviaQ9, striviaQ92, strivia9A, strivia9B, strivia9C, strivia9D
+000a1d e2ee
+000a1e e0f7
+000a1f 95c8
+000a20 1560
+000a21 f409
+000a22 9468                      	COMPARE answer9
+000a23 f40e                      	brtc PC+2
+000a24 9493                      	inc c1
+000a25 940e 012a
+000a27 f00e
+000a28 940c 0a32
+000a2a 940e 0140
+000a2c e2e4
+000a2d e0f3
+000a2e 940e 03c5
+000a30 940c 0a38
+000a32 940e 0140
+000a34 e2ee
+000a35 e0f3
+000a36 940e 03c5
+000a38 1b55
+000a39 2744
+000a3a 2733
+000a3b 2722
+000a3c 2d29
+000a3d e10e
+000a3e 2e40
+000a3f e001
+000a40 2e50
+000a41 940e 03cd
+000a43 6353
+000a44 726f
+000a45 3a65
+000a46 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(215): macro 'PRINT_SCORE' called here
+000a47 0000                      	PRINT_SCORE c1
+000a48 ed00
+000a49 2e30
+000a4a e008
+000a4b 930f
+000a4c 923f
+000a4d e300
+000a4e 2e30
+000a4f e006
+000a50 943a
+000a51 f7f1
+000a52 943a
+000a53 950a
+000a54 f7d9
+000a55 903f
+000a56 910f
+000a57 943a
+000a58 f791
+000a59 950a
+000a5a f781                      	WAIT_MS 2000
+000a5b 940e 0140
+000a5d e3e0
+000a5e e0f7
+000a5f 940e 03c5
+000a61 e3ee
+000a62 e0f7
+000a63 e420
+000a64 940e 014c
+000a66 940e 03c5
+000a68 940e 00e1
+000a6a 940e 0b90
+000a6c 2f62
+000a6d 7820
+000a6e f009
+000a6f 940c 0aa5
+000a71 3468
+000a72 f741
+000a73 940e 0140
+000a75 e4ea
+000a76 e0f7
+000a77 940e 03c5
+000a79 e5e8
+000a7a e0f7
+000a7b e420
+000a7c 940e 014c
+000a7e 940e 03c5
+000a80 940e 00e1
+000a82 940e 0b90
+000a84 2f62
+000a85 7820
+000a86 f009
+000a87 940c 0aa5
+000a89 3468
+000a8a f741
+000a8b 940e 0140
+000a8d e6ea
+000a8e e0f7
+000a8f 940e 03c5
+000a91 e7e8
+000a92 e0f7
+000a93 e420
+000a94 940e 014c
+000a96 940e 03c5
+000a98 940e 00e1
+000a9a 940e 0b90
+000a9c 2f62
+000a9d 7820
+000a9e f009
+000a9f 940c 0aa5
+000aa1 3468
+000aa2 f741
+000aa3 940c 0a5b                 	QUESTION striviaQ10, striviaQ102, strivia10A, strivia10B, strivia10C, strivia10D
+000aa5 e8e8
+000aa6 e0f7
+000aa7 95c8
+000aa8 1560
+000aa9 f409
+000aaa 9468                      	COMPARE answer10
+000aab f40e                      	brtc PC+2
+000aac 9493                      	inc c1
+000aad 940e 012a
+000aaf f00e
+000ab0 940c 0aba
+000ab2 940e 0140
+000ab4 e2e4
+000ab5 e0f3
+000ab6 940e 03c5
+000ab8 940c 0ac0
+000aba 940e 0140
+000abc e2ee
+000abd e0f3
+000abe 940e 03c5
+000ac0 1b55
+000ac1 2744
+000ac2 2733
+000ac3 2722
+000ac4 2d29
+000ac5 e10e
+000ac6 2e40
+000ac7 e001
+000ac8 2e50
+000ac9 940e 03cd
+000acb 6353
+000acc 726f
+000acd 3a65
+000ace 12c0
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\macros.asm(122): warning: .cseg .db misalignment - padding zero byte
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(221): macro 'PRINT_SCORE' called here
+000acf 0000                      	PRINT_SCORE c1
+000ad0 ed00
+000ad1 2e30
+000ad2 e008
+000ad3 930f
+000ad4 923f
+000ad5 e300
+000ad6 2e30
+000ad7 e006
+000ad8 943a
+000ad9 f7f1
+000ada 943a
+000adb 950a
+000adc f7d9
+000add 903f
+000ade 910f
+000adf 943a
+000ae0 f791
+000ae1 950a
+000ae2 f781                      	WAIT_MS 2000
+000ae3 e005                      	ldi w, 0x05
+000ae4 1690                      	cp c1, w
+000ae5 f410                      	brsh trivia_won
+000ae6 940c 0b2a                 	jmp trivia_lost
+                                 trivia_won:
+000ae8 940e 0140
+000aea e6ec
+000aeb e0f3
+000aec 940e 03c5
+000aee e7ec
+000aef e0f3
+000af0 e420
+000af1 940e 014c
+000af3 940e 03c5                     DISPLAY2 strwin1, strwin2
+000af5 ed00
+000af6 2e30
+000af7 e008
+000af8 930f
+000af9 923f
+000afa e300
+000afb 2e30
+000afc e006
+000afd 943a
+000afe f7f1
+000aff 943a
+000b00 950a
+000b01 f7d9
+000b02 903f
+000b03 910f
+000b04 943a
+000b05 f791
+000b06 950a
+000b07 f781                      	WAIT_MS 2000
+000b08 940e 0140
+000b0a e5e6
+000b0b e0f3
+000b0c 940e 03c5
+000b0e e6e0
+000b0f e0f3
+000b10 e420
+000b11 940e 014c
+000b13 940e 03c5                 	DISPLAY2 strclue1a, strclue1b
+000b15 ea00
+000b16 2e30
+000b17 e100
+000b18 930f
+000b19 923f
+000b1a e300
+000b1b 2e30
+000b1c e006
+000b1d 943a
+000b1e f7f1
+000b1f 943a
+000b20 950a
+000b21 f7d9
+000b22 903f
+000b23 910f
+000b24 943a
+000b25 f791
+000b26 950a
+000b27 f781                      	WAIT_MS 4000
+000b28 940c 0508                 	jmp main_loop
+                                 trivia_lost:
+000b2a 940e 0140
+000b2c e8e4
+000b2d e0f3
+000b2e 940e 03c5
+000b30 e8ee
+000b31 e0f3
+000b32 e420
+000b33 940e 014c
+000b35 940e 03c5                 	DISPLAY2 strlose1, strlose2
+000b37 ed00
+000b38 2e30
+000b39 e008
+000b3a 930f
+000b3b 923f
+000b3c e300
+000b3d 2e30
+000b3e e006
+000b3f 943a
+000b40 f7f1
+000b41 943a
+000b42 950a
+000b43 f7d9
+000b44 903f
+000b45 910f
+000b46 943a
+000b47 f791
+000b48 950a
+000b49 f781                      	WAIT_MS 2000
+000b4a 940c 0508                 	jmp main_loop
+                                 
+                                 dance:
+000b4c 940e 0140
+000b4e e0e0
+000b4f e0f3
+000b50 940e 03c5
+000b52 e1e6
+000b53 e0f3
+000b54 e420
+000b55 940e 014c
+000b57 940e 03c5                 	DISPLAY2 strwelcome, strbutton
+000b59 ed00
+000b5a 2e30
+000b5b e008
+000b5c 930f
+000b5d 923f
+000b5e e300
+000b5f 2e30
+000b60 e006
+000b61 943a
+000b62 f7f1
+000b63 943a
+000b64 950a
+000b65 f7d9
+000b66 903f
+000b67 910f
+000b68 943a
+000b69 f791
+000b6a 950a
+000b6b f781                      	WAIT_MS 2000
+000b6c 940c 0508                 	jmp main_loop
+                                 
+                                 
+                                 end:
+000b6e 940e 0140
+000b70 e0e2
+000b71 e0f4
+000b72 940e 03c5
+000b74 e0ee
+000b75 e0f4
+000b76 e420
+000b77 940e 014c
+000b79 940e 03c5                 	DISPLAY2 str10, str11
+000b7b ed00
+000b7c 2e30
+000b7d e008
+000b7e 930f
+000b7f 923f
+000b80 e300
+000b81 2e30
+000b82 e006
+000b83 943a
+000b84 f7f1
+000b85 943a
+000b86 950a
+000b87 f7d9
+000b88 903f
+000b89 910f
+000b8a 943a
+000b8b f791
+000b8c 950a
+000b8d f781                      	WAIT_MS 2000
+000b8e 940c 04dc                 	jmp reset
+                                 
+                                 check_reset:
+000b90 e108
+000b91 1680                      	_CPI c0, 0x18 ; check if * key pressed
+000b92 f409                      	brne PC+2
+000b93 940c 04dc                 	jmp reset
 
 
 RESOURCE USE INFORMATION
@@ -4228,41 +6519,41 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega128" register use summary:
-x  :   6 y  :   0 z  :   0 r0 :   8 r1 :   6 r2 :   6 r3 :  58 r4 :   3 
-r5 :   3 r6 :   0 r7 :   0 r8 :   5 r9 :   5 r10:   5 r11:   6 r12:  11 
-r13:   0 r14:   8 r15:   4 r16: 222 r17:   1 r18:  33 r19:  16 r20:  16 
-r21:  16 r22:  18 r23:  26 r24:   8 r25:  16 r26:   3 r27:   3 r28:   0 
-r29:   0 r30:  13 r31:   8 
+x  :   6 y  :   0 z  :   0 r0 :  20 r1 :   6 r2 :   6 r3 : 184 r4 :  11 
+r5 :  11 r6 :   0 r7 :   0 r8 :   7 r9 :  27 r10:   5 r11:   6 r12:  11 
+r13:   0 r14:   8 r15:   4 r16: 444 r17:   1 r18: 157 r19:  26 r20:  26 
+r21:  36 r22:  98 r23:  26 r24:   8 r25:  16 r26:   3 r27:   3 r28:   0 
+r29:   0 r30: 125 r31: 119 
 Registers used: 28 out of 35 (80.0%)
 
 "ATmega128" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   0 add   :   4 adiw  :   5 and   :   4 
-andi  :   7 asr   :   2 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   1 brcs  :   0 break :   0 breq  :  17 brge  :   0 brhc  :   0 
+.lds  :   0 .sts  :   0 adc   :   0 add   :   4 adiw  :   6 and   :   4 
+andi  :  37 asr   :   2 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+brcc  :   1 brcs  :   0 break :   0 breq  :  50 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   1 
-brne  :  43 brpl  :   1 brsh  :   1 brtc  :   5 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   1 call  :   2 cbi   :   0 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  23 cls   :   0 
-clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :   1 cpc   :   3 
-cpi   :   9 cpse  :   0 dec   :  46 elpm  :   0 eor   :   0 fmul  :   0 
-fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :   5 inc   :   2 
-jmp   :   5 ld    :   6 ldd   :   0 ldi   :  97 lds   :   3 lpm   :  15 
-lsl   :   1 lsr   :   3 mov   :  54 movw  :   0 mul   :   0 muls  :   0 
-mulsu :   0 neg   :   0 nop   :   1 or    :   0 ori   :   2 out   :  14 
-pop   :  39 push  :  38 rcall :  23 ret   :  12 reti  :   1 rjmp  :  43 
+brne  : 158 brpl  :   1 brsh  :   2 brtc  :  15 brts  :  10 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   1 call  : 290 cbi   :   0 cbr   :   0 
+clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  53 cls   :   0 
+clt   :   1 clv   :   0 clz   :   0 com   :   8 cp    :  13 cpc   :   3 
+cpi   :  43 cpse  :   0 dec   : 136 elpm  :   0 eor   :   0 fmul  :   0 
+fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :   5 inc   :  12 
+jmp   :  77 ld    :   6 ldd   :   0 ldi   : 452 lds   :   3 lpm   :  48 
+lsl   :   1 lsr   :   3 mov   : 151 movw  :   0 mul   :   0 muls  :   0 
+mulsu :   0 neg   :   0 nop   :   1 or    :   0 ori   :   2 out   :  16 
+pop   :  75 push  :  74 rcall :  26 ret   :  17 reti  :   1 rjmp  :  42 
 rol   :  10 ror   :  13 sbc   :   3 sbci  :   1 sbi   :   1 sbic  :   0 
-sbis  :   0 sbiw  :   0 sbr   :   1 sbrc  :  17 sbrs  :   0 sec   :   0 
-seh   :   0 sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :   1 
+sbis  :   0 sbiw  :   0 sbr   :   1 sbrc  :  21 sbrs  :   0 sec   :   0 
+seh   :   0 sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :  11 
 sev   :   0 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 
-sts   :   3 sub   :   3 subi  :  10 swap  :   4 tst   :  13 wdr   :   0 
+sts   :   3 sub   :  13 subi  :  10 swap  :   4 tst   :  14 wdr   :   0 
 
-Instructions used: 57 out of 114 (50.0%)
+Instructions used: 58 out of 114 (50.9%)
 
 "ATmega128" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x0008b4   1272     52   1324  131072   1.0%
+[.cseg] 0x000000 0x00172c   4602   1330   5932  131072   4.5%
 [.dseg] 0x000100 0x000100      0      0      0    4096   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
-Assembly complete, 0 errors, 8 warnings
+Assembly complete, 0 errors, 69 warnings
