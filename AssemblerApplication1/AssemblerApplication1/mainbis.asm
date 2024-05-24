@@ -94,6 +94,9 @@ isr_return:
 	ldi _w,10 ; sound feedback of key pressed acknowledge
 beep01:    
     _LDI    wr2,0xff
+	ldi a0, re2
+	ldi b0, 225 ; 2.5ms * 225 
+	call sound
 	OUTI	KPDO,0x0f
     reti
 
@@ -102,7 +105,8 @@ beep01:
 .include "string.asm"
 .include "subroutines.asm"
 .include "printf.asm"
-
+.include "songs.asm"
+.include "sound.asm"
 reset:
 	LDSP	RAMEND	
 	rcall LCD_init
@@ -110,12 +114,14 @@ reset:
 	out DDRB, r16
 	ldi r16, 0x00
 	out DDRD, r16
+	sbi		DDRE,SPEAKER	; enable sound
 	jmp main
 
 main:
-	rcall	LCD_clear
+	call	LCD_clear
 	DISPLAY2 str0, str1
-	WAIT_MS 2000
+	MENU_SONG
+
 
 main_loop:
 	rcall start
@@ -226,13 +232,15 @@ trivia:
 	jmp trivia_lost
 trivia_won:
     DISPLAY2 strwin1, strwin2
-	WAIT_MS 2000
+	CELEBRATE_song
+	;WAIT_MS 2000
 	DISPLAY2 strclue1a, strclue1b
 	WAIT_MS 4000
 	jmp main_loop
 trivia_lost:
 	DISPLAY2 strlose1, strlose2
-	WAIT_MS 2000
+	LOSE_SONG
+	;WAIT_MS 2000
 	jmp main_loop
 
 dance:

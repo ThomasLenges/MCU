@@ -15,3 +15,7 @@
 	adiw	zl, 1
 	rjmp	LCD_putstring
 done:ret
+
+; ===================================== celebration music ===========================================
+sound_celebrate:
+	

@@ -105,7 +105,16 @@
     <Compile Include="mainbis.asm">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="notes.asm">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="printf.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="songs.asm">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sound.asm">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="string.asm">

@@ -7,7 +7,7 @@ reset_kpd:
 	OUTI	DDRB,0xff		; turn on LEDs
 	OUTI	EIMSK,0x0f		; enable INT0-INT3
 	OUTI	EICRB,0b0		;>at low level
-	sbi		DDRE,SPEAKER	; enable sound
+	
 
 	clr		wr0
 	clr		wr1
