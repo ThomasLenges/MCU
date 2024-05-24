@@ -22,8 +22,11 @@
 	jmp isr_ext_int2
 	jmp isr_ext_int3
 
+.org OVF0addr
+	jmp overflow0
+
 	; === interrupt service routines ===
-	
+
 isr_ext_int0:
 	_LDI	wr1, 0x01		; detect row 1
 	_LDI	mask, 0b00000001
@@ -95,10 +98,14 @@ isr_return:
 beep01:    
     _LDI    wr2,0xff
 	ldi a0, re2
-	ldi b0, 225 ; 2.5ms * 225 
+	ldi b0, 30 ; 2.5ms*30=75ms
 	call sound
 	OUTI	KPDO,0x0f
     reti
+
+overflow0:
+	OUTI TIMSK, (0<<TOIE0)  ; timer0 overflow interrupt disable
+	reti
 
 .include "kpd4x4bis.asm"
 .include "lcd.asm"
@@ -107,6 +114,10 @@ beep01:
 .include "printf.asm"
 .include "songs.asm"
 .include "sound.asm"
+.include "wire1.asm"		; include Dallas 1-wire(R) routines
+.include "wire1_temp2.asm"
+
+
 reset:
 	LDSP	RAMEND	
 	rcall LCD_init
@@ -128,7 +139,7 @@ main_loop:
 	CB1 b0,1, safe
 	CB1 b0,0, games
 	CB1 b0,0, trivia
-	CB1 b0,1, dance
+	CB1 b0,1, lava
 	jmp main_loop
 
 start:
@@ -233,18 +244,28 @@ trivia:
 trivia_won:
     DISPLAY2 strwin1, strwin2
 	CELEBRATE_song
-	;WAIT_MS 2000
 	DISPLAY2 strclue1a, strclue1b
 	WAIT_MS 4000
 	jmp main_loop
 trivia_lost:
 	DISPLAY2 strlose1, strlose2
 	LOSE_SONG
-	;WAIT_MS 2000
 	jmp main_loop
 
-dance:
-	DISPLAY2 strwelcome, strbutton
+lava:
+	DISPLAY2 strwelcome, strlava
+	WAIT_MS 2000
+	DISPLAY1 strlava2
+	WAIT_MS 2000
+	; start counter of game wins
+	_LDI c1, 0x00
+	DISPLAY1 strlava3
+ ; allow btw 24 and 26C
+	call reset_wire
+	subi a0, 0x80 ;24*16=400 = 0x0180
+	sbci a1, 0x01
+	brmi PC+3
+	DISPLAY1 strclue1a
 	WAIT_MS 2000
 	jmp main_loop
 

@@ -112,9 +112,11 @@ question_end:
 	jmp incorrect
 correct:
 	DISPLAY1 strcorrect
+	CORRECT_SONG
 	jmp score
 incorrect:
 	DISPLAY1 strfalse
+	INCORRECT_SONG
 score:
 	CLR4 a3, a2, a1, a0
 	mov a0, @0

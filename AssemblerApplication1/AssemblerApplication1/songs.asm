@@ -3,73 +3,95 @@
 .macro CELEBRATE_song
 ; 1e tonalité
 	ldi a0, do2
-	ldi b0, 80 ; 2.5ms * 225 
+	ldi b0, 80
 	call sound
+
 	ldi a0, so
 	ldi b0, 60
 	call sound
+
 	ldi a0, do2
 	ldi b0, 80
 	call sound
+
 	ldi a0, mi2
 	ldi b0, 60
 	call sound
+
 	ldi a0, so2
 	ldi b0, 60
 	call sound
+
 	ldi a0, do3
 	ldi b0, 60
 	call sound
+
 	ldi a0, mi3
 	ldi b0, 170
 	call sound
+
 	ldi a0, do3
 	ldi b0, 170
 	call sound
+
 ; 2e tonalité
 	ldi a0, dom2
-	ldi b0, 80 ; 2.5ms * 225 
+	ldi b0, 80 
 	call sound
+
 	ldi a0, som
 	ldi b0, 60
 	call sound
+
 	ldi a0, dom2
 	ldi b0, 80
 	call sound
+
 	ldi a0, fa2
 	ldi b0, 60
 	call sound
+
 	ldi a0, som3
 	ldi b0, 60
 	call sound
+
 	ldi a0, dom3
 	ldi b0, 60
 	call sound
+
 	ldi a0, fa3
 	ldi b0, 170
 	call sound
+
 	ldi a0, dom3
 	ldi b0, 170
 	call sound
+
 ; 3e tonalité
 	ldi a0, rem2
 	ldi b0, 80
 	call sound
+
 	ldi a0, lam
 	ldi b0, 60
 	call sound
+
 	ldi a0, rem2
 	ldi b0, 80
 	call sound
+
 	ldi a0, so2
 	ldi b0, 60
 	call sound
+
 	ldi a0, lam2
 	ldi b0, 60
 	call sound
+
 	ldi a0, rem3
 	ldi b0, 170
 	call sound
+
 	ldi a0, fa3
 	ldi b0, 200
 	call sound
@@ -80,64 +102,83 @@
 	ldi b0, 80
 	call sound
 	WAIT_MS 60
+
 	ldi a0, fa3
 	ldi b0, 90
 	call sound
 	WAIT_MS 60
+
 	ldi a0, fa3
 	ldi b0, 70
 	call sound
 	WAIT_MS 60
+
 	ldi a0, fa3
 	ldi b0, 70
 	call sound
 	WAIT_MS 60
+
 	ldi a0, fa3
 	ldi b0, 70
 	call sound
+
 	ldi a0, mi3
 	ldi b0, 70
 	call sound
+
 	ldi a0, re3
 	ldi b0, 70
 	call sound
+
 	ldi a0, do3
 	ldi b0, 140
 	call sound
 	WAIT_MS 700
+
 	ldi a0, do3
 	ldi b0, 100
 	call sound
+
 	ldi a0, so2
 	ldi b0, 100
 	call sound
+
 	ldi a0, mi2
 	ldi b0, 100
 	call sound
+
 	ldi a0, lam2
 	ldi b0, 100
 	call sound
+
 	ldi a0, do3
 	ldi b0, 100
 	call sound
+
 	ldi a0, lam2
 	ldi b0, 100
 	call sound
+
 	ldi a0, som2
 	ldi b0, 100
 	call sound
+
 	ldi a0, lam2
 	ldi b0, 100
 	call sound
+
 	ldi a0, som2
 	ldi b0, 100
 	call sound
+
 	ldi a0, so2
 	ldi b0, 80
 	call sound
+
 	ldi a0, fa2
 	ldi b0, 60
 	call sound
+
 	ldi a0, so2
 	ldi b0, 150
 	call sound
@@ -319,19 +360,24 @@
     WAIT_MS 50
 .endmacro
 
-/*
-.macro MENU_SONG
-	ldi a0, mi2
-	ldi b0, 75
+.macro CORRECT_SONG
+	WAIT_MS 500
+	ldi a0, dom3
+	ldi b0, 5
 	call sound
-	WAIT_MS 60
-	ldi a0, mi2
-	ldi b0, 75
+	ldi a0, la2
 	call sound
-	WAIT_MS 80
-	ldi a0, mi2
-	ldi b0, 75
+	ldi a0, dom3
 	call sound
-
+	ldi a0, la2
+	call sound
 .endmacro
-*/
+
+.macro INCORRECT_SONG
+	WAIT_MS 500
+	ldi a0, do
+	ldi b0, 30
+	call sound
+	ldi a0, do
+	call sound
+.endmacro

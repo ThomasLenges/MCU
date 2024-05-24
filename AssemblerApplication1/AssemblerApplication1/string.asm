@@ -25,13 +25,13 @@ str3:
 
 ; general
 strwelcome:
-.db "Welcome to",0
+.db "Welcome to the",0
 
 strivia:
-.db "trivia :)",0
+.db "trivia game :)",0
 
-strbutton:
-.db "the button :)",0
+strlava:
+.db "board is lava :)",0
 
 strcorrect:
 .db "Correct!",0
@@ -44,6 +44,9 @@ strivia2:
 
 strivia3:
 .db "rrectly to win",0
+
+strlava2:
+.db "Win 2/3 to win",0
 
 strclue1a:
 .db "1st clue:",0
@@ -67,7 +70,7 @@ strlose2:
 str4:
 .db "A. TRIVIA QUIZ", 0
 str5:
-.db "B. BUTTON DANCE", 0
+.db "B. LAVA BOARD", 0
 
 ; Open safe
 str6:
@@ -243,3 +246,7 @@ strivia10D:
 .db "D. TAYLOR SWIFT", 0
 answer10:
 .db 0x82 ; 0xfb
+
+; THE BOARD IS LAVA
+strlava3:
+.db "Reach 25C in 5s",0
