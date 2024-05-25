@@ -155,15 +155,59 @@ start:
 	cpi b0, 0x82
 	brne PC+2
 	ret
-	jmp start
+	jmp main_loop
 
 safe:
 	DISPLAY1 str6
+	_LDI c1, 0
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"      ****      ",0
+	call reset_kpd
+	call check_reset
+	COMPARE clue1answer, a0
+	brtc PC+2
+	inc c1
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"      ",FSTR,b,0
+	CA LCD_pos, $47 
+	call reset_kpd
+	call check_reset
+	COMPARE clue2answer, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $48
+	call reset_kpd
+	call check_reset
+	COMPARE clue3answer1, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $49
+	call reset_kpd
+	call check_reset
+	COMPARE clue3answer2, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	WAIT_MS 1000
+	_CPI c1, 4
+	brne incorrectpass
+correctpass:
+	DISPLAY1 strpasscorr
+	WAIT_MS 2000
 	jmp end
+incorrectpass:
+	DISPLAY2 strpassincorr, strpassincorrbis
+	WAIT_MS 2000
+	jmp main_loop
 
 games:
-; ==============================================================================
-;/*
 page1:
 	DISPLAY2 strgame1, strgame2
 	call reset_kpd
@@ -197,20 +241,8 @@ page2:
 	cpi b0, 0x48 ; check if # key pressed
 	brne page2
 	jmp games
-; ==============================================================================
-/*
-	DISPLAY2 strgame1, strgame2
-	call reset_kpd
-	call check_reset
-	mov b0, a0
-	cpi b0, 0x81
-	breq PC+3
-	cpi b0, 0x82
-	brne PC+2
-	ret
-	jmp games
 
-*/
+
 trivia:
 	DISPLAY2 strwelcome, strivia
 	WAIT_MS 2000
@@ -218,61 +250,61 @@ trivia:
 	WAIT_MS 2000
 	_LDI c1, 0x00
 	QUESTION striviaQ1, striviaQ12, strivia1A, strivia1B, strivia1C, strivia1D
-	COMPARE answer1
+	COMPARE answer1, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ2, striviaQ22, strivia2A, strivia2B, strivia2C, strivia2D
-	COMPARE answer2
+	COMPARE answer2, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ3, striviaQ32, strivia3A, strivia3B, strivia3C, strivia3D
-	COMPARE answer3
+	COMPARE answer3, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ4, striviaQ42, strivia4A, strivia4B, strivia4C, strivia4D
-	COMPARE answer4
+	COMPARE answer4, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ5, striviaQ52, strivia5A, strivia5B, strivia5C, strivia5D
-	COMPARE answer5
+	COMPARE answer5, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ6, striviaQ62, strivia6A, strivia6B, strivia6C, strivia6D
-	COMPARE answer6
+	COMPARE answer6, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ7, striviaQ72, strivia7A, strivia7B, strivia7C, strivia7D
-	COMPARE answer7
+	COMPARE answer7, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ8, striviaQ82, strivia8A, strivia8B, strivia8C, strivia8D
-	COMPARE answer8
+	COMPARE answer8, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ9, striviaQ92, strivia9A, strivia9B, strivia9C, strivia9D
-	COMPARE answer9
+	COMPARE answer9, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
 	WAIT_MS 2000
 	QUESTION striviaQ10, striviaQ102, strivia10A, strivia10B, strivia10C, strivia10D
-	COMPARE answer10
+	COMPARE answer10, b0
 	brtc PC+2
 	inc c1
 	PRINT_SCORE c1
@@ -390,10 +422,252 @@ lava_lost:
 
 
 dance:
+sequence1:
 	DISPLAY2 strwelcome, strdance
 	WAIT_MS 2000
-
-
+	DISPLAY2 strdance2, strdance3
+	WAIT_MS 2000
+	DISPLAY2 strdance4, strdance5
+	WAIT_MS 2000
+	DISPLAY2 strdance_game1, strdance_
+	WAIT_MS 2000
+	call LCD_clear
+	PRINTF LCD
+.db	"****************",0
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"****************",0
+	_LDI c1, 0 ; counter for each game
+	_LDI c2, 0 ; overall counter
+	call reset_kpd
+	call check_reset
+	COMPARE game1answer1, a0
+	brtc PC+2
+	inc c1
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"******",FSTR,b,"********",0
+	CA LCD_pos, $47 
+	call reset_kpd
+	call check_reset
+	COMPARE game1answer2, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $48 
+	call reset_kpd
+	call check_reset
+	COMPARE game1answer3, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	WAIT_MS 2000
+	_CPI c1, 3
+	brne lose_1
+	jmp win_1
+lose_1:
+	DISPLAY1 strfalse
+	WAIT_MS 2000
+	jmp sequence2
+win_1:
+	DISPLAY1 strcorrect
+	WAIT_MS 2000
+	inc c2
+	jmp sequence2
+sequence2:
+	_LDI c1, 0 ; counter for each game
+	DISPLAY2 strdance4, strdance5
+	WAIT_MS 2000
+	DISPLAY2 strdance_game2, strdance_
+	WAIT_MS 2000
+	call LCD_clear
+	PRINTF LCD
+.db	"****************",0
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"****************",0
+	call reset_kpd
+	call check_reset
+	COMPARE game2answer1, a0
+	brtc PC+2
+	inc c1
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"*****",FSTR,b,"*********",0
+	CA LCD_pos, $46
+	call reset_kpd
+	call check_reset
+	COMPARE game2answer2, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $47 
+	call reset_kpd
+	call check_reset
+	COMPARE game2answer3, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $48 
+	call reset_kpd
+	call check_reset
+	COMPARE game2answer4, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $49 
+	call reset_kpd
+	call check_reset
+	COMPARE game2answer5, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+CA LCD_pos, $4a 
+	call reset_kpd
+	call check_reset
+	COMPARE game2answer6, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	WAIT_MS 2000
+	_CPI c1, 6
+	brne lose_2
+	jmp win_2
+lose_2:
+	DISPLAY1 strfalse
+	WAIT_MS 2000
+	jmp sequence3
+win_2:
+	DISPLAY1 strcorrect
+	WAIT_MS 2000
+	inc c2
+	jmp sequence3
+sequence3:
+	_LDI c1, 0 ; counter for each game
+	DISPLAY2 strdance4, strdance5
+	WAIT_MS 2000
+	DISPLAY2 strdance_game3, strdance_
+	WAIT_MS 2000
+	call LCD_clear
+	PRINTF LCD
+.db	"****************",0
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"****************",0
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer1, a0
+	brtc PC+2
+	inc c1
+	CA LCD_pos, $40
+	PRINTF LCD
+.db	"***",FSTR,b,"************",0
+	CA LCD_pos, $44
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer2, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $45 
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer3, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $46 
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer4, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $47 
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer5, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $48
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer6, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $49 
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer7, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $4a
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer8, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $4b
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer9, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	CA LCD_pos, $4c
+	call reset_kpd
+	call check_reset
+	COMPARE game3answer10, a0
+	brtc PC+2
+	inc c1
+	PRINTF LCD
+.db	FSTR,b,0
+	WAIT_MS 2000
+	_CPI c1, 10
+	brne lose_3
+	jmp win_3
+lose_3:
+	DISPLAY1 strfalse
+	WAIT_MS 2000
+	jmp final_keypad
+win_3:
+	DISPLAY1 strcorrect
+	WAIT_MS 2000
+	inc c2
+	jmp final_keypad
+final_keypad:
+	_CPI c2, 2
+	brsh keypad_won
+	jmp keypad_lost
+keypad_won:
+    DISPLAY2 strwin1, strwin2
+	CELEBRATE_song
+	DISPLAY2 strclue3, strclue3b
+	WAIT_MS 4000
+	jmp main_loop
+keypad_lost:
+	DISPLAY2 strlose1, strlose2
+	LOSE_SONG
+	jmp main_loop
 
 end:
 	DISPLAY2 str10, str11
@@ -401,6 +675,7 @@ end:
 	jmp reset
 
 check_reset:
+	mov c0, a0
 	_CPI c0, 0x18 ; check if * key pressed
 	brne PC+2
 	jmp reset

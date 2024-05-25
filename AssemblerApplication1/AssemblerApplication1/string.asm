@@ -57,11 +57,29 @@ strclue1a:
 strclue1b:
 .db "SNOW WHITE",0
 
+clue1answer:
+.db $14 ;7
+
 strclue2a:
 .db "2nd clue:",0
 
 strclue2b:
-.db "Olympic rings",0
+.db "Musketeers",0
+
+clue2answer:
+.db $41 ;3
+
+strclue3:
+.db "3rd clue: (2dig)",0
+
+strclue3b:
+.db "Katniss Everdeen",0
+
+clue3answer1:
+.db $11 ;1
+
+clue3answer2:
+.db $21 ;2
 
 strwin1:
 .db "CONGRATULATIONS",0
@@ -86,8 +104,16 @@ strgame3:
 ; Open safe
 str6:
 .db "ENTER PASSCODE", 0
-str7:
-.db "INCORRECT PASSCODE", 0
+
+strpasscorr:
+.db "CORRECT PASSCODE",0
+
+strpassincorr:
+.db "INCORRECT", 0
+
+strpassincorrbis:
+.db "PASSCODE",0
+
 str8:
 .db "CONGRATULATIONS, ", 0
 str9:
@@ -279,3 +305,69 @@ strlavalost:
 
 strlavahot:
 .db "2 hot to handle!",0
+
+; DANCE
+strdance2:
+.db "Come dance, no",0
+
+strdance3:
+.db "errors allowed!",0
+
+strdance4:
+.db "===Repeat the===",0
+
+strdance5:
+.db "====sequence====",0
+
+strdance_game1:
+.db "======57B=======",0
+
+game1answer1:
+.db $22 ;5
+game1answer2:
+.db $14 ;7
+game1answer3:
+.db $82 ;B
+
+strdance_game2:
+.db "=====0A9C3D=====",0
+
+game2answer1:
+.db $28 ;0
+game2answer2:
+.db $81 ;A
+game2answer3:
+.db $44 ;9
+game2answer4:
+.db $84 ;C
+game2answer5:
+.db $41 ;3
+game2answer6:
+.db $88 ;D
+
+strdance_game3:
+.db "===9290BDA#04===",0
+
+game3answer1:
+.db $44 ;9
+game3answer2:
+.db $21 ;2
+game3answer3:
+.db $44 ;9
+game3answer4:
+.db $28 ;0
+game3answer5:
+.db $82 ;B
+game3answer6:
+.db $88 ;D
+game3answer7:
+.db $81 ;A
+game3answer8:
+.db $48 ;#
+game3answer9:
+.db $28 ;0
+game3answer10:
+.db $12 ;4
+
+strdance_:
+.db "================",0

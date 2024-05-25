@@ -97,10 +97,11 @@ question_end:
 
 ; --- set T in SREG if answer correct
 .macro COMPARE
+	clt
 	ldi zl, low(2*@0)
 	ldi zh, high(2*@0)
 	lpm
-	cp b0, r0
+	cp @1, r0
 	brne PC+2
 	set
 .endmacro
