@@ -132,7 +132,8 @@ reset:
 main:
 	call	LCD_clear
 	DISPLAY2 str0, str1
-	MENU_SONG
+	;MENU_SONG
+	
 
 
 main_loop:
@@ -197,15 +198,15 @@ safe:
 .db	FSTR,b,0
 	WAIT_MS 1000
 	_CPI c1, 4
-	brne incorrectpass
-correctpass:
-	DISPLAY1 strpasscorr
-	WAIT_MS 2000
-	jmp end
+	breq correctpass
 incorrectpass:
 	DISPLAY2 strpassincorr, strpassincorrbis
-	WAIT_MS 2000
+	LOSER_SONG
 	jmp main_loop
+correctpass:
+	DISPLAY1 strpasscorr
+	VICTORY_SONG
+	jmp end
 
 games:
 page1:
@@ -341,7 +342,9 @@ lava:
 	ldi a1, 0x00
 	cp b0, a0
 	cpc b1, a1
-	brmi lost1
+	brmi PC+2
+	jmp win1
+	jmp lost1
 win1:
 	DISPLAY1 strlavawin1
 	CORRECT_SONG
@@ -354,7 +357,7 @@ lost1:
 task2:
 	DISPLAY1 strlava4
 	WAIT_MS 2000
- ; add at least 1C
+ ; add at least 0.5-1C
 	call reset_wire
 	sub b0, d0 ;compare final value with intial one
 	sbc b1, d1
@@ -671,6 +674,8 @@ keypad_lost:
 
 end:
 	DISPLAY2 str10, str11
+	WAIT_MS 2000
+	DISPLAY2 strcred, strcred2
 	WAIT_MS 2000
 	jmp reset
 

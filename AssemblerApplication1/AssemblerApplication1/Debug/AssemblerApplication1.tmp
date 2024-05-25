@@ -213,6 +213,8 @@
   <game3answer9><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>367</LINE></game3answer9>
   <game3answer10><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>369</LINE></game3answer10>
   <strdance_><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>372</LINE></strdance_>
+  <strcred><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>376</LINE></strcred>
+  <strcred2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\string.asm</FILE><LINE>379</LINE></strcred2>
   <LCD_putstring><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>9</LINE></LCD_putstring>
   <done><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>17</LINE></done>
   <sound_celebrate><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\subroutines.asm</FILE><LINE>20</LINE></sound_celebrate>
@@ -270,44 +272,44 @@
   <main_wire><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\wire1_temp2.asm</FILE><LINE>18</LINE></main_wire>
   <out_test><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\wire1_temp2.asm</FILE><LINE>43</LINE></out_test>
   <main><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>132</LINE></main>
-  <main_loop><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>138</LINE></main_loop>
-  <start><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>148</LINE></start>
-  <safe><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>160</LINE></safe>
-  <games><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>210</LINE></games>
-  <trivia><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>246</LINE></trivia>
-  <lava><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>327</LINE></lava>
-  <dance><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>424</LINE></dance>
-  <check_reset><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>677</LINE></check_reset>
-  <incorrectpass><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>205</LINE></incorrectpass>
-  <correctpass><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>201</LINE></correctpass>
-  <end><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>672</LINE></end>
-  <page1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>211</LINE></page1>
-  <page2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>227</LINE></page2>
-  <trivia_won><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>316</LINE></trivia_won>
-  <trivia_lost><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>322</LINE></trivia_lost>
-  <lost1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>350</LINE></lost1>
-  <win1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>345</LINE></win1>
-  <task2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>354</LINE></task2>
-  <lost2a><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>378</LINE></lost2a>
-  <lost2b><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>382</LINE></lost2b>
-  <win2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>372</LINE></win2>
-  <task3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>386</LINE></task3>
-  <lost3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>403</LINE></lost3>
-  <win3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>398</LINE></win3>
-  <end_game><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>407</LINE></end_game>
-  <lava_won><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>412</LINE></lava_won>
-  <lava_lost><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>418</LINE></lava_lost>
-  <sequence1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>425</LINE></sequence1>
-  <lose_1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>470</LINE></lose_1>
-  <win_1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>474</LINE></win_1>
-  <sequence2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>479</LINE></sequence2>
-  <lose_2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>543</LINE></lose_2>
-  <win_2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>547</LINE></win_2>
-  <sequence3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>552</LINE></sequence3>
-  <lose_3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>648</LINE></lose_3>
-  <win_3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>652</LINE></win_3>
-  <final_keypad><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>657</LINE></final_keypad>
-  <keypad_won><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>661</LINE></keypad_won>
-  <keypad_lost><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>667</LINE></keypad_lost>
+  <main_loop><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>139</LINE></main_loop>
+  <start><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>149</LINE></start>
+  <safe><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>161</LINE></safe>
+  <games><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>211</LINE></games>
+  <trivia><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>247</LINE></trivia>
+  <lava><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>328</LINE></lava>
+  <dance><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>427</LINE></dance>
+  <check_reset><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>682</LINE></check_reset>
+  <correctpass><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>206</LINE></correctpass>
+  <incorrectpass><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>202</LINE></incorrectpass>
+  <end><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>675</LINE></end>
+  <page1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>212</LINE></page1>
+  <page2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>228</LINE></page2>
+  <trivia_won><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>317</LINE></trivia_won>
+  <trivia_lost><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>323</LINE></trivia_lost>
+  <win1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>348</LINE></win1>
+  <lost1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>353</LINE></lost1>
+  <task2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>357</LINE></task2>
+  <lost2a><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>381</LINE></lost2a>
+  <lost2b><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>385</LINE></lost2b>
+  <win2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>375</LINE></win2>
+  <task3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>389</LINE></task3>
+  <lost3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>406</LINE></lost3>
+  <win3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>401</LINE></win3>
+  <end_game><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>410</LINE></end_game>
+  <lava_won><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>415</LINE></lava_won>
+  <lava_lost><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>421</LINE></lava_lost>
+  <sequence1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>428</LINE></sequence1>
+  <lose_1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>473</LINE></lose_1>
+  <win_1><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>477</LINE></win_1>
+  <sequence2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>482</LINE></sequence2>
+  <lose_2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>546</LINE></lose_2>
+  <win_2><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>550</LINE></win_2>
+  <sequence3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>555</LINE></sequence3>
+  <lose_3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>651</LINE></lose_3>
+  <win_3><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>655</LINE></win_3>
+  <final_keypad><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>660</LINE></final_keypad>
+  <keypad_won><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>664</LINE></keypad_won>
+  <keypad_lost><FILE>C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm</FILE><LINE>670</LINE></keypad_lost>
  </LABELS>
 </ASSEMBLER_INFO>

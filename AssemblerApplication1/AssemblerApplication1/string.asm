@@ -15,9 +15,9 @@ KeySet01:
 
 ; Menu of game
 str0:
-.db "WELCOME TO ", 0
+.db "===WELCOME TO===", 0
 str1:
-.db "MCU PARTY", 0
+.db "====MCU PARTY===", 0
 str2:
 .db "A. PLAY GAME", 0
 str3:
@@ -25,10 +25,10 @@ str3:
 
 ; general
 strwelcome:
-.db "Welcome to the",0
+.db " Welcome to the ",0
 
 strivia:
-.db "trivia game :)",0
+.db " trivia game :) ",0
 
 strlava:
 .db "board is lava :)",0
@@ -37,10 +37,10 @@ strdance:
 .db "keypad dance :)",0
 
 strcorrect:
-.db "Correct!",0
+.db "====Correct!====",0
 
 strfalse:
-.db "False!",0
+.db "=====False!=====",0
 
 strivia2:
 .db "Answer 5/10 co-",0
@@ -52,19 +52,19 @@ strlava2:
 .db "Win 2/3 to win",0
 
 strclue1a:
-.db "1st clue:",0
+.db "    1st clue:   ",0
 
 strclue1b:
-.db "SNOW WHITE",0
+.db "   SNOW WHITE   ",0
 
 clue1answer:
 .db $14 ;7
 
 strclue2a:
-.db "2nd clue:",0
+.db "    2nd clue:   ",0
 
 strclue2b:
-.db "Musketeers",0
+.db "   Musketeers   ",0
 
 clue2answer:
 .db $41 ;3
@@ -85,13 +85,13 @@ strwin1:
 .db "CONGRATULATIONS",0
 
 strwin2:
-.db "YOU WIN",0
+.db "=====YOU WIN====",0
 
 strlose1:
-.db "YOU LOSE,",0
+.db "====YOU LOSE====",0
 
 strlose2:
-.db "TRY AGAIN",0
+.db "====TRY AGAIN===",0
 
 ; Choose games
 strgame1:
@@ -109,19 +109,19 @@ strpasscorr:
 .db "CORRECT PASSCODE",0
 
 strpassincorr:
-.db "INCORRECT", 0
+.db "====INCORRECT===", 0
 
 strpassincorrbis:
-.db "PASSCODE",0
+.db "====PASSCODE====",0
 
 str8:
 .db "CONGRATULATIONS, ", 0
 str9:
 .db "YOU WIN THIS GAME !", 0
 str10:
-.db "THANKS FOR", 0
+.db "   THANKS FOR   ", 0
 str11:
-.db "PLAYING! :D", 0
+.db "   PLAYING! :D  ", 0
 
 ; Quiz trivia
 ; Question 1
@@ -286,22 +286,22 @@ answer10:
 
 ; THE BOARD IS LAVA
 strlava3:
-.db "Add 0.5C in 8s",0
+.db " Add 0.5C in 8s ",0
 
 strlava4:
 .db "Add 0.5-1C in 8s",0
 
 strlava5:
-.db "Add 1C in 8s",0
+.db "  Add 1C in 8s  ",0
 
 strlavawin1:
-.db "YOU WIN!",0
+.db "====YOU WIN!====",0
 
 strlavawin2:
 .db "CONGRATULATIONS!",0
 
 strlavalost:
-.db "It's freezing!",0
+.db " It's freezing! ",0
 
 strlavahot:
 .db "2 hot to handle!",0
@@ -371,3 +371,10 @@ game3answer10:
 
 strdance_:
 .db "================",0
+
+; Credits
+strcred:
+.db " Made by Thomas ",0
+
+strcred2:
+.db "   and Renuka   ",0
