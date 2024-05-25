@@ -132,7 +132,7 @@ reset:
 main:
 	call	LCD_clear
 	DISPLAY2 str0, str1
-	;MENU_SONG
+	MENU_SONG
 	
 
 
