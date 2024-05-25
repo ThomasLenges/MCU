@@ -472,11 +472,12 @@ sequence1:
 	jmp win_1
 lose_1:
 	DISPLAY1 strfalse
+	INCORRECT_SONG
 	WAIT_MS 2000
 	jmp sequence2
 win_1:
 	DISPLAY1 strcorrect
-	WAIT_MS 2000
+	CORRECT_SONG
 	inc c2
 	jmp sequence2
 sequence2:
@@ -545,11 +546,11 @@ CA LCD_pos, $4a
 	jmp win_2
 lose_2:
 	DISPLAY1 strfalse
-	WAIT_MS 2000
+	INCORRECT_SONG
 	jmp sequence3
 win_2:
 	DISPLAY1 strcorrect
-	WAIT_MS 2000
+	CORRECT_SONG
 	inc c2
 	jmp sequence3
 sequence3:
@@ -650,11 +651,11 @@ sequence3:
 	jmp win_3
 lose_3:
 	DISPLAY1 strfalse
-	WAIT_MS 2000
+	INCORRECT_SONG
 	jmp final_keypad
 win_3:
 	DISPLAY1 strcorrect
-	WAIT_MS 2000
+	CORRECT_SONG
 	inc c2
 	jmp final_keypad
 final_keypad:

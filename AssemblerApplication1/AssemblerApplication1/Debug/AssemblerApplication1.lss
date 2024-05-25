@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm Sun May 26 00:53:04 2024
+AVRASM ver. 2.2.6  C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm Sun May 26 00:56:45 2024
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.1.130\avrasm\inc\m128def.inc'
 C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(1): Including file 'C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\definitions.asm'
@@ -7345,7 +7345,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000a6c 940e 017d
 000a6e 940e 0523                 	DISPLAY2 str2, str3
 000a70 940e 0113                 	call reset_kpd
-000a72 940e 259f                 	call check_reset
+000a72 940e 25f4                 	call check_reset
 000a74 2f62                      	mov b0, a0
 000a75 3861                      	cpi b0, 0x81
 000a76 f011                      	breq PC+3
@@ -7379,7 +7379,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(166): warning: .cseg .db misalignment - padding zero byte
 000a95 0000                      .db	"      ****      ",0
 000a96 940e 0113                 	call reset_kpd
-000a98 940e 259f                 	call check_reset
+000a98 940e 25f4                 	call check_reset
 000a9a 94e8
 000a9b e2ee
 000a9c e0f4
@@ -7405,7 +7405,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000ab1 e427
 000ab2 940e 017d                 	CA LCD_pos, $47 
 000ab4 940e 0113                 	call reset_kpd
-000ab6 940e 259f                 	call check_reset
+000ab6 940e 25f4                 	call check_reset
 000ab8 94e8
 000ab9 e5e4
 000aba e0f4
@@ -7426,7 +7426,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000ac9 e428
 000aca 940e 017d                 	CA LCD_pos, $48
 000acc 940e 0113                 	call reset_kpd
-000ace 940e 259f                 	call check_reset
+000ace 940e 25f4                 	call check_reset
 000ad0 94e8
 000ad1 e7ea
 000ad2 e0f4
@@ -7447,7 +7447,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000ae1 e429
 000ae2 940e 017d                 	CA LCD_pos, $49
 000ae4 940e 0113                 	call reset_kpd
-000ae6 940e 259f                 	call check_reset
+000ae6 940e 25f4                 	call check_reset
 000ae8 94e8
 000ae9 e7ec
 000aea e0f4
@@ -8307,7 +8307,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000e6d f791
 000e6e 950a
 000e6f f781                      	VICTORY_SONG
-000e70 940c 255d                 	jmp end
+000e70 940c 25b2                 	jmp end
                                  
                                  games:
                                  page1:
@@ -8321,7 +8321,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000e7b 940e 017d
 000e7d 940e 0523                 	DISPLAY2 strgame1, strgame2
 000e7f 940e 0113                 	call reset_kpd
-000e81 940e 259f                 	call check_reset
+000e81 940e 25f4                 	call check_reset
 000e83 2f62                      	mov b0, a0
 000e84 3861                      	cpi b0, 0x81 ; A
 000e85 f409                      	brne PC+2
@@ -8340,7 +8340,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000e92 e0f4
 000e93 940e 0523                 	DISPLAY1 strgame3
 000e95 940e 0113                 	call reset_kpd
-000e97 940e 259f                 	call check_reset
+000e97 940e 25f4                 	call check_reset
 000e99 2f62                      	mov b0, a0
 000e9a 3861                      	cpi b0, 0x81 ; A
 000e9b f409                      	brne PC+2
@@ -8425,7 +8425,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000ef2 940e 017d
 000ef4 940e 0523
 000ef6 940e 0113
-000ef8 940e 259f
+000ef8 940e 25f4
 000efa 2f62
 000efb 7820
 000efc f009
@@ -8442,7 +8442,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000f0a 940e 017d
 000f0c 940e 0523
 000f0e 940e 0113
-000f10 940e 259f
+000f10 940e 25f4
 000f12 2f62
 000f13 7820
 000f14 f009
@@ -8459,7 +8459,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000f22 940e 017d
 000f24 940e 0523
 000f26 940e 0113
-000f28 940e 259f
+000f28 940e 25f4
 000f2a 2f62
 000f2b 7820
 000f2c f009
@@ -8588,7 +8588,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000fb7 940e 017d
 000fb9 940e 0523
 000fbb 940e 0113
-000fbd 940e 259f
+000fbd 940e 25f4
 000fbf 2f62
 000fc0 7820
 000fc1 f009
@@ -8605,7 +8605,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000fcf 940e 017d
 000fd1 940e 0523
 000fd3 940e 0113
-000fd5 940e 259f
+000fd5 940e 25f4
 000fd7 2f62
 000fd8 7820
 000fd9 f009
@@ -8622,7 +8622,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 000fe7 940e 017d
 000fe9 940e 0523
 000feb 940e 0113
-000fed 940e 259f
+000fed 940e 25f4
 000fef 2f62
 000ff0 7820
 000ff1 f009
@@ -8751,7 +8751,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 00107c 940e 017d
 00107e 940e 0523
 001080 940e 0113
-001082 940e 259f
+001082 940e 25f4
 001084 2f62
 001085 7820
 001086 f009
@@ -8768,7 +8768,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001094 940e 017d
 001096 940e 0523
 001098 940e 0113
-00109a 940e 259f
+00109a 940e 25f4
 00109c 2f62
 00109d 7820
 00109e f009
@@ -8785,7 +8785,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0010ac 940e 017d
 0010ae 940e 0523
 0010b0 940e 0113
-0010b2 940e 259f
+0010b2 940e 25f4
 0010b4 2f62
 0010b5 7820
 0010b6 f009
@@ -8914,7 +8914,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001141 940e 017d
 001143 940e 0523
 001145 940e 0113
-001147 940e 259f
+001147 940e 25f4
 001149 2f62
 00114a 7820
 00114b f009
@@ -8931,7 +8931,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001159 940e 017d
 00115b 940e 0523
 00115d 940e 0113
-00115f 940e 259f
+00115f 940e 25f4
 001161 2f62
 001162 7820
 001163 f009
@@ -8948,7 +8948,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001171 940e 017d
 001173 940e 0523
 001175 940e 0113
-001177 940e 259f
+001177 940e 25f4
 001179 2f62
 00117a 7820
 00117b f009
@@ -9077,7 +9077,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001206 940e 017d
 001208 940e 0523
 00120a 940e 0113
-00120c 940e 259f
+00120c 940e 25f4
 00120e 2f62
 00120f 7820
 001210 f009
@@ -9094,7 +9094,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 00121e 940e 017d
 001220 940e 0523
 001222 940e 0113
-001224 940e 259f
+001224 940e 25f4
 001226 2f62
 001227 7820
 001228 f009
@@ -9111,7 +9111,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001236 940e 017d
 001238 940e 0523
 00123a 940e 0113
-00123c 940e 259f
+00123c 940e 25f4
 00123e 2f62
 00123f 7820
 001240 f009
@@ -9240,7 +9240,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0012cb 940e 017d
 0012cd 940e 0523
 0012cf 940e 0113
-0012d1 940e 259f
+0012d1 940e 25f4
 0012d3 2f62
 0012d4 7820
 0012d5 f009
@@ -9257,7 +9257,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0012e3 940e 017d
 0012e5 940e 0523
 0012e7 940e 0113
-0012e9 940e 259f
+0012e9 940e 25f4
 0012eb 2f62
 0012ec 7820
 0012ed f009
@@ -9274,7 +9274,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0012fb 940e 017d
 0012fd 940e 0523
 0012ff 940e 0113
-001301 940e 259f
+001301 940e 25f4
 001303 2f62
 001304 7820
 001305 f009
@@ -9403,7 +9403,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001390 940e 017d
 001392 940e 0523
 001394 940e 0113
-001396 940e 259f
+001396 940e 25f4
 001398 2f62
 001399 7820
 00139a f009
@@ -9420,7 +9420,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0013a8 940e 017d
 0013aa 940e 0523
 0013ac 940e 0113
-0013ae 940e 259f
+0013ae 940e 25f4
 0013b0 2f62
 0013b1 7820
 0013b2 f009
@@ -9437,7 +9437,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0013c0 940e 017d
 0013c2 940e 0523
 0013c4 940e 0113
-0013c6 940e 259f
+0013c6 940e 25f4
 0013c8 2f62
 0013c9 7820
 0013ca f009
@@ -9566,7 +9566,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001455 940e 017d
 001457 940e 0523
 001459 940e 0113
-00145b 940e 259f
+00145b 940e 25f4
 00145d 2f62
 00145e 7820
 00145f f009
@@ -9583,7 +9583,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 00146d 940e 017d
 00146f 940e 0523
 001471 940e 0113
-001473 940e 259f
+001473 940e 25f4
 001475 2f62
 001476 7820
 001477 f009
@@ -9600,7 +9600,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001485 940e 017d
 001487 940e 0523
 001489 940e 0113
-00148b 940e 259f
+00148b 940e 25f4
 00148d 2f62
 00148e 7820
 00148f f009
@@ -9729,7 +9729,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 00151a 940e 017d
 00151c 940e 0523
 00151e 940e 0113
-001520 940e 259f
+001520 940e 25f4
 001522 2f62
 001523 7820
 001524 f009
@@ -9746,7 +9746,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001532 940e 017d
 001534 940e 0523
 001536 940e 0113
-001538 940e 259f
+001538 940e 25f4
 00153a 2f62
 00153b 7820
 00153c f009
@@ -9763,7 +9763,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 00154a 940e 017d
 00154c 940e 0523
 00154e 940e 0113
-001550 940e 259f
+001550 940e 25f4
 001552 2f62
 001553 7820
 001554 f009
@@ -9892,7 +9892,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0015df 940e 017d
 0015e1 940e 0523
 0015e3 940e 0113
-0015e5 940e 259f
+0015e5 940e 25f4
 0015e7 2f62
 0015e8 7820
 0015e9 f009
@@ -9909,7 +9909,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 0015f7 940e 017d
 0015f9 940e 0523
 0015fb 940e 0113
-0015fd 940e 259f
+0015fd 940e 25f4
 0015ff 2f62
 001600 7820
 001601 f009
@@ -9926,7 +9926,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 00160f 940e 017d
 001611 940e 0523
 001613 940e 0113
-001615 940e 259f
+001615 940e 25f4
 001617 2f62
 001618 7820
 001619 f009
@@ -11986,7 +11986,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001ed7 e000
 001ed8 2ea0                      	_LDI c2, 0 ; overall counter
 001ed9 940e 0113                 	call reset_kpd
-001edb 940e 259f                 	call check_reset
+001edb 940e 25f4                 	call check_reset
 001edd 94e8
 001ede ece6
 001edf e0f9
@@ -12016,7 +12016,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001ef8 e427
 001ef9 940e 017d                 	CA LCD_pos, $47 
 001efb 940e 0113                 	call reset_kpd
-001efd 940e 259f                 	call check_reset
+001efd 940e 25f4                 	call check_reset
 001eff 94e8
 001f00 ece8
 001f01 e0f9
@@ -12037,7 +12037,7 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001f10 e428
 001f11 940e 017d                 	CA LCD_pos, $48 
 001f13 940e 0113                 	call reset_kpd
-001f15 940e 259f                 	call check_reset
+001f15 940e 25f4                 	call check_reset
 001f17 94e8
 001f18 ecea
 001f19 e0f9
@@ -12077,15 +12077,15 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001f3b e003
 001f3c 1690                      	_CPI c1, 3
 001f3d f411                      	brne lose_1
-001f3e 940c 1f5b                 	jmp win_1
+001f3e 940c 1f75                 	jmp win_1
                                  lose_1:
 001f40 940e 0171
 001f42 ece8
 001f43 e0f3
 001f44 940e 0523                 	DISPLAY1 strfalse
-001f46 ed00
+001f46 ef04
 001f47 2e30
-001f48 e008
+001f48 e002
 001f49 930f
 001f4a 923f
 001f4b e300
@@ -12101,1478 +12101,1545 @@ C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\m
 001f55 943a
 001f56 f791
 001f57 950a
-001f58 f781                      	WAIT_MS 2000
-001f59 940c 1f77                 	jmp sequence2
+001f58 f781
+001f59 ec21
+001f5a e16e
+001f5b 940e 063a
+001f5d ec21
+001f5e 940e 063a                 	INCORRECT_SONG
+001f60 ed00
+001f61 2e30
+001f62 e008
+001f63 930f
+001f64 923f
+001f65 e300
+001f66 2e30
+001f67 e006
+001f68 943a
+001f69 f7f1
+001f6a 943a
+001f6b 950a
+001f6c f7d9
+001f6d 903f
+001f6e 910f
+001f6f 943a
+001f70 f791
+001f71 950a
+001f72 f781                      	WAIT_MS 2000
+001f73 940c 1fa0                 	jmp sequence2
                                  win_1:
-001f5b 940e 0171
-001f5d ebe6
-001f5e e0f3
-001f5f 940e 0523                 	DISPLAY1 strcorrect
-001f61 ed00
-001f62 2e30
-001f63 e008
-001f64 930f
-001f65 923f
-001f66 e300
-001f67 2e30
-001f68 e006
-001f69 943a
-001f6a f7f1
-001f6b 943a
-001f6c 950a
-001f6d f7d9
-001f6e 903f
-001f6f 910f
-001f70 943a
-001f71 f791
-001f72 950a
-001f73 f781                      	WAIT_MS 2000
-001f74 94a3                      	inc c2
-001f75 940c 1f77                 	jmp sequence2
+001f75 940e 0171
+001f77 ebe6
+001f78 e0f3
+001f79 940e 0523                 	DISPLAY1 strcorrect
+001f7b ef04
+001f7c 2e30
+001f7d e002
+001f7e 930f
+001f7f 923f
+001f80 e300
+001f81 2e30
+001f82 e006
+001f83 943a
+001f84 f7f1
+001f85 943a
+001f86 950a
+001f87 f7d9
+001f88 903f
+001f89 910f
+001f8a 943a
+001f8b f791
+001f8c 950a
+001f8d f781
+001f8e e22d
+001f8f e46b
+001f90 940e 063a
+001f92 e329
+001f93 e46b
+001f94 940e 063a
+001f96 e22d
+001f97 e46b
+001f98 940e 063a
+001f9a e329
+001f9b 940e 063a                 	CORRECT_SONG
+001f9d 94a3                      	inc c2
+001f9e 940c 1fa0                 	jmp sequence2
                                  sequence2:
-001f77 e000
-001f78 2e90                      	_LDI c1, 0 ; counter for each game
-001f79 940e 0171
-001f7b e9e0
-001f7c e0f9
-001f7d 940e 0523
-001f7f eae2
-001f80 e0f9
-001f81 e420
-001f82 940e 017d
-001f84 940e 0523                 	DISPLAY2 strdance4, strdance5
-001f86 ed00
-001f87 2e30
-001f88 e008
-001f89 930f
-001f8a 923f
-001f8b e300
-001f8c 2e30
-001f8d e006
-001f8e 943a
-001f8f f7f1
-001f90 943a
-001f91 950a
-001f92 f7d9
-001f93 903f
-001f94 910f
-001f95 943a
-001f96 f791
-001f97 950a
-001f98 f781                      	WAIT_MS 2000
-001f99 940e 0171
-001f9b ecec
-001f9c e0f9
-001f9d 940e 0523
-001f9f e1e0
-001fa0 e0fa
-001fa1 e420
-001fa2 940e 017d
-001fa4 940e 0523                 	DISPLAY2 strdance_game2, strdance_
-001fa6 ed00
-001fa7 2e30
-001fa8 e008
-001fa9 930f
-001faa 923f
-001fab e300
-001fac 2e30
-001fad e006
-001fae 943a
-001faf f7f1
-001fb0 943a
-001fb1 950a
-001fb2 f7d9
-001fb3 903f
-001fb4 910f
-001fb5 943a
-001fb6 f791
-001fb7 950a
-001fb8 f781                      	WAIT_MS 2000
-001fb9 940e 015b                 	call LCD_clear
-001fbb e40f
-001fbc 2e40
-001fbd e001
-001fbe 2e50
-001fbf 940e 052b                 	PRINTF LCD
-001fc1 2a2a
-001fc2 2a2a
-001fc3 2a2a
-001fc4 2a2a
-001fc5 2a2a
-001fc6 2a2a
-001fc7 2a2a
-001fc8 2a2a
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(490): warning: .cseg .db misalignment - padding zero byte
-001fc9 0000                      .db	"****************",0
+001fa0 e000
+001fa1 2e90                      	_LDI c1, 0 ; counter for each game
+001fa2 940e 0171
+001fa4 e9e0
+001fa5 e0f9
+001fa6 940e 0523
+001fa8 eae2
+001fa9 e0f9
+001faa e420
+001fab 940e 017d
+001fad 940e 0523                 	DISPLAY2 strdance4, strdance5
+001faf ed00
+001fb0 2e30
+001fb1 e008
+001fb2 930f
+001fb3 923f
+001fb4 e300
+001fb5 2e30
+001fb6 e006
+001fb7 943a
+001fb8 f7f1
+001fb9 943a
+001fba 950a
+001fbb f7d9
+001fbc 903f
+001fbd 910f
+001fbe 943a
+001fbf f791
+001fc0 950a
+001fc1 f781                      	WAIT_MS 2000
+001fc2 940e 0171
+001fc4 ecec
+001fc5 e0f9
+001fc6 940e 0523
+001fc8 e1e0
+001fc9 e0fa
 001fca e420
-001fcb 940e 017d                 	CA LCD_pos, $40
-001fcd e40f
-001fce 2e40
-001fcf e001
-001fd0 2e50
-001fd1 940e 052b                 	PRINTF LCD
-001fd3 2a2a
-001fd4 2a2a
-001fd5 2a2a
-001fd6 2a2a
-001fd7 2a2a
-001fd8 2a2a
-001fd9 2a2a
-001fda 2a2a
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(493): warning: .cseg .db misalignment - padding zero byte
-001fdb 0000                      .db	"****************",0
-001fdc 940e 0113                 	call reset_kpd
-001fde 940e 259f                 	call check_reset
-001fe0 94e8
-001fe1 edee
-001fe2 e0f9
-001fe3 95c8
-001fe4 1520
-001fe5 f409
-001fe6 9468                      	COMPARE game2answer1, a0
-001fe7 f40e                      	brtc PC+2
-001fe8 9493                      	inc c1
-001fe9 e420
-001fea 940e 017d                 	CA LCD_pos, $40
-001fec e40f
-001fed 2e40
-001fee e001
-001fef 2e50
-001ff0 940e 052b                 	PRINTF LCD
-001ff2 2a2a
-001ff3 2a2a
-001ff4 852a
-001ff5 2a16
-001ff6 2a2a
-001ff7 2a2a
-001ff8 2a2a
-001ff9 2a2a
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(501): warning: .cseg .db misalignment - padding zero byte
-001ffa 0000                      .db	"*****",FSTR,b,"*********",0
-001ffb e426
-001ffc 940e 017d                 	CA LCD_pos, $46
-001ffe 940e 0113                 	call reset_kpd
-002000 940e 259f                 	call check_reset
-002002 94e8
-002003 eee0
-002004 e0f9
-002005 95c8
-002006 1520
-002007 f409
-002008 9468                      	COMPARE game2answer2, a0
-002009 f40e                      	brtc PC+2
-00200a 9493                      	inc c1
-00200b e40f
-00200c 2e40
-00200d e001
-00200e 2e50
-00200f 940e 052b                 	PRINTF LCD
-002011 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(509): warning: .cseg .db misalignment - padding zero byte
-002012 0000                      .db	FSTR,b,0
-002013 e427
-002014 940e 017d                 	CA LCD_pos, $47 
-002016 940e 0113                 	call reset_kpd
-002018 940e 259f                 	call check_reset
-00201a 94e8
-00201b eee2
-00201c e0f9
-00201d 95c8
-00201e 1520
-00201f f409
-002020 9468                      	COMPARE game2answer3, a0
-002021 f40e                      	brtc PC+2
-002022 9493                      	inc c1
-002023 e40f
-002024 2e40
-002025 e001
-002026 2e50
-002027 940e 052b                 	PRINTF LCD
-002029 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(517): warning: .cseg .db misalignment - padding zero byte
-00202a 0000                      .db	FSTR,b,0
-00202b e428
-00202c 940e 017d                 	CA LCD_pos, $48 
-00202e 940e 0113                 	call reset_kpd
-002030 940e 259f                 	call check_reset
-002032 94e8
-002033 eee4
-002034 e0f9
-002035 95c8
-002036 1520
-002037 f409
-002038 9468                      	COMPARE game2answer4, a0
-002039 f40e                      	brtc PC+2
-00203a 9493                      	inc c1
-00203b e40f
-00203c 2e40
-00203d e001
-00203e 2e50
-00203f 940e 052b                 	PRINTF LCD
-002041 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(525): warning: .cseg .db misalignment - padding zero byte
-002042 0000                      .db	FSTR,b,0
-002043 e429
-002044 940e 017d                 	CA LCD_pos, $49 
-002046 940e 0113                 	call reset_kpd
-002048 940e 259f                 	call check_reset
-00204a 94e8
-00204b eee6
-00204c e0f9
-00204d 95c8
-00204e 1520
-00204f f409
-002050 9468                      	COMPARE game2answer5, a0
-002051 f40e                      	brtc PC+2
-002052 9493                      	inc c1
-002053 e40f
-002054 2e40
-002055 e001
-002056 2e50
-002057 940e 052b                 	PRINTF LCD
-002059 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(533): warning: .cseg .db misalignment - padding zero byte
-00205a 0000                      .db	FSTR,b,0
-00205b e42a
-00205c 940e 017d                 CA LCD_pos, $4a 
-00205e 940e 0113                 	call reset_kpd
-002060 940e 259f                 	call check_reset
-002062 94e8
-002063 eee8
-002064 e0f9
-002065 95c8
-002066 1520
-002067 f409
-002068 9468                      	COMPARE game2answer6, a0
-002069 f40e                      	brtc PC+2
-00206a 9493                      	inc c1
-00206b e40f
-00206c 2e40
-00206d e001
-00206e 2e50
-00206f 940e 052b                 	PRINTF LCD
-002071 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(541): warning: .cseg .db misalignment - padding zero byte
-002072 0000                      .db	FSTR,b,0
-002073 ed00
-002074 2e30
-002075 e008
-002076 930f
-002077 923f
-002078 e300
-002079 2e30
-00207a e006
-00207b 943a
-00207c f7f1
-00207d 943a
-00207e 950a
-00207f f7d9
-002080 903f
-002081 910f
-002082 943a
-002083 f791
-002084 950a
-002085 f781                      	WAIT_MS 2000
-002086 e006
-002087 1690                      	_CPI c1, 6
-002088 f411                      	brne lose_2
-002089 940c 20a6                 	jmp win_2
+001fcb 940e 017d
+001fcd 940e 0523                 	DISPLAY2 strdance_game2, strdance_
+001fcf ed00
+001fd0 2e30
+001fd1 e008
+001fd2 930f
+001fd3 923f
+001fd4 e300
+001fd5 2e30
+001fd6 e006
+001fd7 943a
+001fd8 f7f1
+001fd9 943a
+001fda 950a
+001fdb f7d9
+001fdc 903f
+001fdd 910f
+001fde 943a
+001fdf f791
+001fe0 950a
+001fe1 f781                      	WAIT_MS 2000
+001fe2 940e 015b                 	call LCD_clear
+001fe4 e40f
+001fe5 2e40
+001fe6 e001
+001fe7 2e50
+001fe8 940e 052b                 	PRINTF LCD
+001fea 2a2a
+001feb 2a2a
+001fec 2a2a
+001fed 2a2a
+001fee 2a2a
+001fef 2a2a
+001ff0 2a2a
+001ff1 2a2a
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(491): warning: .cseg .db misalignment - padding zero byte
+001ff2 0000                      .db	"****************",0
+001ff3 e420
+001ff4 940e 017d                 	CA LCD_pos, $40
+001ff6 e40f
+001ff7 2e40
+001ff8 e001
+001ff9 2e50
+001ffa 940e 052b                 	PRINTF LCD
+001ffc 2a2a
+001ffd 2a2a
+001ffe 2a2a
+001fff 2a2a
+002000 2a2a
+002001 2a2a
+002002 2a2a
+002003 2a2a
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(494): warning: .cseg .db misalignment - padding zero byte
+002004 0000                      .db	"****************",0
+002005 940e 0113                 	call reset_kpd
+002007 940e 25f4                 	call check_reset
+002009 94e8
+00200a edee
+00200b e0f9
+00200c 95c8
+00200d 1520
+00200e f409
+00200f 9468                      	COMPARE game2answer1, a0
+002010 f40e                      	brtc PC+2
+002011 9493                      	inc c1
+002012 e420
+002013 940e 017d                 	CA LCD_pos, $40
+002015 e40f
+002016 2e40
+002017 e001
+002018 2e50
+002019 940e 052b                 	PRINTF LCD
+00201b 2a2a
+00201c 2a2a
+00201d 852a
+00201e 2a16
+00201f 2a2a
+002020 2a2a
+002021 2a2a
+002022 2a2a
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(502): warning: .cseg .db misalignment - padding zero byte
+002023 0000                      .db	"*****",FSTR,b,"*********",0
+002024 e426
+002025 940e 017d                 	CA LCD_pos, $46
+002027 940e 0113                 	call reset_kpd
+002029 940e 25f4                 	call check_reset
+00202b 94e8
+00202c eee0
+00202d e0f9
+00202e 95c8
+00202f 1520
+002030 f409
+002031 9468                      	COMPARE game2answer2, a0
+002032 f40e                      	brtc PC+2
+002033 9493                      	inc c1
+002034 e40f
+002035 2e40
+002036 e001
+002037 2e50
+002038 940e 052b                 	PRINTF LCD
+00203a 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(510): warning: .cseg .db misalignment - padding zero byte
+00203b 0000                      .db	FSTR,b,0
+00203c e427
+00203d 940e 017d                 	CA LCD_pos, $47 
+00203f 940e 0113                 	call reset_kpd
+002041 940e 25f4                 	call check_reset
+002043 94e8
+002044 eee2
+002045 e0f9
+002046 95c8
+002047 1520
+002048 f409
+002049 9468                      	COMPARE game2answer3, a0
+00204a f40e                      	brtc PC+2
+00204b 9493                      	inc c1
+00204c e40f
+00204d 2e40
+00204e e001
+00204f 2e50
+002050 940e 052b                 	PRINTF LCD
+002052 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(518): warning: .cseg .db misalignment - padding zero byte
+002053 0000                      .db	FSTR,b,0
+002054 e428
+002055 940e 017d                 	CA LCD_pos, $48 
+002057 940e 0113                 	call reset_kpd
+002059 940e 25f4                 	call check_reset
+00205b 94e8
+00205c eee4
+00205d e0f9
+00205e 95c8
+00205f 1520
+002060 f409
+002061 9468                      	COMPARE game2answer4, a0
+002062 f40e                      	brtc PC+2
+002063 9493                      	inc c1
+002064 e40f
+002065 2e40
+002066 e001
+002067 2e50
+002068 940e 052b                 	PRINTF LCD
+00206a 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(526): warning: .cseg .db misalignment - padding zero byte
+00206b 0000                      .db	FSTR,b,0
+00206c e429
+00206d 940e 017d                 	CA LCD_pos, $49 
+00206f 940e 0113                 	call reset_kpd
+002071 940e 25f4                 	call check_reset
+002073 94e8
+002074 eee6
+002075 e0f9
+002076 95c8
+002077 1520
+002078 f409
+002079 9468                      	COMPARE game2answer5, a0
+00207a f40e                      	brtc PC+2
+00207b 9493                      	inc c1
+00207c e40f
+00207d 2e40
+00207e e001
+00207f 2e50
+002080 940e 052b                 	PRINTF LCD
+002082 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(534): warning: .cseg .db misalignment - padding zero byte
+002083 0000                      .db	FSTR,b,0
+002084 e42a
+002085 940e 017d                 CA LCD_pos, $4a 
+002087 940e 0113                 	call reset_kpd
+002089 940e 25f4                 	call check_reset
+00208b 94e8
+00208c eee8
+00208d e0f9
+00208e 95c8
+00208f 1520
+002090 f409
+002091 9468                      	COMPARE game2answer6, a0
+002092 f40e                      	brtc PC+2
+002093 9493                      	inc c1
+002094 e40f
+002095 2e40
+002096 e001
+002097 2e50
+002098 940e 052b                 	PRINTF LCD
+00209a 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(542): warning: .cseg .db misalignment - padding zero byte
+00209b 0000                      .db	FSTR,b,0
+00209c ed00
+00209d 2e30
+00209e e008
+00209f 930f
+0020a0 923f
+0020a1 e300
+0020a2 2e30
+0020a3 e006
+0020a4 943a
+0020a5 f7f1
+0020a6 943a
+0020a7 950a
+0020a8 f7d9
+0020a9 903f
+0020aa 910f
+0020ab 943a
+0020ac f791
+0020ad 950a
+0020ae f781                      	WAIT_MS 2000
+0020af e006
+0020b0 1690                      	_CPI c1, 6
+0020b1 f411                      	brne lose_2
+0020b2 940c 20d6                 	jmp win_2
                                  lose_2:
-00208b 940e 0171
-00208d ece8
-00208e e0f3
-00208f 940e 0523                 	DISPLAY1 strfalse
-002091 ed00
-002092 2e30
-002093 e008
-002094 930f
-002095 923f
-002096 e300
-002097 2e30
-002098 e006
-002099 943a
-00209a f7f1
-00209b 943a
-00209c 950a
-00209d f7d9
-00209e 903f
-00209f 910f
-0020a0 943a
-0020a1 f791
-0020a2 950a
-0020a3 f781                      	WAIT_MS 2000
-0020a4 940c 20c2                 	jmp sequence3
+0020b4 940e 0171
+0020b6 ece8
+0020b7 e0f3
+0020b8 940e 0523                 	DISPLAY1 strfalse
+0020ba ef04
+0020bb 2e30
+0020bc e002
+0020bd 930f
+0020be 923f
+0020bf e300
+0020c0 2e30
+0020c1 e006
+0020c2 943a
+0020c3 f7f1
+0020c4 943a
+0020c5 950a
+0020c6 f7d9
+0020c7 903f
+0020c8 910f
+0020c9 943a
+0020ca f791
+0020cb 950a
+0020cc f781
+0020cd ec21
+0020ce e16e
+0020cf 940e 063a
+0020d1 ec21
+0020d2 940e 063a                 	INCORRECT_SONG
+0020d4 940c 2101                 	jmp sequence3
                                  win_2:
-0020a6 940e 0171
-0020a8 ebe6
-0020a9 e0f3
-0020aa 940e 0523                 	DISPLAY1 strcorrect
-0020ac ed00
-0020ad 2e30
-0020ae e008
-0020af 930f
-0020b0 923f
-0020b1 e300
-0020b2 2e30
-0020b3 e006
-0020b4 943a
-0020b5 f7f1
-0020b6 943a
-0020b7 950a
-0020b8 f7d9
-0020b9 903f
-0020ba 910f
-0020bb 943a
-0020bc f791
-0020bd 950a
-0020be f781                      	WAIT_MS 2000
-0020bf 94a3                      	inc c2
-0020c0 940c 20c2                 	jmp sequence3
+0020d6 940e 0171
+0020d8 ebe6
+0020d9 e0f3
+0020da 940e 0523                 	DISPLAY1 strcorrect
+0020dc ef04
+0020dd 2e30
+0020de e002
+0020df 930f
+0020e0 923f
+0020e1 e300
+0020e2 2e30
+0020e3 e006
+0020e4 943a
+0020e5 f7f1
+0020e6 943a
+0020e7 950a
+0020e8 f7d9
+0020e9 903f
+0020ea 910f
+0020eb 943a
+0020ec f791
+0020ed 950a
+0020ee f781
+0020ef e22d
+0020f0 e46b
+0020f1 940e 063a
+0020f3 e329
+0020f4 e46b
+0020f5 940e 063a
+0020f7 e22d
+0020f8 e46b
+0020f9 940e 063a
+0020fb e329
+0020fc 940e 063a                 	CORRECT_SONG
+0020fe 94a3                      	inc c2
+0020ff 940c 2101                 	jmp sequence3
                                  sequence3:
-0020c2 e000
-0020c3 2e90                      	_LDI c1, 0 ; counter for each game
-0020c4 940e 0171
-0020c6 e9e0
-0020c7 e0f9
-0020c8 940e 0523
-0020ca eae2
-0020cb e0f9
-0020cc e420
-0020cd 940e 017d
-0020cf 940e 0523                 	DISPLAY2 strdance4, strdance5
-0020d1 ed00
-0020d2 2e30
-0020d3 e008
-0020d4 930f
-0020d5 923f
-0020d6 e300
-0020d7 2e30
-0020d8 e006
-0020d9 943a
-0020da f7f1
-0020db 943a
-0020dc 950a
-0020dd f7d9
-0020de 903f
-0020df 910f
-0020e0 943a
-0020e1 f791
-0020e2 950a
-0020e3 f781                      	WAIT_MS 2000
-0020e4 940e 0171
-0020e6 eeea
-0020e7 e0f9
-0020e8 940e 0523
-0020ea e1e0
-0020eb e0fa
-0020ec e420
-0020ed 940e 017d
-0020ef 940e 0523                 	DISPLAY2 strdance_game3, strdance_
-0020f1 ed00
-0020f2 2e30
-0020f3 e008
-0020f4 930f
-0020f5 923f
-0020f6 e300
-0020f7 2e30
-0020f8 e006
-0020f9 943a
-0020fa f7f1
-0020fb 943a
-0020fc 950a
-0020fd f7d9
-0020fe 903f
-0020ff 910f
-002100 943a
-002101 f791
-002102 950a
-002103 f781                      	WAIT_MS 2000
-002104 940e 015b                 	call LCD_clear
-002106 e40f
-002107 2e40
-002108 e001
-002109 2e50
-00210a 940e 052b                 	PRINTF LCD
-00210c 2a2a
-00210d 2a2a
-00210e 2a2a
-00210f 2a2a
-002110 2a2a
-002111 2a2a
-002112 2a2a
-002113 2a2a
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(563): warning: .cseg .db misalignment - padding zero byte
-002114 0000                      .db	"****************",0
-002115 e420
-002116 940e 017d                 	CA LCD_pos, $40
-002118 e40f
-002119 2e40
-00211a e001
-00211b 2e50
-00211c 940e 052b                 	PRINTF LCD
-00211e 2a2a
-00211f 2a2a
-002120 2a2a
-002121 2a2a
-002122 2a2a
-002123 2a2a
-002124 2a2a
-002125 2a2a
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(566): warning: .cseg .db misalignment - padding zero byte
-002126 0000                      .db	"****************",0
-002127 940e 0113                 	call reset_kpd
-002129 940e 259f                 	call check_reset
-00212b 94e8
-00212c efec
-00212d e0f9
-00212e 95c8
-00212f 1520
-002130 f409
-002131 9468                      	COMPARE game3answer1, a0
-002132 f40e                      	brtc PC+2
-002133 9493                      	inc c1
-002134 e420
-002135 940e 017d                 	CA LCD_pos, $40
-002137 e40f
-002138 2e40
-002139 e001
-00213a 2e50
-00213b 940e 052b                 	PRINTF LCD
-00213d 2a2a
-00213e 852a
-00213f 2a16
-002140 2a2a
-002141 2a2a
-002142 2a2a
-002143 2a2a
-002144 2a2a
-002145 002a                      .db	"***",FSTR,b,"************",0
-002146 e424
-002147 940e 017d                 	CA LCD_pos, $44
-002149 940e 0113                 	call reset_kpd
-00214b 940e 259f                 	call check_reset
-00214d 94e8
-00214e efee
-00214f e0f9
-002150 95c8
-002151 1520
-002152 f409
-002153 9468                      	COMPARE game3answer2, a0
-002154 f40e                      	brtc PC+2
-002155 9493                      	inc c1
-002156 e40f
-002157 2e40
-002158 e001
-002159 2e50
-00215a 940e 052b                 	PRINTF LCD
-00215c 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(582): warning: .cseg .db misalignment - padding zero byte
-00215d 0000                      .db	FSTR,b,0
-00215e e425
-00215f 940e 017d                 	CA LCD_pos, $45 
-002161 940e 0113                 	call reset_kpd
-002163 940e 259f                 	call check_reset
-002165 94e8
-002166 e0e0
-002167 e0fa
-002168 95c8
-002169 1520
-00216a f409
-00216b 9468                      	COMPARE game3answer3, a0
-00216c f40e                      	brtc PC+2
-00216d 9493                      	inc c1
-00216e e40f
-00216f 2e40
-002170 e001
-002171 2e50
-002172 940e 052b                 	PRINTF LCD
-002174 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(590): warning: .cseg .db misalignment - padding zero byte
-002175 0000                      .db	FSTR,b,0
-002176 e426
-002177 940e 017d                 	CA LCD_pos, $46 
-002179 940e 0113                 	call reset_kpd
-00217b 940e 259f                 	call check_reset
-00217d 94e8
-00217e e0e2
-00217f e0fa
-002180 95c8
-002181 1520
-002182 f409
-002183 9468                      	COMPARE game3answer4, a0
-002184 f40e                      	brtc PC+2
-002185 9493                      	inc c1
-002186 e40f
-002187 2e40
-002188 e001
-002189 2e50
-00218a 940e 052b                 	PRINTF LCD
-00218c 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(598): warning: .cseg .db misalignment - padding zero byte
-00218d 0000                      .db	FSTR,b,0
-00218e e427
-00218f 940e 017d                 	CA LCD_pos, $47 
-002191 940e 0113                 	call reset_kpd
-002193 940e 259f                 	call check_reset
-002195 94e8
-002196 e0e4
-002197 e0fa
-002198 95c8
-002199 1520
-00219a f409
-00219b 9468                      	COMPARE game3answer5, a0
-00219c f40e                      	brtc PC+2
-00219d 9493                      	inc c1
-00219e e40f
-00219f 2e40
-0021a0 e001
-0021a1 2e50
-0021a2 940e 052b                 	PRINTF LCD
-0021a4 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(606): warning: .cseg .db misalignment - padding zero byte
-0021a5 0000                      .db	FSTR,b,0
-0021a6 e428
-0021a7 940e 017d                 	CA LCD_pos, $48
-0021a9 940e 0113                 	call reset_kpd
-0021ab 940e 259f                 	call check_reset
-0021ad 94e8
-0021ae e0e6
-0021af e0fa
-0021b0 95c8
-0021b1 1520
-0021b2 f409
-0021b3 9468                      	COMPARE game3answer6, a0
-0021b4 f40e                      	brtc PC+2
-0021b5 9493                      	inc c1
-0021b6 e40f
-0021b7 2e40
-0021b8 e001
-0021b9 2e50
-0021ba 940e 052b                 	PRINTF LCD
-0021bc 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(614): warning: .cseg .db misalignment - padding zero byte
-0021bd 0000                      .db	FSTR,b,0
-0021be e429
-0021bf 940e 017d                 	CA LCD_pos, $49 
-0021c1 940e 0113                 	call reset_kpd
-0021c3 940e 259f                 	call check_reset
-0021c5 94e8
-0021c6 e0e8
-0021c7 e0fa
-0021c8 95c8
-0021c9 1520
-0021ca f409
-0021cb 9468                      	COMPARE game3answer7, a0
-0021cc f40e                      	brtc PC+2
-0021cd 9493                      	inc c1
-0021ce e40f
-0021cf 2e40
-0021d0 e001
-0021d1 2e50
-0021d2 940e 052b                 	PRINTF LCD
-0021d4 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(622): warning: .cseg .db misalignment - padding zero byte
-0021d5 0000                      .db	FSTR,b,0
-0021d6 e42a
-0021d7 940e 017d                 	CA LCD_pos, $4a
-0021d9 940e 0113                 	call reset_kpd
-0021db 940e 259f                 	call check_reset
-0021dd 94e8
-0021de e0ea
-0021df e0fa
-0021e0 95c8
-0021e1 1520
-0021e2 f409
-0021e3 9468                      	COMPARE game3answer8, a0
-0021e4 f40e                      	brtc PC+2
-0021e5 9493                      	inc c1
-0021e6 e40f
-0021e7 2e40
-0021e8 e001
-0021e9 2e50
-0021ea 940e 052b                 	PRINTF LCD
-0021ec 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(630): warning: .cseg .db misalignment - padding zero byte
-0021ed 0000                      .db	FSTR,b,0
-0021ee e42b
-0021ef 940e 017d                 	CA LCD_pos, $4b
-0021f1 940e 0113                 	call reset_kpd
-0021f3 940e 259f                 	call check_reset
-0021f5 94e8
-0021f6 e0ec
-0021f7 e0fa
-0021f8 95c8
-0021f9 1520
-0021fa f409
-0021fb 9468                      	COMPARE game3answer9, a0
-0021fc f40e                      	brtc PC+2
-0021fd 9493                      	inc c1
-0021fe e40f
-0021ff 2e40
-002200 e001
-002201 2e50
-002202 940e 052b                 	PRINTF LCD
-002204 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(638): warning: .cseg .db misalignment - padding zero byte
-002205 0000                      .db	FSTR,b,0
-002206 e42c
-002207 940e 017d                 	CA LCD_pos, $4c
-002209 940e 0113                 	call reset_kpd
-00220b 940e 259f                 	call check_reset
-00220d 94e8
-00220e e0ee
-00220f e0fa
-002210 95c8
-002211 1520
-002212 f409
-002213 9468                      	COMPARE game3answer10, a0
-002214 f40e                      	brtc PC+2
-002215 9493                      	inc c1
-002216 e40f
-002217 2e40
-002218 e001
-002219 2e50
-00221a 940e 052b                 	PRINTF LCD
-00221c 1685
-C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(646): warning: .cseg .db misalignment - padding zero byte
-00221d 0000                      .db	FSTR,b,0
-00221e ed00
-00221f 2e30
-002220 e008
-002221 930f
-002222 923f
-002223 e300
-002224 2e30
-002225 e006
-002226 943a
-002227 f7f1
-002228 943a
-002229 950a
-00222a f7d9
-00222b 903f
-00222c 910f
-00222d 943a
-00222e f791
-00222f 950a
-002230 f781                      	WAIT_MS 2000
-002231 e00a
-002232 1690                      	_CPI c1, 10
-002233 f411                      	brne lose_3
-002234 940c 2251                 	jmp win_3
-                                 lose_3:
-002236 940e 0171
-002238 ece8
-002239 e0f3
-00223a 940e 0523                 	DISPLAY1 strfalse
-00223c ed00
-00223d 2e30
-00223e e008
-00223f 930f
-002240 923f
-002241 e300
-002242 2e30
-002243 e006
-002244 943a
-002245 f7f1
-002246 943a
-002247 950a
-002248 f7d9
-002249 903f
-00224a 910f
-00224b 943a
-00224c f791
-00224d 950a
-00224e f781                      	WAIT_MS 2000
-00224f 940c 226d                 	jmp final_keypad
-                                 win_3:
-002251 940e 0171
-002253 ebe6
-002254 e0f3
-002255 940e 0523                 	DISPLAY1 strcorrect
-002257 ed00
-002258 2e30
-002259 e008
-00225a 930f
-00225b 923f
-00225c e300
-00225d 2e30
-00225e e006
-00225f 943a
-002260 f7f1
-002261 943a
-002262 950a
-002263 f7d9
-002264 903f
-002265 910f
-002266 943a
-002267 f791
+002101 e000
+002102 2e90                      	_LDI c1, 0 ; counter for each game
+002103 940e 0171
+002105 e9e0
+002106 e0f9
+002107 940e 0523
+002109 eae2
+00210a e0f9
+00210b e420
+00210c 940e 017d
+00210e 940e 0523                 	DISPLAY2 strdance4, strdance5
+002110 ed00
+002111 2e30
+002112 e008
+002113 930f
+002114 923f
+002115 e300
+002116 2e30
+002117 e006
+002118 943a
+002119 f7f1
+00211a 943a
+00211b 950a
+00211c f7d9
+00211d 903f
+00211e 910f
+00211f 943a
+002120 f791
+002121 950a
+002122 f781                      	WAIT_MS 2000
+002123 940e 0171
+002125 eeea
+002126 e0f9
+002127 940e 0523
+002129 e1e0
+00212a e0fa
+00212b e420
+00212c 940e 017d
+00212e 940e 0523                 	DISPLAY2 strdance_game3, strdance_
+002130 ed00
+002131 2e30
+002132 e008
+002133 930f
+002134 923f
+002135 e300
+002136 2e30
+002137 e006
+002138 943a
+002139 f7f1
+00213a 943a
+00213b 950a
+00213c f7d9
+00213d 903f
+00213e 910f
+00213f 943a
+002140 f791
+002141 950a
+002142 f781                      	WAIT_MS 2000
+002143 940e 015b                 	call LCD_clear
+002145 e40f
+002146 2e40
+002147 e001
+002148 2e50
+002149 940e 052b                 	PRINTF LCD
+00214b 2a2a
+00214c 2a2a
+00214d 2a2a
+00214e 2a2a
+00214f 2a2a
+002150 2a2a
+002151 2a2a
+002152 2a2a
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(564): warning: .cseg .db misalignment - padding zero byte
+002153 0000                      .db	"****************",0
+002154 e420
+002155 940e 017d                 	CA LCD_pos, $40
+002157 e40f
+002158 2e40
+002159 e001
+00215a 2e50
+00215b 940e 052b                 	PRINTF LCD
+00215d 2a2a
+00215e 2a2a
+00215f 2a2a
+002160 2a2a
+002161 2a2a
+002162 2a2a
+002163 2a2a
+002164 2a2a
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(567): warning: .cseg .db misalignment - padding zero byte
+002165 0000                      .db	"****************",0
+002166 940e 0113                 	call reset_kpd
+002168 940e 25f4                 	call check_reset
+00216a 94e8
+00216b efec
+00216c e0f9
+00216d 95c8
+00216e 1520
+00216f f409
+002170 9468                      	COMPARE game3answer1, a0
+002171 f40e                      	brtc PC+2
+002172 9493                      	inc c1
+002173 e420
+002174 940e 017d                 	CA LCD_pos, $40
+002176 e40f
+002177 2e40
+002178 e001
+002179 2e50
+00217a 940e 052b                 	PRINTF LCD
+00217c 2a2a
+00217d 852a
+00217e 2a16
+00217f 2a2a
+002180 2a2a
+002181 2a2a
+002182 2a2a
+002183 2a2a
+002184 002a                      .db	"***",FSTR,b,"************",0
+002185 e424
+002186 940e 017d                 	CA LCD_pos, $44
+002188 940e 0113                 	call reset_kpd
+00218a 940e 25f4                 	call check_reset
+00218c 94e8
+00218d efee
+00218e e0f9
+00218f 95c8
+002190 1520
+002191 f409
+002192 9468                      	COMPARE game3answer2, a0
+002193 f40e                      	brtc PC+2
+002194 9493                      	inc c1
+002195 e40f
+002196 2e40
+002197 e001
+002198 2e50
+002199 940e 052b                 	PRINTF LCD
+00219b 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(583): warning: .cseg .db misalignment - padding zero byte
+00219c 0000                      .db	FSTR,b,0
+00219d e425
+00219e 940e 017d                 	CA LCD_pos, $45 
+0021a0 940e 0113                 	call reset_kpd
+0021a2 940e 25f4                 	call check_reset
+0021a4 94e8
+0021a5 e0e0
+0021a6 e0fa
+0021a7 95c8
+0021a8 1520
+0021a9 f409
+0021aa 9468                      	COMPARE game3answer3, a0
+0021ab f40e                      	brtc PC+2
+0021ac 9493                      	inc c1
+0021ad e40f
+0021ae 2e40
+0021af e001
+0021b0 2e50
+0021b1 940e 052b                 	PRINTF LCD
+0021b3 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(591): warning: .cseg .db misalignment - padding zero byte
+0021b4 0000                      .db	FSTR,b,0
+0021b5 e426
+0021b6 940e 017d                 	CA LCD_pos, $46 
+0021b8 940e 0113                 	call reset_kpd
+0021ba 940e 25f4                 	call check_reset
+0021bc 94e8
+0021bd e0e2
+0021be e0fa
+0021bf 95c8
+0021c0 1520
+0021c1 f409
+0021c2 9468                      	COMPARE game3answer4, a0
+0021c3 f40e                      	brtc PC+2
+0021c4 9493                      	inc c1
+0021c5 e40f
+0021c6 2e40
+0021c7 e001
+0021c8 2e50
+0021c9 940e 052b                 	PRINTF LCD
+0021cb 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(599): warning: .cseg .db misalignment - padding zero byte
+0021cc 0000                      .db	FSTR,b,0
+0021cd e427
+0021ce 940e 017d                 	CA LCD_pos, $47 
+0021d0 940e 0113                 	call reset_kpd
+0021d2 940e 25f4                 	call check_reset
+0021d4 94e8
+0021d5 e0e4
+0021d6 e0fa
+0021d7 95c8
+0021d8 1520
+0021d9 f409
+0021da 9468                      	COMPARE game3answer5, a0
+0021db f40e                      	brtc PC+2
+0021dc 9493                      	inc c1
+0021dd e40f
+0021de 2e40
+0021df e001
+0021e0 2e50
+0021e1 940e 052b                 	PRINTF LCD
+0021e3 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(607): warning: .cseg .db misalignment - padding zero byte
+0021e4 0000                      .db	FSTR,b,0
+0021e5 e428
+0021e6 940e 017d                 	CA LCD_pos, $48
+0021e8 940e 0113                 	call reset_kpd
+0021ea 940e 25f4                 	call check_reset
+0021ec 94e8
+0021ed e0e6
+0021ee e0fa
+0021ef 95c8
+0021f0 1520
+0021f1 f409
+0021f2 9468                      	COMPARE game3answer6, a0
+0021f3 f40e                      	brtc PC+2
+0021f4 9493                      	inc c1
+0021f5 e40f
+0021f6 2e40
+0021f7 e001
+0021f8 2e50
+0021f9 940e 052b                 	PRINTF LCD
+0021fb 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(615): warning: .cseg .db misalignment - padding zero byte
+0021fc 0000                      .db	FSTR,b,0
+0021fd e429
+0021fe 940e 017d                 	CA LCD_pos, $49 
+002200 940e 0113                 	call reset_kpd
+002202 940e 25f4                 	call check_reset
+002204 94e8
+002205 e0e8
+002206 e0fa
+002207 95c8
+002208 1520
+002209 f409
+00220a 9468                      	COMPARE game3answer7, a0
+00220b f40e                      	brtc PC+2
+00220c 9493                      	inc c1
+00220d e40f
+00220e 2e40
+00220f e001
+002210 2e50
+002211 940e 052b                 	PRINTF LCD
+002213 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(623): warning: .cseg .db misalignment - padding zero byte
+002214 0000                      .db	FSTR,b,0
+002215 e42a
+002216 940e 017d                 	CA LCD_pos, $4a
+002218 940e 0113                 	call reset_kpd
+00221a 940e 25f4                 	call check_reset
+00221c 94e8
+00221d e0ea
+00221e e0fa
+00221f 95c8
+002220 1520
+002221 f409
+002222 9468                      	COMPARE game3answer8, a0
+002223 f40e                      	brtc PC+2
+002224 9493                      	inc c1
+002225 e40f
+002226 2e40
+002227 e001
+002228 2e50
+002229 940e 052b                 	PRINTF LCD
+00222b 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(631): warning: .cseg .db misalignment - padding zero byte
+00222c 0000                      .db	FSTR,b,0
+00222d e42b
+00222e 940e 017d                 	CA LCD_pos, $4b
+002230 940e 0113                 	call reset_kpd
+002232 940e 25f4                 	call check_reset
+002234 94e8
+002235 e0ec
+002236 e0fa
+002237 95c8
+002238 1520
+002239 f409
+00223a 9468                      	COMPARE game3answer9, a0
+00223b f40e                      	brtc PC+2
+00223c 9493                      	inc c1
+00223d e40f
+00223e 2e40
+00223f e001
+002240 2e50
+002241 940e 052b                 	PRINTF LCD
+002243 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(639): warning: .cseg .db misalignment - padding zero byte
+002244 0000                      .db	FSTR,b,0
+002245 e42c
+002246 940e 017d                 	CA LCD_pos, $4c
+002248 940e 0113                 	call reset_kpd
+00224a 940e 25f4                 	call check_reset
+00224c 94e8
+00224d e0ee
+00224e e0fa
+00224f 95c8
+002250 1520
+002251 f409
+002252 9468                      	COMPARE game3answer10, a0
+002253 f40e                      	brtc PC+2
+002254 9493                      	inc c1
+002255 e40f
+002256 2e40
+002257 e001
+002258 2e50
+002259 940e 052b                 	PRINTF LCD
+00225b 1685
+C:\Users\renuka\Desktop\projet\MCU\AssemblerApplication1\AssemblerApplication1\mainbis.asm(647): warning: .cseg .db misalignment - padding zero byte
+00225c 0000                      .db	FSTR,b,0
+00225d ed00
+00225e 2e30
+00225f e008
+002260 930f
+002261 923f
+002262 e300
+002263 2e30
+002264 e006
+002265 943a
+002266 f7f1
+002267 943a
 002268 950a
-002269 f781                      	WAIT_MS 2000
-00226a 94a3                      	inc c2
-00226b 940c 226d                 	jmp final_keypad
+002269 f7d9
+00226a 903f
+00226b 910f
+00226c 943a
+00226d f791
+00226e 950a
+00226f f781                      	WAIT_MS 2000
+002270 e00a
+002271 1690                      	_CPI c1, 10
+002272 f411                      	brne lose_3
+002273 940c 2297                 	jmp win_3
+                                 lose_3:
+002275 940e 0171
+002277 ece8
+002278 e0f3
+002279 940e 0523                 	DISPLAY1 strfalse
+00227b ef04
+00227c 2e30
+00227d e002
+00227e 930f
+00227f 923f
+002280 e300
+002281 2e30
+002282 e006
+002283 943a
+002284 f7f1
+002285 943a
+002286 950a
+002287 f7d9
+002288 903f
+002289 910f
+00228a 943a
+00228b f791
+00228c 950a
+00228d f781
+00228e ec21
+00228f e16e
+002290 940e 063a
+002292 ec21
+002293 940e 063a                 	INCORRECT_SONG
+002295 940c 22c2                 	jmp final_keypad
+                                 win_3:
+002297 940e 0171
+002299 ebe6
+00229a e0f3
+00229b 940e 0523                 	DISPLAY1 strcorrect
+00229d ef04
+00229e 2e30
+00229f e002
+0022a0 930f
+0022a1 923f
+0022a2 e300
+0022a3 2e30
+0022a4 e006
+0022a5 943a
+0022a6 f7f1
+0022a7 943a
+0022a8 950a
+0022a9 f7d9
+0022aa 903f
+0022ab 910f
+0022ac 943a
+0022ad f791
+0022ae 950a
+0022af f781
+0022b0 e22d
+0022b1 e46b
+0022b2 940e 063a
+0022b4 e329
+0022b5 e46b
+0022b6 940e 063a
+0022b8 e22d
+0022b9 e46b
+0022ba 940e 063a
+0022bc e329
+0022bd 940e 063a                 	CORRECT_SONG
+0022bf 94a3                      	inc c2
+0022c0 940c 22c2                 	jmp final_keypad
                                  final_keypad:
-00226d e002
-00226e 16a0                      	_CPI c2, 2
-00226f f410                      	brsh keypad_won
-002270 940c 2466                 	jmp keypad_lost
+0022c2 e002
+0022c3 16a0                      	_CPI c2, 2
+0022c4 f410                      	brsh keypad_won
+0022c5 940c 24bb                 	jmp keypad_lost
                                  keypad_won:
-002272 940e 0171
-002274 e7ee
-002275 e0f4
-002276 940e 0523
-002278 e8ee
-002279 e0f4
-00227a e420
-00227b 940e 017d
-00227d 940e 0523                     DISPLAY2 strwin1, strwin2
-00227f e620
-002280 e461
-002281 940e 063a
-002283 e004
-002284 2e30
-002285 e001
-002286 930f
-002287 923f
-002288 e300
-002289 2e30
-00228a e006
-00228b 943a
-00228c f7f1
-00228d 943a
-00228e 950a
-00228f f7d9
-002290 903f
-002291 910f
-002292 943a
-002293 f791
-002294 950a
-002295 f781
-002296 e820
-002297 e461
-002298 940e 063a
-00229a e004
-00229b 2e30
-00229c e001
-00229d 930f
-00229e 923f
-00229f e300
-0022a0 2e30
-0022a1 e006
-0022a2 943a
-0022a3 f7f1
-0022a4 943a
-0022a5 950a
-0022a6 f7d9
-0022a7 903f
-0022a8 910f
-0022a9 943a
-0022aa f791
-0022ab 950a
-0022ac f781
-0022ad e620
-0022ae e461
-0022af 940e 063a
-0022b1 e004
-0022b2 2e30
-0022b3 e001
-0022b4 930f
-0022b5 923f
-0022b6 e300
-0022b7 2e30
-0022b8 e006
-0022b9 943a
-0022ba f7f1
-0022bb 943a
-0022bc 950a
-0022bd f7d9
-0022be 903f
-0022bf 910f
-0022c0 943a
-0022c1 f791
-0022c2 950a
-0022c3 f781
-0022c4 e42c
-0022c5 e461
-0022c6 940e 063a
-0022c8 e004
-0022c9 2e30
-0022ca e001
-0022cb 930f
-0022cc 923f
-0022cd e300
-0022ce 2e30
-0022cf e006
-0022d0 943a
-0022d1 f7f1
-0022d2 943a
-0022d3 950a
-0022d4 f7d9
-0022d5 903f
-0022d6 910f
-0022d7 943a
-0022d8 f791
-0022d9 950a
-0022da f781
-0022db e420
-0022dc e461
-0022dd 940e 063a
-0022df e004
-0022e0 2e30
-0022e1 e001
-0022e2 930f
-0022e3 923f
-0022e4 e300
-0022e5 2e30
-0022e6 e006
+0022c7 940e 0171
+0022c9 e7ee
+0022ca e0f4
+0022cb 940e 0523
+0022cd e8ee
+0022ce e0f4
+0022cf e420
+0022d0 940e 017d
+0022d2 940e 0523                     DISPLAY2 strwin1, strwin2
+0022d4 e620
+0022d5 e461
+0022d6 940e 063a
+0022d8 e004
+0022d9 2e30
+0022da e001
+0022db 930f
+0022dc 923f
+0022dd e300
+0022de 2e30
+0022df e006
+0022e0 943a
+0022e1 f7f1
+0022e2 943a
+0022e3 950a
+0022e4 f7d9
+0022e5 903f
+0022e6 910f
 0022e7 943a
-0022e8 f7f1
-0022e9 943a
-0022ea 950a
-0022eb f7d9
-0022ec 903f
-0022ed 910f
-0022ee 943a
-0022ef f791
-0022f0 950a
-0022f1 f781
-0022f2 e320
-0022f3 e461
-0022f4 940e 063a
-0022f6 e004
-0022f7 2e30
-0022f8 e001
-0022f9 930f
-0022fa 923f
-0022fb e300
-0022fc 2e30
-0022fd e006
+0022e8 f791
+0022e9 950a
+0022ea f781
+0022eb e820
+0022ec e461
+0022ed 940e 063a
+0022ef e004
+0022f0 2e30
+0022f1 e001
+0022f2 930f
+0022f3 923f
+0022f4 e300
+0022f5 2e30
+0022f6 e006
+0022f7 943a
+0022f8 f7f1
+0022f9 943a
+0022fa 950a
+0022fb f7d9
+0022fc 903f
+0022fd 910f
 0022fe 943a
-0022ff f7f1
-002300 943a
-002301 950a
-002302 f7d9
-002303 903f
-002304 910f
-002305 943a
-002306 f791
-002307 950a
-002308 f781
-002309 e226
-00230a ea6a
-00230b 940e 063a
-00230d e320
-00230e ea6a
-00230f 940e 063a
-002311 e302
-002312 2e30
-002313 e001
-002314 930f
-002315 923f
-002316 e300
-002317 2e30
-002318 e006
-002319 943a
-00231a f7f1
-00231b 943a
-00231c 950a
-00231d f7d9
-00231e 903f
-00231f 910f
-002320 943a
-002321 f791
-002322 950a
-002323 f781
-002324 e52b
-002325 e461
-002326 940e 063a
-002328 e004
-002329 2e30
-00232a e001
-00232b 930f
-00232c 923f
-00232d e300
-00232e 2e30
-00232f e006
-002330 943a
-002331 f7f1
-002332 943a
-002333 950a
-002334 f7d9
-002335 903f
-002336 910f
-002337 943a
-002338 f791
-002339 950a
-00233a f781
-00233b e729
-00233c e461
-00233d 940e 063a
-00233f e004
-002340 2e30
-002341 e001
-002342 930f
-002343 923f
-002344 e300
-002345 2e30
-002346 e006
-002347 943a
-002348 f7f1
-002349 943a
-00234a 950a
-00234b f7d9
-00234c 903f
-00234d 910f
-00234e 943a
-00234f f791
-002350 950a
-002351 f781
-002352 e52b
-002353 e461
-002354 940e 063a
-002356 e004
-002357 2e30
-002358 e001
-002359 930f
-00235a 923f
-00235b e300
-00235c 2e30
-00235d e006
-00235e 943a
-00235f f7f1
-002360 943a
-002361 950a
-002362 f7d9
-002363 903f
-002364 910f
-002365 943a
-002366 f791
-002367 950a
-002368 f781
-002369 e428
-00236a e461
-00236b 940e 063a
-00236d e004
-00236e 2e30
-00236f e001
-002370 930f
-002371 923f
-002372 e300
-002373 2e30
-002374 e006
+0022ff f791
+002300 950a
+002301 f781
+002302 e620
+002303 e461
+002304 940e 063a
+002306 e004
+002307 2e30
+002308 e001
+002309 930f
+00230a 923f
+00230b e300
+00230c 2e30
+00230d e006
+00230e 943a
+00230f f7f1
+002310 943a
+002311 950a
+002312 f7d9
+002313 903f
+002314 910f
+002315 943a
+002316 f791
+002317 950a
+002318 f781
+002319 e42c
+00231a e461
+00231b 940e 063a
+00231d e004
+00231e 2e30
+00231f e001
+002320 930f
+002321 923f
+002322 e300
+002323 2e30
+002324 e006
+002325 943a
+002326 f7f1
+002327 943a
+002328 950a
+002329 f7d9
+00232a 903f
+00232b 910f
+00232c 943a
+00232d f791
+00232e 950a
+00232f f781
+002330 e420
+002331 e461
+002332 940e 063a
+002334 e004
+002335 2e30
+002336 e001
+002337 930f
+002338 923f
+002339 e300
+00233a 2e30
+00233b e006
+00233c 943a
+00233d f7f1
+00233e 943a
+00233f 950a
+002340 f7d9
+002341 903f
+002342 910f
+002343 943a
+002344 f791
+002345 950a
+002346 f781
+002347 e320
+002348 e461
+002349 940e 063a
+00234b e004
+00234c 2e30
+00234d e001
+00234e 930f
+00234f 923f
+002350 e300
+002351 2e30
+002352 e006
+002353 943a
+002354 f7f1
+002355 943a
+002356 950a
+002357 f7d9
+002358 903f
+002359 910f
+00235a 943a
+00235b f791
+00235c 950a
+00235d f781
+00235e e226
+00235f ea6a
+002360 940e 063a
+002362 e320
+002363 ea6a
+002364 940e 063a
+002366 e302
+002367 2e30
+002368 e001
+002369 930f
+00236a 923f
+00236b e300
+00236c 2e30
+00236d e006
+00236e 943a
+00236f f7f1
+002370 943a
+002371 950a
+002372 f7d9
+002373 903f
+002374 910f
 002375 943a
-002376 f7f1
-002377 943a
-002378 950a
-002379 f7d9
-00237a 903f
-00237b 910f
-00237c 943a
-00237d f791
-00237e 950a
-00237f f781
-002380 e12e
-002381 e461
-002382 940e 063a
-002384 e004
-002385 2e30
-002386 e001
-002387 930f
-002388 923f
-002389 e300
-00238a 2e30
-00238b e006
+002376 f791
+002377 950a
+002378 f781
+002379 e52b
+00237a e461
+00237b 940e 063a
+00237d e004
+00237e 2e30
+00237f e001
+002380 930f
+002381 923f
+002382 e300
+002383 2e30
+002384 e006
+002385 943a
+002386 f7f1
+002387 943a
+002388 950a
+002389 f7d9
+00238a 903f
+00238b 910f
 00238c 943a
-00238d f7f1
-00238e 943a
-00238f 950a
-002390 f7d9
-002391 903f
-002392 910f
-002393 943a
-002394 f791
-002395 950a
-002396 f781
-002397 e22d
-002398 e461
-002399 940e 063a
-00239b e004
-00239c 2e30
-00239d e001
-00239e 930f
-00239f 923f
-0023a0 e300
-0023a1 2e30
-0023a2 e006
+00238d f791
+00238e 950a
+00238f f781
+002390 e729
+002391 e461
+002392 940e 063a
+002394 e004
+002395 2e30
+002396 e001
+002397 930f
+002398 923f
+002399 e300
+00239a 2e30
+00239b e006
+00239c 943a
+00239d f7f1
+00239e 943a
+00239f 950a
+0023a0 f7d9
+0023a1 903f
+0023a2 910f
 0023a3 943a
-0023a4 f7f1
-0023a5 943a
-0023a6 950a
-0023a7 f7d9
-0023a8 903f
-0023a9 910f
-0023aa 943a
-0023ab f791
-0023ac 950a
-0023ad f781
-0023ae e224
-0023af ea6a
-0023b0 940e 063a
-0023b2 e22d
-0023b3 ea6a
-0023b4 940e 063a
-0023b6 e302
-0023b7 2e30
-0023b8 e001
-0023b9 930f
-0023ba 923f
-0023bb e300
-0023bc 2e30
-0023bd e006
-0023be 943a
-0023bf f7f1
-0023c0 943a
-0023c1 950a
-0023c2 f7d9
-0023c3 903f
-0023c4 910f
-0023c5 943a
-0023c6 f791
-0023c7 950a
-0023c8 f781
-0023c9 e521
-0023ca e461
-0023cb 940e 063a
-0023cd e004
-0023ce 2e30
-0023cf e001
-0023d0 930f
-0023d1 923f
-0023d2 e300
-0023d3 2e30
-0023d4 e006
-0023d5 943a
-0023d6 f7f1
-0023d7 943a
-0023d8 950a
-0023d9 f7d9
-0023da 903f
-0023db 910f
-0023dc 943a
-0023dd f791
-0023de 950a
-0023df f781
-0023e0 e62c
-0023e1 e461
-0023e2 940e 063a
-0023e4 e004
-0023e5 2e30
-0023e6 e001
-0023e7 930f
-0023e8 923f
-0023e9 e300
-0023ea 2e30
-0023eb e006
-0023ec 943a
-0023ed f7f1
-0023ee 943a
-0023ef 950a
-0023f0 f7d9
-0023f1 903f
-0023f2 910f
-0023f3 943a
-0023f4 f791
-0023f5 950a
-0023f6 f781
-0023f7 e521
-0023f8 e461
-0023f9 940e 063a
-0023fb e004
-0023fc 2e30
-0023fd e001
-0023fe 930f
-0023ff 923f
-002400 e300
-002401 2e30
-002402 e006
-002403 943a
-002404 f7f1
-002405 943a
-002406 950a
-002407 f7d9
-002408 903f
-002409 910f
-00240a 943a
-00240b f791
-00240c 950a
-00240d f781
-00240e e420
-00240f e461
-002410 940e 063a
-002412 e004
-002413 2e30
-002414 e001
-002415 930f
-002416 923f
-002417 e300
-002418 2e30
-002419 e006
+0023a4 f791
+0023a5 950a
+0023a6 f781
+0023a7 e52b
+0023a8 e461
+0023a9 940e 063a
+0023ab e004
+0023ac 2e30
+0023ad e001
+0023ae 930f
+0023af 923f
+0023b0 e300
+0023b1 2e30
+0023b2 e006
+0023b3 943a
+0023b4 f7f1
+0023b5 943a
+0023b6 950a
+0023b7 f7d9
+0023b8 903f
+0023b9 910f
+0023ba 943a
+0023bb f791
+0023bc 950a
+0023bd f781
+0023be e428
+0023bf e461
+0023c0 940e 063a
+0023c2 e004
+0023c3 2e30
+0023c4 e001
+0023c5 930f
+0023c6 923f
+0023c7 e300
+0023c8 2e30
+0023c9 e006
+0023ca 943a
+0023cb f7f1
+0023cc 943a
+0023cd 950a
+0023ce f7d9
+0023cf 903f
+0023d0 910f
+0023d1 943a
+0023d2 f791
+0023d3 950a
+0023d4 f781
+0023d5 e12e
+0023d6 e461
+0023d7 940e 063a
+0023d9 e004
+0023da 2e30
+0023db e001
+0023dc 930f
+0023dd 923f
+0023de e300
+0023df 2e30
+0023e0 e006
+0023e1 943a
+0023e2 f7f1
+0023e3 943a
+0023e4 950a
+0023e5 f7d9
+0023e6 903f
+0023e7 910f
+0023e8 943a
+0023e9 f791
+0023ea 950a
+0023eb f781
+0023ec e22d
+0023ed e461
+0023ee 940e 063a
+0023f0 e004
+0023f1 2e30
+0023f2 e001
+0023f3 930f
+0023f4 923f
+0023f5 e300
+0023f6 2e30
+0023f7 e006
+0023f8 943a
+0023f9 f7f1
+0023fa 943a
+0023fb 950a
+0023fc f7d9
+0023fd 903f
+0023fe 910f
+0023ff 943a
+002400 f791
+002401 950a
+002402 f781
+002403 e224
+002404 ea6a
+002405 940e 063a
+002407 e22d
+002408 ea6a
+002409 940e 063a
+00240b e302
+00240c 2e30
+00240d e001
+00240e 930f
+00240f 923f
+002410 e300
+002411 2e30
+002412 e006
+002413 943a
+002414 f7f1
+002415 943a
+002416 950a
+002417 f7d9
+002418 903f
+002419 910f
 00241a 943a
-00241b f7f1
-00241c 943a
-00241d 950a
-00241e f7d9
-00241f 903f
-002420 910f
-002421 943a
-002422 f791
-002423 950a
-002424 f781
-002425 e326
-002426 e461
-002427 940e 063a
-002429 e004
-00242a 2e30
-00242b e001
-00242c 930f
-00242d 923f
-00242e e300
-00242f 2e30
-002430 e006
+00241b f791
+00241c 950a
+00241d f781
+00241e e521
+00241f e461
+002420 940e 063a
+002422 e004
+002423 2e30
+002424 e001
+002425 930f
+002426 923f
+002427 e300
+002428 2e30
+002429 e006
+00242a 943a
+00242b f7f1
+00242c 943a
+00242d 950a
+00242e f7d9
+00242f 903f
+002430 910f
 002431 943a
-002432 f7f1
-002433 943a
-002434 950a
-002435 f7d9
-002436 903f
-002437 910f
-002438 943a
-002439 f791
-00243a 950a
-00243b f781
-00243c e228
-00243d ea6a
-00243e 940e 063a
-002440 e224
-002441 ec68
-002442 940e 063a                 	CELEBRATE_song
-002444 940e 0171
-002446 e5e6
-002447 e0f4
-002448 940e 0523
-00244a e6e8
-00244b e0f4
-00244c e420
-00244d 940e 017d
-00244f 940e 0523                 	DISPLAY2 strclue3, strclue3b
-002451 ea00
-002452 2e30
-002453 e100
-002454 930f
-002455 923f
-002456 e300
-002457 2e30
-002458 e006
-002459 943a
-00245a f7f1
-00245b 943a
-00245c 950a
-00245d f7d9
-00245e 903f
-00245f 910f
-002460 943a
-002461 f791
-002462 950a
-002463 f781                      	WAIT_MS 4000
-002464 940c 0a51                 	jmp main_loop
-                                 keypad_lost:
-002466 940e 0171
-002468 eae0
-002469 e0f4
-00246a 940e 0523
-00246c ebe2
-00246d e0f4
-00246e e420
-00246f 940e 017d
-002471 940e 0523                 	DISPLAY2 strlose1, strlose2
-002473 e323
-002474 e466
-002475 940e 063a
-002477 e30c
-002478 2e30
-002479 e001
-00247a 930f
-00247b 923f
-00247c e300
-00247d 2e30
-00247e e006
-00247f 943a
-002480 f7f1
-002481 943a
-002482 950a
-002483 f7d9
-002484 903f
-002485 910f
+002432 f791
+002433 950a
+002434 f781
+002435 e62c
+002436 e461
+002437 940e 063a
+002439 e004
+00243a 2e30
+00243b e001
+00243c 930f
+00243d 923f
+00243e e300
+00243f 2e30
+002440 e006
+002441 943a
+002442 f7f1
+002443 943a
+002444 950a
+002445 f7d9
+002446 903f
+002447 910f
+002448 943a
+002449 f791
+00244a 950a
+00244b f781
+00244c e521
+00244d e461
+00244e 940e 063a
+002450 e004
+002451 2e30
+002452 e001
+002453 930f
+002454 923f
+002455 e300
+002456 2e30
+002457 e006
+002458 943a
+002459 f7f1
+00245a 943a
+00245b 950a
+00245c f7d9
+00245d 903f
+00245e 910f
+00245f 943a
+002460 f791
+002461 950a
+002462 f781
+002463 e420
+002464 e461
+002465 940e 063a
+002467 e004
+002468 2e30
+002469 e001
+00246a 930f
+00246b 923f
+00246c e300
+00246d 2e30
+00246e e006
+00246f 943a
+002470 f7f1
+002471 943a
+002472 950a
+002473 f7d9
+002474 903f
+002475 910f
+002476 943a
+002477 f791
+002478 950a
+002479 f781
+00247a e326
+00247b e461
+00247c 940e 063a
+00247e e004
+00247f 2e30
+002480 e001
+002481 930f
+002482 923f
+002483 e300
+002484 2e30
+002485 e006
 002486 943a
-002487 f791
-002488 950a
-002489 f781
-00248a e224
-00248b e466
-00248c 940e 063a
-00248e e50a
-00248f 2e30
-002490 e001
-002491 930f
-002492 923f
-002493 e300
-002494 2e30
-002495 e006
-002496 943a
-002497 f7f1
-002498 943a
-002499 950a
-00249a f7d9
-00249b 903f
-00249c 910f
-00249d 943a
-00249e f791
-00249f 950a
-0024a0 f781
-0024a1 e224
-0024a2 e466
-0024a3 940e 063a
-0024a5 e50a
-0024a6 2e30
-0024a7 e001
-0024a8 930f
-0024a9 923f
-0024aa e300
-0024ab 2e30
-0024ac e006
-0024ad 943a
-0024ae f7f1
-0024af 943a
-0024b0 950a
-0024b1 f7d9
-0024b2 903f
-0024b3 910f
-0024b4 943a
-0024b5 f791
-0024b6 950a
-0024b7 f781
-0024b8 e224
-0024b9 e466
-0024ba 940e 063a
-0024bc e50a
-0024bd 2e30
-0024be e001
-0024bf 930f
-0024c0 923f
-0024c1 e300
-0024c2 2e30
-0024c3 e006
-0024c4 943a
-0024c5 f7f1
-0024c6 943a
-0024c7 950a
-0024c8 f7d9
-0024c9 903f
-0024ca 910f
-0024cb 943a
-0024cc f791
-0024cd 950a
-0024ce f781
-0024cf e224
-0024d0 e466
-0024d1 940e 063a
-0024d3 e004
-0024d4 2e30
-0024d5 e001
-0024d6 930f
-0024d7 923f
-0024d8 e300
-0024d9 2e30
-0024da e006
+002487 f7f1
+002488 943a
+002489 950a
+00248a f7d9
+00248b 903f
+00248c 910f
+00248d 943a
+00248e f791
+00248f 950a
+002490 f781
+002491 e228
+002492 ea6a
+002493 940e 063a
+002495 e224
+002496 ec68
+002497 940e 063a                 	CELEBRATE_song
+002499 940e 0171
+00249b e5e6
+00249c e0f4
+00249d 940e 0523
+00249f e6e8
+0024a0 e0f4
+0024a1 e420
+0024a2 940e 017d
+0024a4 940e 0523                 	DISPLAY2 strclue3, strclue3b
+0024a6 ea00
+0024a7 2e30
+0024a8 e100
+0024a9 930f
+0024aa 923f
+0024ab e300
+0024ac 2e30
+0024ad e006
+0024ae 943a
+0024af f7f1
+0024b0 943a
+0024b1 950a
+0024b2 f7d9
+0024b3 903f
+0024b4 910f
+0024b5 943a
+0024b6 f791
+0024b7 950a
+0024b8 f781                      	WAIT_MS 4000
+0024b9 940c 0a51                 	jmp main_loop
+                                 keypad_lost:
+0024bb 940e 0171
+0024bd eae0
+0024be e0f4
+0024bf 940e 0523
+0024c1 ebe2
+0024c2 e0f4
+0024c3 e420
+0024c4 940e 017d
+0024c6 940e 0523                 	DISPLAY2 strlose1, strlose2
+0024c8 e323
+0024c9 e466
+0024ca 940e 063a
+0024cc e30c
+0024cd 2e30
+0024ce e001
+0024cf 930f
+0024d0 923f
+0024d1 e300
+0024d2 2e30
+0024d3 e006
+0024d4 943a
+0024d5 f7f1
+0024d6 943a
+0024d7 950a
+0024d8 f7d9
+0024d9 903f
+0024da 910f
 0024db 943a
-0024dc f7f1
-0024dd 943a
-0024de 950a
-0024df f7d9
-0024e0 903f
-0024e1 910f
-0024e2 943a
-0024e3 f791
-0024e4 950a
-0024e5 f781
-0024e6 e226
-0024e7 e466
-0024e8 940e 063a
-0024ea e004
-0024eb 2e30
-0024ec e001
-0024ed 930f
-0024ee 923f
-0024ef e300
-0024f0 2e30
-0024f1 e006
+0024dc f791
+0024dd 950a
+0024de f781
+0024df e224
+0024e0 e466
+0024e1 940e 063a
+0024e3 e50a
+0024e4 2e30
+0024e5 e001
+0024e6 930f
+0024e7 923f
+0024e8 e300
+0024e9 2e30
+0024ea e006
+0024eb 943a
+0024ec f7f1
+0024ed 943a
+0024ee 950a
+0024ef f7d9
+0024f0 903f
+0024f1 910f
 0024f2 943a
-0024f3 f7f1
-0024f4 943a
-0024f5 950a
-0024f6 f7d9
-0024f7 903f
-0024f8 910f
-0024f9 943a
-0024fa f791
-0024fb 950a
-0024fc f781
-0024fd e22a
-0024fe e466
-0024ff 940e 063a
-002501 e004
-002502 2e30
-002503 e001
-002504 930f
-002505 923f
-002506 e300
-002507 2e30
-002508 e006
+0024f3 f791
+0024f4 950a
+0024f5 f781
+0024f6 e224
+0024f7 e466
+0024f8 940e 063a
+0024fa e50a
+0024fb 2e30
+0024fc e001
+0024fd 930f
+0024fe 923f
+0024ff e300
+002500 2e30
+002501 e006
+002502 943a
+002503 f7f1
+002504 943a
+002505 950a
+002506 f7d9
+002507 903f
+002508 910f
 002509 943a
-00250a f7f1
-00250b 943a
-00250c 950a
-00250d f7d9
-00250e 903f
-00250f 910f
-002510 943a
-002511 f791
-002512 950a
-002513 f781
-002514 e320
-002515 e86c
-002516 940e 063a
-002518 eb0c
-002519 2e30
-00251a e003
-00251b 930f
-00251c 923f
-00251d e300
-00251e 2e30
-00251f e006
+00250a f791
+00250b 950a
+00250c f781
+00250d e224
+00250e e466
+00250f 940e 063a
+002511 e50a
+002512 2e30
+002513 e001
+002514 930f
+002515 923f
+002516 e300
+002517 2e30
+002518 e006
+002519 943a
+00251a f7f1
+00251b 943a
+00251c 950a
+00251d f7d9
+00251e 903f
+00251f 910f
 002520 943a
-002521 f7f1
-002522 943a
-002523 950a
-002524 f7d9
-002525 903f
-002526 910f
-002527 943a
-002528 f791
-002529 950a
-00252a f781
-00252b e320
-00252c e664
-00252d 940e 063a
-00252f e420
-002530 e664
-002531 940e 063a
-002533 e42c
-002534 e664
-002535 940e 063a
-002537 e326
-002538 e664
-002539 940e 063a
-00253b e320
-00253c e664
+002521 f791
+002522 950a
+002523 f781
+002524 e224
+002525 e466
+002526 940e 063a
+002528 e004
+002529 2e30
+00252a e001
+00252b 930f
+00252c 923f
+00252d e300
+00252e 2e30
+00252f e006
+002530 943a
+002531 f7f1
+002532 943a
+002533 950a
+002534 f7d9
+002535 903f
+002536 910f
+002537 943a
+002538 f791
+002539 950a
+00253a f781
+00253b e226
+00253c e466
 00253d 940e 063a
-00253f e326
-002540 e664
-002541 940e 063a
-002543 e32c
-002544 e664
-002545 940e 063a
-002547 e326
-002548 e664
-002549 940e 063a
-00254b e32c
-00254c e664
-00254d 940e 063a
-00254f e420
-002550 e560
-002551 940e 063a
-002553 e428
-002554 e36c
-002555 940e 063a
-002557 e420
-002558 e966
-002559 940e 063a                 	LOSE_SONG
-00255b 940c 0a51                 	jmp main_loop
+00253f e004
+002540 2e30
+002541 e001
+002542 930f
+002543 923f
+002544 e300
+002545 2e30
+002546 e006
+002547 943a
+002548 f7f1
+002549 943a
+00254a 950a
+00254b f7d9
+00254c 903f
+00254d 910f
+00254e 943a
+00254f f791
+002550 950a
+002551 f781
+002552 e22a
+002553 e466
+002554 940e 063a
+002556 e004
+002557 2e30
+002558 e001
+002559 930f
+00255a 923f
+00255b e300
+00255c 2e30
+00255d e006
+00255e 943a
+00255f f7f1
+002560 943a
+002561 950a
+002562 f7d9
+002563 903f
+002564 910f
+002565 943a
+002566 f791
+002567 950a
+002568 f781
+002569 e320
+00256a e86c
+00256b 940e 063a
+00256d eb0c
+00256e 2e30
+00256f e003
+002570 930f
+002571 923f
+002572 e300
+002573 2e30
+002574 e006
+002575 943a
+002576 f7f1
+002577 943a
+002578 950a
+002579 f7d9
+00257a 903f
+00257b 910f
+00257c 943a
+00257d f791
+00257e 950a
+00257f f781
+002580 e320
+002581 e664
+002582 940e 063a
+002584 e420
+002585 e664
+002586 940e 063a
+002588 e42c
+002589 e664
+00258a 940e 063a
+00258c e326
+00258d e664
+00258e 940e 063a
+002590 e320
+002591 e664
+002592 940e 063a
+002594 e326
+002595 e664
+002596 940e 063a
+002598 e32c
+002599 e664
+00259a 940e 063a
+00259c e326
+00259d e664
+00259e 940e 063a
+0025a0 e32c
+0025a1 e664
+0025a2 940e 063a
+0025a4 e420
+0025a5 e560
+0025a6 940e 063a
+0025a8 e428
+0025a9 e36c
+0025aa 940e 063a
+0025ac e420
+0025ad e966
+0025ae 940e 063a                 	LOSE_SONG
+0025b0 940c 0a51                 	jmp main_loop
                                  
                                  end:
-00255d 940e 0171
-00255f e5ee
-002560 e0f5
-002561 940e 0523
-002563 e7e0
-002564 e0f5
-002565 e420
-002566 940e 017d
-002568 940e 0523                 	DISPLAY2 str10, str11
-00256a ed00
-00256b 2e30
-00256c e008
-00256d 930f
-00256e 923f
-00256f e300
-002570 2e30
-002571 e006
-002572 943a
-002573 f7f1
-002574 943a
-002575 950a
-002576 f7d9
-002577 903f
-002578 910f
-002579 943a
-00257a f791
-00257b 950a
-00257c f781                      	WAIT_MS 2000
-00257d 940e 0171
-00257f e2e2
-002580 e0fa
-002581 940e 0523
-002583 e3e4
-002584 e0fa
-002585 e420
-002586 940e 017d
-002588 940e 0523                 	DISPLAY2 strcred, strcred2
-00258a ed00
-00258b 2e30
-00258c e008
-00258d 930f
-00258e 923f
-00258f e300
-002590 2e30
-002591 e006
-002592 943a
-002593 f7f1
-002594 943a
-002595 950a
-002596 f7d9
-002597 903f
-002598 910f
-002599 943a
-00259a f791
-00259b 950a
-00259c f781                      	WAIT_MS 2000
-00259d 940c 0711                 	jmp reset
+0025b2 940e 0171
+0025b4 e5ee
+0025b5 e0f5
+0025b6 940e 0523
+0025b8 e7e0
+0025b9 e0f5
+0025ba e420
+0025bb 940e 017d
+0025bd 940e 0523                 	DISPLAY2 str10, str11
+0025bf ed00
+0025c0 2e30
+0025c1 e008
+0025c2 930f
+0025c3 923f
+0025c4 e300
+0025c5 2e30
+0025c6 e006
+0025c7 943a
+0025c8 f7f1
+0025c9 943a
+0025ca 950a
+0025cb f7d9
+0025cc 903f
+0025cd 910f
+0025ce 943a
+0025cf f791
+0025d0 950a
+0025d1 f781                      	WAIT_MS 2000
+0025d2 940e 0171
+0025d4 e2e2
+0025d5 e0fa
+0025d6 940e 0523
+0025d8 e3e4
+0025d9 e0fa
+0025da e420
+0025db 940e 017d
+0025dd 940e 0523                 	DISPLAY2 strcred, strcred2
+0025df ed00
+0025e0 2e30
+0025e1 e008
+0025e2 930f
+0025e3 923f
+0025e4 e300
+0025e5 2e30
+0025e6 e006
+0025e7 943a
+0025e8 f7f1
+0025e9 943a
+0025ea 950a
+0025eb f7d9
+0025ec 903f
+0025ed 910f
+0025ee 943a
+0025ef f791
+0025f0 950a
+0025f1 f781                      	WAIT_MS 2000
+0025f2 940c 0711                 	jmp reset
                                  
                                  check_reset:
-00259f 2e82                      	mov c0, a0
-0025a0 e108
-0025a1 1680                      	_CPI c0, 0x18 ; check if * key pressed
-0025a2 f409                      	brne PC+2
-0025a3 940c 0711                 	jmp reset
+0025f4 2e82                      	mov c0, a0
+0025f5 e108
+0025f6 1680                      	_CPI c0, 0x18 ; check if * key pressed
+0025f7 f409                      	brne PC+2
+0025f8 940c 0711                 	jmp reset
 
 
 RESOURCE USE INFORMATION
@@ -13590,10 +13657,10 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega128" register use summary:
-x  :   6 y  :   0 z  :   0 r0 :  43 r1 :   6 r2 :   6 r3 :1605 r4 :  43 
+x  :   6 y  :   0 z  :   0 r0 :  43 r1 :   6 r2 :   6 r3 :1612 r4 :  43 
 r5 :  43 r6 :   0 r7 :   0 r8 :  12 r9 :  63 r10:  10 r11:   9 r12:  15 
-r13:   4 r14:   8 r15:   4 r16:2667 r17:   1 r18: 535 r19:  49 r20:  28 
-r21:  36 r22: 377 r23:  38 r24:   8 r25:  16 r26:   3 r27:   3 r28:   0 
+r13:   4 r14:   8 r15:   4 r16:2677 r17:   1 r18: 553 r19:  49 r20:  28 
+r21:  36 r22: 389 r23:  38 r24:   8 r25:  16 r26:   3 r27:   3 r28:   0 
 r29:   0 r30: 199 r31: 193 
 Registers used: 29 out of 35 (82.9%)
 
@@ -13602,16 +13669,16 @@ Registers used: 29 out of 35 (82.9%)
 andi  :  37 asr   :   2 bclr  :   0 bld   :   2 brbc  :   0 brbs  :   0 
 brcc  :   5 brcs  :   0 break :   0 breq  :  52 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   5 
-brne  :1008 brpl  :   1 brsh  :   4 brtc  :  38 brts  :  10 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   6 call  : 800 cbi   :   7 cbr   :   0 
+brne  :1012 brpl  :   1 brsh  :   4 brtc  :  38 brts  :  10 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   6 call  : 818 cbi   :   7 cbr   :   0 
 clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :  55 cls   :   0 
 clt   :  34 clv   :   0 clz   :   0 com   :   8 cp    :  46 cpc   :   6 
-cpi   :  49 cpse  :   0 dec   :1156 elpm  :   0 eor   :   1 fmul  :   0 
+cpi   :  49 cpse  :   0 dec   :1161 elpm  :   0 eor   :   1 fmul  :   0 
 fmuls :   0 fmulsu:   0 icall :   1 ijmp  :   1 in    :  10 inc   :  41 
-jmp   : 104 ld    :   6 ldd   :   0 ldi   :2113 lds   :   3 lpm   : 117 
-lsl   :   1 lsr   :   3 mov   : 638 movw  :   0 mul   :   0 muls  :   0 
+jmp   : 104 ld    :   6 ldd   :   0 ldi   :2147 lds   :   3 lpm   : 117 
+lsl   :   1 lsr   :   3 mov   : 640 movw  :   0 mul   :   0 muls  :   0 
 mulsu :   0 neg   :   0 nop   :   8 or    :   0 ori   :   2 out   :  21 
-pop   : 483 push  : 482 rcall :  50 ret   :  35 reti  :   2 rjmp  :  48 
+pop   : 485 push  : 484 rcall :  50 ret   :  35 reti  :   2 rjmp  :  48 
 rol   :  10 ror   :  17 sbc   :   9 sbci  :   1 sbi   :   6 sbic  :   0 
 sbis  :   1 sbiw  :   0 sbr   :   1 sbrc  :  23 sbrs  :   0 sec   :   0 
 seh   :   0 sei   :   2 sen   :   0 ser   :   0 ses   :   0 set   :  34 
@@ -13623,7 +13690,7 @@ Instructions used: 62 out of 114 (54.4%)
 "ATmega128" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x004b4c  17006   2226  19232  131072  14.7%
+[.cseg] 0x000000 0x004bf6  17176   2226  19402  131072  14.8%
 [.dseg] 0x000100 0x000100      0      0      0    4096   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
