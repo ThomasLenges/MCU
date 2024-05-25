@@ -100,11 +100,12 @@ beep01:
 	ldi a0, re2
 	ldi b0, 30 ; 2.5ms*30=75ms
 	call sound
+	WAIT_MS 200
 	OUTI	KPDO,0x0f
     reti
 
 overflow0:
-	OUTI TIMSK, (0<<TOIE0)  ; timer0 overflow interrupt disable
+	OUTI TCCR0, 0
 	reti
 
 .include "kpd4x4bis.asm"
@@ -131,7 +132,7 @@ reset:
 main:
 	call	LCD_clear
 	DISPLAY2 str0, str1
-	MENU_SONG
+	;MENU_SONG
 
 
 main_loop:
@@ -140,6 +141,8 @@ main_loop:
 	CB1 b0,0, games
 	CB1 b0,0, trivia
 	CB1 b0,1, lava
+	CB1 b0,2, dance
+
 	jmp main_loop
 
 start:
@@ -159,7 +162,44 @@ safe:
 	jmp end
 
 games:
-	DISPLAY2 str4, str5
+; ==============================================================================
+;/*
+page1:
+	DISPLAY2 strgame1, strgame2
+	call reset_kpd
+	call check_reset
+	mov b0, a0
+	cpi b0, 0x81 ; A
+	brne PC+2
+	ret
+	cpi b0, 0x82 ; B
+	brne PC+2
+	ret
+	cpi b0, 0x84 ; C
+	brne PC+2
+	ret
+	cpi b0, 0x48 ; check if # key pressed
+	brne page1
+page2:
+	DISPLAY1 strgame3
+	call reset_kpd
+	call check_reset
+	mov b0, a0
+	cpi b0, 0x81 ; A
+	brne PC+2
+	ret
+	cpi b0, 0x82 ; B
+	brne PC+2
+	ret
+	cpi b0, 0x84 ; C
+	brne PC+2
+	ret
+	cpi b0, 0x48 ; check if # key pressed
+	brne page2
+	jmp games
+; ==============================================================================
+/*
+	DISPLAY2 strgame1, strgame2
 	call reset_kpd
 	call check_reset
 	mov b0, a0
@@ -170,7 +210,7 @@ games:
 	ret
 	jmp games
 
-
+*/
 trivia:
 	DISPLAY2 strwelcome, strivia
 	WAIT_MS 2000
@@ -260,14 +300,99 @@ lava:
 	; start counter of game wins
 	_LDI c1, 0x00
 	DISPLAY1 strlava3
- ; allow btw 24 and 26C
-	call reset_wire
-	subi a0, 0x80 ;24*16=400 = 0x0180
-	sbci a1, 0x01
-	brmi PC+3
-	DISPLAY1 strclue1a
 	WAIT_MS 2000
+ ; add at least 0.5C
+	call reset_wire
+	sub b0, d0 ;compare final value with intial one
+	sbc b1, d1
+	ldi a0, 0x08 ; 0x0008 = +0.5 degree. Goal to reach
+	ldi a1, 0x00
+	cp b0, a0
+	cpc b1, a1
+	brmi lost1
+win1:
+	DISPLAY1 strlavawin1
+	CORRECT_SONG
+	inc c1
+	jmp task2
+lost1:
+	DISPLAY1 strlavalost
+	INCORRECT_SONG
+	jmp task2
+task2:
+	DISPLAY1 strlava4
+	WAIT_MS 2000
+ ; add at least 1C
+	call reset_wire
+	sub b0, d0 ;compare final value with intial one
+	sbc b1, d1
+	ldi a0, 0x08 ; 0x0008 = +0.5 degree. Goal to reach
+	ldi a1, 0x00
+	cp b0, a0
+	cpc b1, a1
+	brmi lost2a
+	ldi a0, 0x10 ; 0x0008 = +0.5 degree. Goal to reach
+	ldi a1, 0x00
+	sub b0, a0
+	sbc b1, a1
+	brmi PC+2
+	jmp lost2b
+win2:
+	call LCD_clear
+	DISPLAY1 strlavawin1
+	CORRECT_SONG
+	inc c1
+	jmp task3
+lost2a:
+	DISPLAY1 strlavalost
+	INCORRECT_SONG
+	jmp task3
+lost2b:
+	DISPLAY1 strlavahot
+	INCORRECT_SONG
+	jmp task3
+task3:
+	DISPLAY1 strlava5
+	WAIT_MS 2000
+ ; add at least 1C
+	call reset_wire
+	sub b0, d0 ;compare final value with intial one
+	sbc b1, d1
+	ldi a0, 0x10 ; 0x0010 = +1 degree. Goal to reach
+	ldi a1, 0x00
+	cp b0, a0
+	cpc b1, a1
+	brmi lost3
+win3:
+	DISPLAY1 strlavawin1
+	CORRECT_SONG
+	inc c1
+	jmp end_game
+lost3:
+	DISPLAY1 strlavalost
+	INCORRECT_SONG
+	jmp end_game
+end_game:
+	ldi w, 0x02
+	cp c1, w
+	brsh lava_won
+	jmp lava_lost
+lava_won:
+    DISPLAY2 strlavawin1, strlavawin2
+	CELEBRATE_song
+	DISPLAY2 strclue2a, strclue2b
+	WAIT_MS 4000
 	jmp main_loop
+lava_lost:
+	DISPLAY2 strlose1, strlose2
+	LOSE_SONG
+	jmp main_loop
+
+
+dance:
+	DISPLAY2 strwelcome, strdance
+	WAIT_MS 2000
+
 
 
 end:

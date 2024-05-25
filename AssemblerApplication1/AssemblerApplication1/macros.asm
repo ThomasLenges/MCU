@@ -1936,7 +1936,7 @@ end:
 	.endmacro
 .macro	CA	; subroutine,a
 	ldi	a0, @1
-	rcall	@0
+	call	@0
 	.endmacro
 .macro	CAB	; subroutine,a,b
 	ldi	a0, @1

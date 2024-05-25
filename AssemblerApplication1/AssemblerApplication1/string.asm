@@ -33,6 +33,9 @@ strivia:
 strlava:
 .db "board is lava :)",0
 
+strdance:
+.db "keypad dance :)",0
+
 strcorrect:
 .db "Correct!",0
 
@@ -54,6 +57,12 @@ strclue1a:
 strclue1b:
 .db "SNOW WHITE",0
 
+strclue2a:
+.db "2nd clue:",0
+
+strclue2b:
+.db "Olympic rings",0
+
 strwin1:
 .db "CONGRATULATIONS",0
 
@@ -67,10 +76,12 @@ strlose2:
 .db "TRY AGAIN",0
 
 ; Choose games
-str4:
+strgame1:
 .db "A. TRIVIA QUIZ", 0
-str5:
+strgame2:
 .db "B. LAVA BOARD", 0
+strgame3:
+.db "C. KEYPAD DANCE",0
 
 ; Open safe
 str6:
@@ -249,4 +260,22 @@ answer10:
 
 ; THE BOARD IS LAVA
 strlava3:
-.db "Reach 25C in 5s",0
+.db "Add 0.5C in 8s",0
+
+strlava4:
+.db "Add 0.5-1C in 8s",0
+
+strlava5:
+.db "Add 1C in 8s",0
+
+strlavawin1:
+.db "YOU WIN!",0
+
+strlavawin2:
+.db "CONGRATULATIONS!",0
+
+strlavalost:
+.db "It's freezing!",0
+
+strlavahot:
+.db "2 hot to handle!",0
