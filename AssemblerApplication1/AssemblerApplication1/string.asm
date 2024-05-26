@@ -37,10 +37,10 @@ strdance:
 .db "keypad dance :)",0
 
 strcorrect:
-.db "====Correct!====",0
+.db "Correct!",0
 
 strfalse:
-.db "=====False!=====",0
+.db "False!",0
 
 strivia2:
 .db "Answer 5/10 co-",0
